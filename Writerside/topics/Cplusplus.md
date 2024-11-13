@@ -1,0 +1,3 @@
+# C++
+
+This section contains snippets of code written in C++, an extension of the C programming language that includes object-oriented features. C++ is widely used for system/software development, game development, real-time simulations, and performance-critical applications. The following examples demonstrate various C++ functionalities and best practices to help you understand and implement C++ in your projects effectively.
