@@ -15,6 +15,12 @@
     <toc-element topic="Go.md"/>
     <toc-element topic="Python.md"/>
     <toc-element topic="Perl.md"/>
+    <toc-element topic="Git.md">
+        <toc-element topic="Debugging.md">
+            <toc-element topic="Verbose-output.md"/>
+        </toc-element>
+        <toc-element topic="Commands.md"/>
+    </toc-element>
     <toc-element topic="SQL.md">
         <toc-element topic="Foreign-keys.md">
             <toc-element topic="Drop-existing-foreign-key.md"/>
@@ -22,7 +28,7 @@
     </toc-element>
     <toc-element topic="JetBrains.md">
         <toc-element topic="Shortcuts.md">
-            <toc-element topic="Git.md"/>
+            <toc-element topic="Git-shortcuts.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>
