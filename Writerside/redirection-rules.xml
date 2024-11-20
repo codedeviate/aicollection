@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="e832614">
+        <description>Created after removal of "git init" from AICollection</description>
+        <accepts>git-init.html</accepts>
+    </rule>
+    <rule id="701f6bc8">
+        <description>Created after removal of "git add" from AICollection</description>
+        <accepts>git-add.html</accepts>
+    </rule>
+    <rule id="54a5f1">
+        <description>Created after removal of "git commit" from AICollection</description>
+        <accepts>git-commit.html</accepts>
+    </rule>
+    <rule id="2a936d09">
+        <description>Created after removal of "git log" from AICollection</description>
+        <accepts>git-log.html</accepts>
+    </rule>
+    <rule id="6d8de7f9">
+        <description>Created after removal of "git branch" from AICollection</description>
+        <accepts>git-branch.html</accepts>
+    </rule>
+    <rule id="1ac8b9b4">
+        <description>Created after removal of "git checkout" from AICollection</description>
+        <accepts>git-checkout.html</accepts>
+    </rule>
+    <rule id="568ada19">
+        <description>Created after removal of "git merge" from AICollection</description>
+        <accepts>git-merge.html</accepts>
+    </rule>
+    <rule id="478271a0">
+        <description>Created after removal of "git remote add" from AICollection</description>
+        <accepts>git-remote-add.html</accepts>
+    </rule>
+    <rule id="1ab173e6">
+        <description>Created after removal of "git push" from AICollection</description>
+        <accepts>git-push.html</accepts>
+    </rule>
+</rules>

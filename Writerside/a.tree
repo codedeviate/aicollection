@@ -11,11 +11,19 @@
         <toc-element topic="C.md"/>
         <toc-element topic="Cplusplus.md"/>
         <toc-element topic="Csharp.md"/>
+        <toc-element topic="CSS.md"/>
         <toc-element topic="Go.md"/>
         <toc-element topic="Javascript.md">
+            <toc-element topic="Javascript-Dialects.md">
+                <toc-element topic="Node.md"/>
+                <toc-element topic="Deno.md"/>
+                <toc-element topic="Bun.md"/>
+            </toc-element>
             <toc-element topic="DOM.md">
                 <toc-element topic="Element-is-loaded.md"/>
             </toc-element>
+            <toc-element topic="Promises.md"/>
+            <toc-element topic="Proxy.md"/>
         </toc-element>
         <toc-element topic="HTML.md"/>
         <toc-element topic="Perl.md"/>
@@ -27,12 +35,15 @@
                 <toc-element topic="Drop-existing-foreign-key.md"/>
             </toc-element>
         </toc-element>
+        <toc-element topic="Zig.md"/>
     </toc-element>
     <toc-element topic="Git.md">
         <toc-element topic="Debugging.md">
             <toc-element topic="Verbose-output.md"/>
         </toc-element>
-        <toc-element topic="Commands.md"/>
+        <toc-element topic="Commands.md">
+            <toc-element topic="10-common-git-commands.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Github.md">
         <toc-element topic="Github-Copilot.md"/>
