@@ -2,7 +2,7 @@
 
 Here is a simple "Hello World" program in C#:
 
-```csharp
+```c#
 using System;
 
 class Program
