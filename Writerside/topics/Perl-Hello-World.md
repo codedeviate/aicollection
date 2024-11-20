@@ -1,22 +1,20 @@
 # Hello, World
 
-Here is a simple "Hello World" program in PHP:
+Here is a simple "Hello World" program in Perl:
 
-```php
-<?php
-echo "Hello, World!";
-?>
+```perl
+print "Hello, World!\n";
 ```
 
 ### Steps to Run
 
-1. **Save the code**: Save the above code in a file named `hello.php`.
+1. **Save the code**: Save the above code in a file named `hello.pl`.
 
-2. **Open a terminal**: Navigate to the directory where `hello.php` is saved.
+2. **Open a terminal**: Navigate to the directory where `hello.pl` is saved.
 
-3. **Run the script**: Use the `php` command to run the script. Run the following command:
+3. **Run the script**: Use the `perl` command to run the script. Run the following command:
    ```sh
-   php hello.php
+   perl hello.pl
    ```
 
 This will output:
