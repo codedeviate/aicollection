@@ -1,0 +1,3 @@
+# Copilot
+
+This section contains information about GitHub Copilot, an AI-powered code completion tool developed by GitHub. GitHub Copilot assists developers by suggesting code snippets, functions, and entire lines of code based on the context of the current file and the developer's coding style. The following examples demonstrate various GitHub Copilot functionalities and best practices to help you understand and utilize GitHub Copilot effectively in your development workflow.

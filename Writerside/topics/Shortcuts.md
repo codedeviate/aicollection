@@ -1,3 +1,3 @@
 # Shortcuts
 
-Start typing here...
+This section contains information about JetBrains shortcuts, which are designed to improve productivity and efficiency while using JetBrains integrated development environments (IDEs). JetBrains shortcuts allow developers to quickly navigate, edit, and manage their code without relying heavily on the mouse. The following examples demonstrate various JetBrains shortcuts and best practices to help you understand and utilize them effectively in your development workflow.

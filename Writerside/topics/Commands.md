@@ -1,3 +1,3 @@
 # Commands
 
-Start typing here...
+This section contains information about Git commands, which are used to interact with the Git version control system. Git commands allow you to perform various tasks such as creating repositories, committing changes, branching, merging, and more. The following examples demonstrate various Git commands and best practices to help you understand and utilize Git effectively in your projects.

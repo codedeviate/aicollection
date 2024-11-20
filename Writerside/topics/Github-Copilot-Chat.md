@@ -1,0 +1,3 @@
+# Copilot Chat
+
+This section contains information about GitHub Copilot Chat, an AI-powered conversational assistant developed by GitHub. GitHub Copilot Chat helps developers by providing real-time assistance, answering questions, and suggesting code snippets based on the context of the current file and the developer's coding style. The following examples demonstrate various GitHub Copilot Chat functionalities and best practices to help you understand and utilize GitHub Copilot Chat effectively in your development workflow.
