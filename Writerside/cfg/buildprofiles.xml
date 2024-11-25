@@ -5,11 +5,16 @@
 
     <variables>
         <custom-favicons>logo.png</custom-favicons>
+        <header-logo>logo-white.png</header-logo>
+        <download-title>AICollection App</download-title>
+        <download-page>https://codedeviate.github.io</download-page>
+        <showDownloadButton>true</showDownloadButton>
     </variables>
     <build-profile instance="a">
         <variables>
             <noindex-content>true</noindex-content>
         </variables>
+        <sitemap priority="0.35" change-frequency="monthly"/>
     </build-profile>
     <footer>
         <copyright>2024 CodeDV8</copyright>

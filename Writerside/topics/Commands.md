@@ -8,6 +8,8 @@ This section contains information about Git commands, which are used to interact
 - [Add](Git-Add.md)
 - [Commit](Git-Commit.md)
 - [Push](Git-Push.md)
+- [Status](Git-Status.md)
+- [Diff](Git-Diff.md)
 - [Branch](Git-Branch.md)
 - [Checkout](Git-Checkout.md)
 - [Merge](Git-Merge.md)
