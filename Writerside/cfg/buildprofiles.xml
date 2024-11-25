@@ -3,11 +3,17 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <custom-favicons>logo.png</custom-favicons>
+    </variables>
     <build-profile instance="a">
         <variables>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
-
+    <footer>
+        <copyright>2024 CodeDV8</copyright>
+        <social type="twitter" href="https://twitter.com/codedv8"/>
+        <social type="instagram" href="https://instagram.com/codedv8"/>
+    </footer>
 </buildprofiles>
