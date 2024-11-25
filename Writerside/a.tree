@@ -63,6 +63,7 @@
     <toc-element topic="Git.md">
         <toc-element topic="Git-lists.md">
             <toc-element topic="25-essential-git-commands.md"/>
+            <toc-element topic="Git-Cheat-Sheet.md"/>
             <toc-element topic="10-common-git-commands.md"/>
         </toc-element>
         <toc-element topic="Debugging.md">
@@ -70,9 +71,33 @@
         </toc-element>
         <toc-element topic="Commands.md">
             <toc-element topic="Git-Init.md"/>
+            <toc-element topic="Git-Add.md"/>
             <toc-element topic="Git-Commit.md"/>
+            <toc-element topic="Git-Push.md"/>
             <toc-element topic="Git-Branch.md"/>
+            <toc-element topic="Git-Checkout.md"/>
+            <toc-element topic="Git-Merge.md"/>
+            <toc-element topic="Git-Pull.md"/>
+            <toc-element topic="Git-Remote.md"/>
+            <toc-element topic="Git-Remote-Add.md"/>
+            <toc-element topic="Git-Clone.md"/>
+            <toc-element topic="Git-Log.md"/>
+            <toc-element topic="Git-Fetch.md"/>
+            <toc-element topic="Git-Blame.md"/>
+            <toc-element topic="Git-Stash.md"/>
+            <toc-element topic="Git-Tag.md"/>
             <toc-element topic="Git-Cherry-picking.md"/>
+            <toc-element topic="Git-Rebase.md"/>
+            <toc-element topic="Git-Bisect.md"/>
+            <toc-element topic="Git-Worktree.md"/>
+            <toc-element topic="Git-Reflog.md"/>
+            <toc-element topic="Git-Rerere.md"/>
+            <toc-element topic="Git-Submodule.md"/>
+            <toc-element topic="Git-Filter-branch.md"/>
+            <toc-element topic="Git-Update-index.md"/>
+            <toc-element topic="Git-Gc.md"/>
+            <toc-element topic="Git-Instaweb.md"/>
+            <toc-element topic="Git-Submodule-foreach.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Github.md">

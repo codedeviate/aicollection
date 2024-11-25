@@ -14,6 +14,8 @@ cd myproject
 git init
 ```
 
+*For more information on initializing a repository, see [this page](Git-Init.md).*
+
 ## `git add <file>`
 
 ### Stage a file for commit
@@ -25,6 +27,8 @@ touch newfile.txt
 git add newfile.txt
 ```
 
+*For more information on staging changes, see [this page](Git-Add.md).*
+
 ## `git add .`
 
 ### Stage all changes in the current directory and subdirectories
@@ -34,6 +38,8 @@ git add newfile.txt
 ```bash
 git add .
 ```
+
+*For more information on staging changes, see [this page](Git-Add.md).*
 
 ## `git commit -m "<message>"`
 
@@ -48,6 +54,8 @@ git add .
 git commit -m "Initial commit"
 ```
 
+*For more information on committing changes, see [this page](Git-Commit.md).*
+
 ## `git log`
 
 ### Display a list of commits made in the repository
@@ -58,6 +66,8 @@ git commit -m "Initial commit"
 git log
 ```
 
+*For more information on history logging, see [this page](Git-Log.md).*
+
 ## `git branch <branch-name>`
 
 ### Create a new branch with the specified name
@@ -67,6 +77,8 @@ git log
 ```bash
 git branch feature/new-feature
 ```
+
+*For more information on branching, see [this page](Git-Branch.md).*
 
 ## `git checkout <branch-name>`
 
@@ -89,6 +101,8 @@ git checkout master
 git merge feature/new-feature
 ```
 
+*For more information on merging branches, see [this page](Git-Merge.md).*
+
 ## `git remote add <name> <url>`
 
 ### Add a new remote repository to the local Git repository
@@ -99,6 +113,8 @@ git merge feature/new-feature
 git remote add origin https://github.com/user/repo.git
 ```
 
+*For more information on remote adding, see [this page](Git-Remote-Add.md).*
+
 ## `git push <remote-name> <branch-name>`
 
 ### Push the current branch (or a specific set of commits) to the remote repository
@@ -108,3 +124,5 @@ git remote add origin https://github.com/user/repo.git
 ```bash
 git push origin master
 ```
+
+*For more information on pushing, see [this page](Git-Push.md).*
