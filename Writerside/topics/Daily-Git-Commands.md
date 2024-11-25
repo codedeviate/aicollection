@@ -1,6 +1,6 @@
 # Daily Git Commands
 
-Here’s a categorized list of all the common Git commands, grouped by functionality. These commands cover most use cases in Git.
+These commands cover most use cases in Git.
 
 ---
 
@@ -125,4 +125,4 @@ Here’s a categorized list of all the common Git commands, grouped by functiona
 
 ---
 
-This list covers most commands you’ll need in day-to-day Git usage. Let me know if you’d like explanations or examples for specific commands!
+This list covers most commands you’ll need in day-to-day Git usage.
