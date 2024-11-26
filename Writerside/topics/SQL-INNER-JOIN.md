@@ -30,6 +30,7 @@ ON table1.column_name = table2.column_name;
 Suppose we have two tables:
 
 **1. `Customers` Table**
+
 | CustomerID | Name        | Country  |
 |------------|-------------|----------|
 | 1          | Alice       | USA      |
@@ -37,12 +38,13 @@ Suppose we have two tables:
 | 3          | Charlie     | UK       |
 
 **2. `Orders` Table**
-| OrderID | CustomerID | Product   |
-|---------|------------|-----------|
-| 101     | 1          | Laptop    |
-| 102     | 2          | Tablet    |
-| 103     | 1          | Smartphone|
-| 104     | 4          | Monitor   |
+
+| OrderID | CustomerID | Product    |
+|---------|------------|------------|
+| 101     | 1          | Laptop     |
+| 102     | 2          | Tablet     |
+| 103     | 1          | Smartphone |
+| 104     | 4          | Monitor    |
 
 ---
 
@@ -56,6 +58,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 ```
 
 **Result:**
+
 | CustomerID | Name   | Product     |
 |------------|--------|-------------|
 | 1          | Alice  | Laptop      |
@@ -92,6 +95,7 @@ WHERE C.Country = 'USA';
 ```
 
 **Result:**
+
 | Name   | Product     |
 |--------|-------------|
 | Alice  | Laptop      |
@@ -116,6 +120,7 @@ This query ensures that only orders placed by customers from the USA are joined.
 You can join more than two tables in one query. Suppose we have another table, `Products`:
 
 **`Products` Table**
+
 | ProductID | Product      | Price |
 |-----------|--------------|-------|
 | 1         | Laptop       | 1000  |
@@ -133,6 +138,7 @@ ON O.Product = P.Product;
 ```
 
 **Result:**
+
 | Name   | Product     | Price |
 |--------|-------------|-------|
 | Alice  | Laptop      | 1000  |

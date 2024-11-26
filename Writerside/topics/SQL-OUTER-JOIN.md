@@ -43,6 +43,7 @@ ON table1.column_name = table2.column_name;
 We will use two tables:
 
 **1. `Customers` Table:**
+
 | CustomerID | Name        | Country  |
 |------------|-------------|----------|
 | 1          | Alice       | USA      |
@@ -51,6 +52,7 @@ We will use two tables:
 | 4          | David       | Germany  |
 
 **2. `Orders` Table:**
+
 | OrderID | CustomerID | Product      |
 |---------|------------|--------------|
 | 101     | 1          | Laptop       |
@@ -70,6 +72,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 ```
 
 **Result:**
+
 | CustomerID | Name     | Product     |
 |------------|----------|-------------|
 | 1          | Alice    | Laptop      |
@@ -93,6 +96,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 ```
 
 **Result:**
+
 | OrderID | Product     | Name     |
 |---------|-------------|----------|
 | 101     | Laptop      | Alice    |
@@ -117,6 +121,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 ```
 
 **Result:**
+
 | CustomerID | Name     | OrderID | Product     |
 |------------|----------|---------|-------------|
 | 1          | Alice    | 101     | Laptop      |
@@ -134,11 +139,12 @@ ON Customers.CustomerID = Orders.CustomerID;
 ---
 
 ## **Comparison of Outer Joins**
-| Join Type      | Included Rows                                                                                             |
-|----------------|----------------------------------------------------------------------------------------------------------|
-| **LEFT JOIN**  | All rows from the left table, plus matching rows from the right table. Non-matching right rows are `NULL`.|
-| **RIGHT JOIN** | All rows from the right table, plus matching rows from the left table. Non-matching left rows are `NULL`. |
-| **FULL JOIN**  | All rows from both tables, with `NULL` for non-matching rows on either side.                              |
+
+| Join Type      | Included Rows                                                                                              |
+|----------------|------------------------------------------------------------------------------------------------------------|
+| **LEFT JOIN**  | All rows from the left table, plus matching rows from the right table. Non-matching right rows are `NULL`. |
+| **RIGHT JOIN** | All rows from the right table, plus matching rows from the left table. Non-matching left rows are `NULL`.  |
+| **FULL JOIN**  | All rows from both tables, with `NULL` for non-matching rows on either side.                               |
 
 ---
 

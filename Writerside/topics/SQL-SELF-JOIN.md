@@ -54,6 +54,7 @@ ON e1.ManagerID = e2.EmployeeID;
 ```
 
 **Result:**
+
 | Employee   | Manager   |
 |------------|-----------|
 | Alice      | NULL      |
@@ -90,6 +91,7 @@ AND a.ProductID < b.ProductID;
 ```
 
 **Result:**
+
 | Duplicate1 | Duplicate2 | ProductName | Price |
 |------------|------------|-------------|-------|
 | 1          | 3          | Laptop      | 1000  |
@@ -118,6 +120,7 @@ ON f1.Destination = f2.Origin;
 ```
 
 **Result:**
+
 | FirstFlight | ConnectingFlight | Origin | Stopover | Destination |
 |-------------|------------------|--------|----------|-------------|
 | 1           | 2                | NYC    | LAX      | SFO         |
@@ -150,6 +153,7 @@ AND a.StudentID < b.StudentID;
 ```
 
 **Result:**
+
 | Student1   | Student2   | Grade |
 |------------|------------|-------|
 | Alice      | Charlie    | 85    |

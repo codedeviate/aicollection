@@ -36,6 +36,9 @@
             <toc-element topic="Proxy.md"/>
         </toc-element>
         <toc-element topic="HTML.md"/>
+        <toc-element topic="Markdown.md">
+            <toc-element topic="Descriptive-basics-of-markdown.md"/>
+        </toc-element>
         <toc-element topic="Perl.md">
             <toc-element topic="Perl-Hello-World.md"/>
         </toc-element>
@@ -96,7 +99,9 @@
             <toc-element topic="Git-Blame.md"/>
             <toc-element topic="Git-Stash.md"/>
             <toc-element topic="Git-Tag.md"/>
-            <toc-element topic="Git-Cherry-picking.md"/>
+            <toc-element topic="Git-Cherry-picking.md">
+                <toc-element topic="Git-Cherry-pick-mulitple-commits-at-once.md"/>
+            </toc-element>
             <toc-element topic="Git-Rebase.md"/>
             <toc-element topic="Git-Bisect.md"/>
             <toc-element topic="Git-Worktree.md"/>

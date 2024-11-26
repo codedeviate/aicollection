@@ -12,9 +12,13 @@ The Zig programming language was developed by Andrew Kelley. Here is a brief his
 - **2019**: Zig 0.4.0 is released, with significant enhancements and performance improvements.
 - **2020**: Zig 0.6.0 is released, adding new language features and further optimizations.
 - **2021**: Zig 0.8.0 is released, continuing the evolution of the language with new features and improvements.
-- **2022**: Zig 1.0.0 is released, marking a major milestone in the language's development. This version includes significant changes to the language design, compiler, and standard library.
+- **2021**: Zig 0.8.0 is released
+- **2022**: Zig 0.10.0 is released, marking a major milestone in the language's development. This version includes significant changes to the language design, compiler, and standard library.
 - **2022**: The introduction of the new `std.zig` module, which provides a modern and streamlined API for building libraries and applications.
 - **2022**: Support for incremental compilation is added to Zig, allowing developers to build and test their code in smaller increments.
 - **2023**: The Zig compiler is optimized for better performance on Apple Silicon chips, taking advantage of the ARM64 architecture.
+- **2023**: Zig 0.11.0 is released
+- **2024**: Zig 0.12.0 is released
+- **2024**: Zig 0.13.0 is released
 
 Zig continues to evolve, with ongoing work to improve the language and add new features. The community remains active, contributing to the growth and development of the language.

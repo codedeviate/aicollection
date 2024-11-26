@@ -26,9 +26,8 @@ Both forms produce the same result.
 ## **How it Works**
 - Each row in the first table is paired with **every** row in the second table.
 - The total number of rows in the result is the product of the number of rows in the two tables:
-  \[
-  \text{Total Rows} = \text{Rows in Table1} \times \text{Rows in Table2}
-  \]
+  $ \text{Total Rows} = \text{Rows in Table1} \times \text{Rows in Table2} $
+  
 
 **CROSS JOIN** is most commonly used when:
 1. Generating combinations (e.g., all possible pairings of rows).
@@ -40,18 +39,20 @@ Both forms produce the same result.
 Suppose we have two tables:
 
 **1. `Colors` Table**
-| ColorID | Color   |
-|---------|---------|
-| 1       | Red     |
-| 2       | Green   |
-| 3       | Blue    |
+
+| ColorID | Color |
+|---------|-------|
+| 1       | Red   |
+| 2       | Green |
+| 3       | Blue  |
 
 **2. `Sizes` Table**
-| SizeID | Size    |
-|--------|---------|
-| 1      | Small   |
-| 2      | Medium  |
-| 3      | Large   |
+
+| SizeID | Size   |
+|--------|--------|
+| 1      | Small  |
+| 2      | Medium |
+| 3      | Large  |
 
 ---
 
@@ -64,17 +65,18 @@ CROSS JOIN Sizes;
 ```
 
 **Result:**
-| Color   | Size    |
-|---------|---------|
-| Red     | Small   |
-| Red     | Medium  |
-| Red     | Large   |
-| Green   | Small   |
-| Green   | Medium  |
-| Green   | Large   |
-| Blue    | Small   |
-| Blue    | Medium  |
-| Blue    | Large   |
+
+| Color | Size   |
+|-------|--------|
+| Red   | Small  |
+| Red   | Medium |
+| Red   | Large  |
+| Green | Small  |
+| Green | Medium |
+| Green | Large  |
+| Blue  | Small  |
+| Blue  | Medium |
+| Blue  | Large  |
 
 **Explanation:**
 - Each color is paired with every size, resulting in \(3 \times 3 = 9\) rows.
@@ -93,13 +95,14 @@ WHERE Colors.Color = 'Red' OR Sizes.Size = 'Large';
 ```
 
 **Result:**
-| Color   | Size    |
-|---------|---------|
-| Red     | Small   |
-| Red     | Medium  |
-| Red     | Large   |
-| Green   | Large   |
-| Blue    | Large   |
+
+| Color | Size   |
+|-------|--------|
+| Red   | Small  |
+| Red   | Medium |
+| Red   | Large  |
+| Green | Large  |
+| Blue  | Large  |
 
 **Explanation:**
 - The `WHERE` clause restricts the combinations based on the specified condition.
@@ -110,17 +113,19 @@ WHERE Colors.Color = 'Red' OR Sizes.Size = 'Large';
 CROSS JOINs are helpful for generating test datasets or grids. For instance, if you want to simulate every pairing of a product and a sales region:
 
 **3.1. `Products` Table**
+
 | ProductID | Product    |
 |-----------|------------|
 | 1         | Laptop     |
 | 2         | Smartphone |
 
 **3.2. `Regions` Table**
-| RegionID | Region     |
-|----------|------------|
-| 1        | North      |
-| 2        | South      |
-| 3        | East       |
+
+| RegionID | Region |
+|----------|--------|
+| 1        | North  |
+| 2        | South  |
+| 3        | East   |
 
 Query:
 ```sql
@@ -130,14 +135,15 @@ CROSS JOIN Regions;
 ```
 
 **Result:**
-| Product     | Region     |
-|-------------|------------|
-| Laptop      | North      |
-| Laptop      | South      |
-| Laptop      | East       |
-| Smartphone  | North      |
-| Smartphone  | South      |
-| Smartphone  | East       |
+
+| Product    | Region |
+|------------|--------|
+| Laptop     | North  |
+| Laptop     | South  |
+| Laptop     | East   |
+| Smartphone | North  |
+| Smartphone | South  |
+| Smartphone | East   |
 
 ---
 
@@ -145,16 +151,18 @@ CROSS JOIN Regions;
 CROSS JOINs can be useful in combinatorial scenarios. For instance, if you need to calculate all potential matches between two teams in a game:
 
 **4.1. `TeamA` Table**
-| PlayerAID | PlayerA   |
-|-----------|-----------|
-| 1         | Alice     |
-| 2         | Bob       |
+
+| PlayerAID | PlayerA |
+|-----------|---------|
+| 1         | Alice   |
+| 2         | Bob     |
 
 **4.2. `TeamB` Table**
-| PlayerBID | PlayerB   |
-|-----------|-----------|
-| 1         | Charlie   |
-| 2         | David     |
+
+| PlayerBID | PlayerB |
+|-----------|---------|
+| 1         | Charlie |
+| 2         | David   |
 
 Query:
 ```sql
@@ -164,6 +172,7 @@ CROSS JOIN TeamB;
 ```
 
 **Result:**
+
 | PlayerA   | PlayerB   |
 |-----------|-----------|
 | Alice     | Charlie   |
