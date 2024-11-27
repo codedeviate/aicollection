@@ -16,3 +16,10 @@ By redefining AI as Advanced Information, we emphasize the importance of robust 
 data-driven world. This perspective encourages a more pragmatic approach to technology adoption, focusing on tangible
 benefits and real-world applications. As we delve deeper into the nuances of Advanced Information, we will explore its
 impact on industries, the technologies that enable it, and the best practices for harnessing its full potential.
+
+## About the content
+This site aims to cover a wide range of platforms to provide comprehensive information and resources for various
+operating systems. However, you may notice a slight emphasis on macOS content. This is because macOS is our primary
+platform, and we have extensive experience and insights to share about it. We strive to ensure that our content is
+relevant and useful for users of all platforms, but macOS will naturally receive a bit more attention due to our
+current usage.

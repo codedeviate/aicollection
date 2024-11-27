@@ -7,7 +7,13 @@
                  start-page="aicollection.md">
 
     <toc-element topic="aicollection.md"/>
+    <toc-element topic="Architectures.md">
+        <toc-element topic="x86-and-x86-64.md"/>
+        <toc-element topic="Arm-and-Aarch64.md"/>
+        <toc-element topic="PowerPC.md"/>
+    </toc-element>
     <toc-element topic="Languages.md">
+        <toc-element topic="Assembly.md"/>
         <toc-element topic="C.md">
             <toc-element topic="C-Hello-World.md"/>
         </toc-element>
@@ -23,7 +29,11 @@
         <toc-element topic="Go.md">
             <toc-element topic="Go-Hello-World.md"/>
         </toc-element>
+        <toc-element topic="Java.md">
+            <toc-element topic="Java-Hello-World.md"/>
+        </toc-element>
         <toc-element topic="Javascript.md">
+            <toc-element topic="Javascript-Hello-World.md"/>
             <toc-element topic="Javascript-Dialects.md">
                 <toc-element topic="Node.md"/>
                 <toc-element topic="Deno.md"/>
@@ -118,6 +128,15 @@
     <toc-element topic="Github.md">
         <toc-element topic="Github-Copilot.md"/>
         <toc-element topic="Github-Copilot-Chat.md"/>
+    </toc-element>
+    <toc-element topic="Programming.md">
+        <toc-element topic="Patterns.md">
+            <toc-element topic="Creational-patterns.md"/>
+            <toc-element topic="Structural-Patterns.md">
+                <toc-element topic="MVC.md"/>
+            </toc-element>
+            <toc-element topic="Behavioral-Patterns.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Shell.md">
         <toc-element topic="Indepth-on-shells.md">
