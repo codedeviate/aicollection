@@ -1,0 +1,3 @@
+# Ideas and tips
+
+Start typing here...
