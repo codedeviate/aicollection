@@ -134,6 +134,7 @@
             <toc-element topic="Git-Gc.md"/>
             <toc-element topic="Git-Instaweb.md"/>
             <toc-element topic="Git-Submodule-foreach.md"/>
+            <toc-element topic="Git-Notes.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Github.md">
