@@ -135,6 +135,14 @@
             <toc-element topic="Git-Instaweb.md"/>
             <toc-element topic="Git-Submodule-foreach.md"/>
             <toc-element topic="Git-Notes.md"/>
+            <toc-element topic="Git-Restore.md"/>
+            <toc-element topic="Git-Reset.md"/>
+            <toc-element topic="Git-rm.md"/>
+            <toc-element topic="Git-mv.md"/>
+            <toc-element topic="Git-show.md"/>
+            <toc-element topic="Git-apply.md"/>
+            <toc-element topic="Git-Revert.md"/>
+            <toc-element topic="Git-grep.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Github.md">
