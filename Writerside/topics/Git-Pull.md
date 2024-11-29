@@ -1,8 +1,8 @@
-# Pull
+# pull
 
 The `git pull` command is used to fetch and integrate changes from a remote repository into the current branch. It is a combination of two commands: `git fetch` and `git merge`. First, it fetches the changes from the remote repository, and then it merges those changes into the current branch.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Fetching Changes**: The `git fetch` part of `git pull` retrieves the latest changes from the remote repository but does not integrate them into your working directory. It updates the remote-tracking branches.
 
@@ -14,7 +14,7 @@ The `git pull` command is used to fetch and integrate changes from a remote repo
 
 5. **Rebasing**: You can use the `--rebase` option with `git pull` to rebase your local commits on top of the fetched commits instead of merging them. This can result in a cleaner project history.
 
-### Examples
+## Examples
 
 1. **Pulling Changes from the Remote Repository**:
    ```sh

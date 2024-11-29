@@ -1,8 +1,8 @@
-# Merge
+# merge
 
 The `git merge` command is used to combine the changes from one branch into another. It is a key part of the Git workflow, allowing you to integrate changes from different branches.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Fast-Forward Merge**: If the branch you are merging has not diverged from the branch you are merging into, Git will perform a fast-forward merge. This simply moves the pointer of the current branch forward to the latest commit of the branch being merged.
 
@@ -12,7 +12,7 @@ The `git merge` command is used to combine the changes from one branch into anot
 
 4. **Merge Commit**: A merge commit is a special commit that has two parent commits. It represents the result of merging two branches.
 
-### Examples
+## Examples
 
 1. **Merging a Branch into the Current Branch**:
    ```sh

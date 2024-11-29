@@ -1,8 +1,8 @@
-# Rebase
+# rebase
 
 The `git rebase` command is used to reapply commits on top of another base tip. It is a powerful tool for streamlining a series of commits, making the commit history more linear and easier to understand.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Basic Usage**: `git rebase` moves or combines a sequence of commits to a new base commit. This is often used to keep a feature branch up to date with the latest changes from the main branch.
 
@@ -14,7 +14,7 @@ The `git rebase` command is used to reapply commits on top of another base tip. 
 
 5. **Preserving Merge Commits**: The `--preserve-merges` option can be used to keep merge commits during a rebase.
 
-### Examples
+## Examples
 
 1. **Rebasing a Feature Branch onto Master**:
    ```sh

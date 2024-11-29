@@ -1,8 +1,8 @@
-# Instaweb
+# instaweb
 
 The `git instaweb` command is a tool that allows you to browse your Git repository using a web interface. It sets up a temporary web server to serve the repository's content, making it easier to view and navigate the repository's history, branches, and commits.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Starting the Web Server**: `git instaweb` starts a web server to serve the repository's content. By default, it uses the `lighttpd` web server, but you can configure it to use other web servers like `apache2` or `webrick`.
 
@@ -10,7 +10,7 @@ The `git instaweb` command is a tool that allows you to browse your Git reposito
 
 3. **Configuration**: You can configure various options for `git instaweb`, such as the web server to use, the port to run on, and the browser to open.
 
-### Examples
+## Examples
 
 1. **Starting the Web Server**:
    ```sh

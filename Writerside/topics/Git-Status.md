@@ -1,8 +1,8 @@
-# Status
+# status
 
 The `git status` command is used to display the state of the working directory and the staging area. It allows you to see which changes have been staged, which haven't, and which files aren't being tracked by Git. This command is essential for understanding the current status of your repository.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Untracked Files**: These are files in your working directory that are not being tracked by Git. They have not been added to the staging area.
 
@@ -13,7 +13,7 @@ The `git status` command is used to display the state of the working directory a
 
 3. **Branch Information**: `git status` also shows the current branch you are on and whether your branch is ahead, behind, or has diverged from the remote branch.
 
-### Examples
+## Examples
 
 1. **Basic `git status`**:
    ```sh

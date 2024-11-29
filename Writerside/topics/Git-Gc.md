@@ -1,8 +1,8 @@
-# Gc
+# gc
 
 The `git gc` command is used to clean up and optimize a Git repository. It stands for "garbage collection" and performs various maintenance tasks to reduce the disk space used by the repository and improve its performance.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Garbage Collection**: `git gc` removes unreachable objects from the repository. These objects are usually created during operations like rebasing, merging, or resetting and are no longer needed.
 
@@ -12,7 +12,7 @@ The `git gc` command is used to clean up and optimize a Git repository. It stand
 
 4. **Repacking**: It repacks the repository to optimize the storage of objects. This can include delta compression, which reduces the size of the repository by storing differences between objects.
 
-### Examples
+## Examples
 
 1. **Running Garbage Collection**:
    ```sh

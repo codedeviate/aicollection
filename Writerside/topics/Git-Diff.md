@@ -1,8 +1,8 @@
-# Diff
+# diff
 
 The `git diff` command is used to show the differences between various Git data sources, such as working directory, staging area, and commits. It is a powerful tool for reviewing changes before committing them or for comparing different versions of a repository.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Comparing Working Directory and Staging Area**: By default, `git diff` shows the changes between the working directory and the staging area. This helps you see what changes have been made but not yet staged for commit.
 
@@ -14,7 +14,7 @@ The `git diff` command is used to show the differences between various Git data 
 
 5. **Comparing Files**: You can also specify a file or directory to see the differences only for that specific path.
 
-### Examples
+## Examples
 
 1. **Comparing Working Directory and Staging Area**:
    ```sh

@@ -1,8 +1,8 @@
-# Submodule foreach
+# submodule foreach
 
 The `git submodule foreach` command is used to execute a specified command in each submodule of a Git repository. This can be useful for performing batch operations on all submodules, such as updating, checking status, or running custom scripts.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Executing Commands**: The `git submodule foreach` command runs the specified shell command in each submodule's directory. The command is executed in the context of each submodule, allowing you to perform operations as if you were in the submodule's directory.
 
@@ -10,7 +10,7 @@ The `git submodule foreach` command is used to execute a specified command in ea
 
 3. **Recursive Option**: You can use the `--recursive` option to apply the command to nested submodules as well.
 
-### Examples
+## Examples
 
 1. **Updating All Submodules**:
    ```sh

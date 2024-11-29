@@ -1,8 +1,8 @@
-# Log
+# log
 
 The `git log` command is used to display the commit history of a Git repository. It provides detailed information about each commit, including the commit hash, author, date, and commit message. This command is highly customizable, allowing you to filter and format the output in various ways.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Basic Usage**: By default, `git log` shows the commit history in reverse chronological order (most recent commits first).
 
@@ -12,7 +12,7 @@ The `git log` command is used to display the commit history of a Git repository.
 
 4. **Limiting Output**: You can limit the number of commits displayed using the `-n` option, where `n` is the number of commits to show.
 
-### Examples
+## Examples
 
 1. **Basic Log**:
    ```sh

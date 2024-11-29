@@ -1,8 +1,8 @@
-# Checkout
+# checkout
 
 The `git checkout` command is used to switch between branches or restore working tree files in a Git repository. It is a versatile command that can be used for various purposes, such as switching branches, checking out specific commits, or discarding changes in the working directory.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Switching Branches**: The most common use of `git checkout` is to switch between branches. When you switch branches, Git updates the files in your working directory to match the state of the branch you are switching to.
 
@@ -12,7 +12,7 @@ The `git checkout` command is used to switch between branches or restore working
 
 4. **Restoring Files**: You can use `git checkout` to restore specific files to their state in a particular commit or branch.
 
-### Examples
+## Examples
 
 1. **Switching to an Existing Branch**:
    ```sh

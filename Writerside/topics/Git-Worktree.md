@@ -1,8 +1,8 @@
-# Worktree
+# worktree
 
 The `git worktree` command allows you to manage multiple working directories attached to a single Git repository. This is useful for working on different branches simultaneously without having to switch between them in a single directory.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Creating a Worktree**: You can create a new worktree linked to a specific branch or commit. This creates a new directory where you can work on that branch or commit independently of the main working directory.
 
@@ -12,7 +12,7 @@ The `git worktree` command allows you to manage multiple working directories att
 
 4. **Pruning Worktrees**: You can prune worktrees to remove references to directories that no longer exist.
 
-### Examples
+## Examples
 
 1. **Creating a New Worktree for a Branch**:
    ```sh

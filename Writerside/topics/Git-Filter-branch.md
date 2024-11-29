@@ -1,8 +1,8 @@
-# Filter-branch
+# filter-branch
 
 The `git filter-branch` command is a powerful tool for rewriting Git history. It allows you to rewrite branches by applying filters to each commit. This can be useful for tasks such as removing sensitive data, changing author information, or modifying file paths.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Rewriting History**: `git filter-branch` can rewrite the commit history of a branch by applying specified filters to each commit. This can include modifying commit messages, changing file contents, or altering author information.
 
@@ -16,7 +16,7 @@ The `git filter-branch` command is a powerful tool for rewriting Git history. It
 
 4. **Performance**: `git filter-branch` can be slow for large repositories because it processes each commit individually. For large-scale history rewriting, consider using tools like `git filter-repo`.
 
-### Examples
+## Examples
 
 1. **Removing a File from History**:
    ```sh

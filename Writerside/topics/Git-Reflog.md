@@ -1,8 +1,8 @@
-# Reflog
+# reflog
 
 The `git reflog` command is used to manage the reference logs in Git. Reflogs record when the tips of branches and other references were updated in the local repository. This is useful for recovering lost commits and understanding the history of changes.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Viewing Reflog**: The `git reflog` command shows a log of all the changes made to the tips of branches and other references. Each entry includes the commit hash, the action taken, and a timestamp.
 
@@ -12,7 +12,7 @@ The `git reflog` command is used to manage the reference logs in Git. Reflogs re
 
 4. **Pruning Reflog**: You can prune unreachable reflog entries using the `git reflog delete` command.
 
-### Examples
+## Examples
 
 1. **Viewing the Reflog**:
    ```sh

@@ -1,8 +1,8 @@
-# Push
+# push
 
 The `git push` command is used to upload local repository content to a remote repository. Pushing is how you transfer commits from your local repository to a remote repository. It's an essential part of collaborating with others, as it allows you to share your changes and integrate changes made by others.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Remote Repositories**: A remote repository is a version of your project that is hosted on the internet or another network. It can be accessed by multiple collaborators. The most common remote repository is `origin`.
 
@@ -12,7 +12,7 @@ The `git push` command is used to upload local repository content to a remote re
 
 4. **Authentication**: Pushing to a remote repository usually requires authentication. This can be done using SSH keys, HTTPS, or other methods.
 
-### Examples
+## Examples
 
 1. **Pushing to the Default Remote and Branch**:
    ```sh

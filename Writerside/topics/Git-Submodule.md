@@ -1,8 +1,8 @@
-# Submodule
+# submodule
 
 The `git submodule` command is used to manage external repositories within a Git repository. Submodules allow you to keep a Git repository as a subdirectory of another Git repository. This is useful for including and tracking dependencies or libraries that are developed in separate repositories.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Adding a Submodule**: You can add a submodule to your repository, which will clone the external repository into a subdirectory and track it.
 
@@ -12,7 +12,7 @@ The `git submodule` command is used to manage external repositories within a Git
 
 4. **Removing a Submodule**: You can remove a submodule from your repository, which involves several steps to clean up the configuration and files.
 
-### Examples
+## Examples
 
 1. **Adding a Submodule**:
    ```sh

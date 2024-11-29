@@ -1,8 +1,8 @@
-# Blame
+# blame
 
 The `git blame` command is used to display the author information and commit details for each line of a file. This is useful for identifying who made specific changes and when those changes were made.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Basic Usage**: `git blame` shows the commit hash, author, date, and the line number for each line in the file. This helps in tracking the history of changes line by line.
 
@@ -16,7 +16,7 @@ The `git blame` command is used to display the author information and commit det
     - Understanding the history of changes for a particular section of a file.
     - Debugging and code reviews to trace the origin of a bug or feature.
 
-### Examples
+## Examples
 
 1. **Basic Blame**:
    ```sh

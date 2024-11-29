@@ -1,8 +1,8 @@
-# Remote Add
+# remote add
 
 The `git remote add` command is used to add a new remote repository to your Git configuration. A remote repository is a version of your project that is hosted on the internet or another network. Adding a remote allows you to collaborate with others by pushing and pulling changes to and from the remote repository.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Adding a Remote**: When you add a remote, you give it a name (e.g., `origin`, `upstream`) and specify the URL of the remote repository. This URL can be an HTTPS URL, an SSH URL, or a Git URL.
 
@@ -10,7 +10,7 @@ The `git remote add` command is used to add a new remote repository to your Git 
 
 3. **Usage**: After adding a remote, you can use `git push` to push changes to the remote repository and `git pull` to fetch and merge changes from the remote repository.
 
-### Examples
+## Examples
 
 1. **Adding a Remote with HTTPS URL**:
    ```sh

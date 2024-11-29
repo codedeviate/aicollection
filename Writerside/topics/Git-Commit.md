@@ -1,8 +1,8 @@
-# Commit
+# commit
 
 The `git commit` command is used to save changes to the local repository. It captures a snapshot of the project's currently staged changes. This command is a crucial part of the Git workflow, as it allows you to record the history of your project.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Creating a Commit**: When you run `git commit`, Git takes the changes that have been added to the staging area and stores them in a new commit. Each commit has a unique identifier (SHA-1 hash) and contains metadata such as the author, date, and commit message.
 
@@ -12,7 +12,7 @@ The `git commit` command is used to save changes to the local repository. It cap
 
 4. **Commit All Changes**: You can use the `-a` option to automatically stage all modified and deleted files before committing, but it does not include new untracked files.
 
-### Examples
+## Examples
 
 1. **Committing Staged Changes with a Message**:
    ```sh

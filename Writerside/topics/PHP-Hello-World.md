@@ -5,7 +5,6 @@ Here is a simple "Hello World" program in PHP:
 ```php
 <?php
 echo "Hello, World!";
-?>
 ```
 
 ### Steps to Run

@@ -1,4 +1,4 @@
-# Notes
+# notes
 
 Git notes are a way to add additional information to Git objects (commits, blobs, trees, and tags) without changing the objects themselves. Notes are stored in a separate namespace and can be used to annotate commits with extra information, such as code reviews, build statuses, or any other metadata.
 

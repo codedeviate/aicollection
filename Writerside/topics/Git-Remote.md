@@ -1,8 +1,8 @@
-# Remote
+# remote
 
 The `git remote` command is used to manage the set of repositories ("remotes") whose branches you track. It allows you to view, add, and remove remote connections to other repositories.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Listing Remotes**: The `git remote` command can list the remote repositories that are currently configured. This is useful for seeing which remotes are available.
 
@@ -14,7 +14,7 @@ The `git remote` command is used to manage the set of repositories ("remotes") w
 
 5. **Showing Remote Details**: You can use `git remote show` to display detailed information about a remote repository, including its URL and the branches it tracks.
 
-### Examples
+## Examples
 
 1. **Listing All Remotes**:
    ```sh

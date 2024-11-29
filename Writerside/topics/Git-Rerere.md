@@ -1,8 +1,8 @@
-# Rerere
+# rerere
 
 The `git rerere` (Reuse Recorded Resolution) command is a Git feature that helps manage and reuse conflict resolutions. When you encounter a merge conflict and resolve it, `git rerere` records the resolution. If the same conflict occurs again in the future, Git can automatically apply the recorded resolution, saving you time and effort.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Enabling Rerere**: You need to enable `rerere` in your Git configuration. This can be done globally or per repository.
 
@@ -14,7 +14,7 @@ The `git rerere` (Reuse Recorded Resolution) command is a Git feature that helps
 
 5. **Manual Intervention**: In some cases, `rerere` might not be able to apply the resolution automatically, and you may need to intervene manually.
 
-### Examples
+## Examples
 
 1. **Enabling Rerere Globally**:
    ```sh

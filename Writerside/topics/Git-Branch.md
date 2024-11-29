@@ -1,8 +1,8 @@
-# Branch
+# branch
 
 The `git branch` command is used to manage branches in a Git repository. Branches are an essential part of Git, allowing you to work on different features or bug fixes independently of the main codebase.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Creating Branches**: A branch in Git is simply a lightweight movable pointer to one of these commits. The default branch name in Git is `master` (or `main` in newer repositories). When you create a new branch, you are creating a new pointer to the current commit.
 
@@ -12,7 +12,7 @@ The `git branch` command is used to manage branches in a Git repository. Branche
 
 4. **Deleting Branches**: Once a branch is no longer needed, you can delete it using `git branch -d` for a safe delete (only if the branch has been merged) or `git branch -D` for a force delete.
 
-### Examples
+## Examples
 
 1. **Creating a New Branch**:
    ```sh

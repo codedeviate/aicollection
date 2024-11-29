@@ -1,8 +1,8 @@
-# Tag
+# tag
 
 The `git tag` command is used to create, list, delete, and verify tags in Git repositories. Tags are used to mark specific points in the repository's history, typically used to mark release points (e.g., v1.0, v2.0).
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Creating Tags**: Tags can be lightweight or annotated. Lightweight tags are just pointers to a specific commit, while annotated tags store additional metadata such as the tagger's name, email, date, and a message.
 
@@ -12,7 +12,7 @@ The `git tag` command is used to create, list, delete, and verify tags in Git re
 
 4. **Pushing Tags**: Tags are not automatically pushed to remote repositories. You need to explicitly push tags.
 
-### Examples
+## Examples
 
 1. **Creating an Annotated Tag**:
    ```sh

@@ -1,8 +1,8 @@
-# Stash
+# stash
 
 The `git stash` command is used to temporarily save changes in your working directory that you are not ready to commit. This allows you to switch branches or perform other tasks without losing your current work. The stashed changes can be reapplied later.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Stashing Changes**: When you run `git stash`, Git saves the changes in your working directory and index (staging area) to a new stash entry and reverts your working directory to match the HEAD commit.
 
@@ -12,7 +12,7 @@ The `git stash` command is used to temporarily save changes in your working dire
 
 4. **Dropping Stashes**: You can remove a specific stash entry using `git stash drop` or clear all stashes using `git stash clear`.
 
-### Examples
+## Examples
 
 1. **Stashing Changes**:
    ```sh

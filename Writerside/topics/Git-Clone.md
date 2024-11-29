@@ -1,8 +1,8 @@
-# Clone
+# clone
 
 The `git clone` command is used to create a copy of an existing Git repository. This is typically the first command you run when you want to start working on a project that is hosted on a remote repository.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Cloning a Repository**: When you clone a repository, Git creates a new directory, initializes a `.git` directory inside it, pulls down all the data for that repository, and checks out a working copy of the latest version.
 
@@ -12,7 +12,7 @@ The `git clone` command is used to create a copy of an existing Git repository. 
 
 4. **Branch Cloning**: You can clone a specific branch by using the `-b` option followed by the branch name.
 
-### Examples
+## Examples
 
 1. **Cloning a Repository**:
    ```sh

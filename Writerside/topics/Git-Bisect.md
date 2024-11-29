@@ -1,8 +1,8 @@
-# Bisect
+# bisect
 
 The `git bisect` command is used to find the commit that introduced a bug by performing a binary search through the commit history. This is particularly useful for large repositories with many commits.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Starting Bisect**: You start the bisect process by specifying a known good commit and a known bad commit. Git will then check out a commit in the middle of the range.
 
@@ -12,7 +12,7 @@ The `git bisect` command is used to find the commit that introduced a bug by per
 
 4. **Ending Bisect**: Once the offending commit is found, you end the bisect process using `git bisect reset`, which returns your repository to its original state.
 
-### Examples
+## Examples
 
 1. **Starting Bisect**:
    ```sh
@@ -43,7 +43,7 @@ The `git bisect` command is used to find the commit that introduced a bug by per
    ```
    This starts the bisect process and uses `./test-script.sh` to automatically test each commit. The script should exit with status 0 if the commit is good and non-zero if the commit is bad.
 
-### Common use cases
+## Common use cases
 Common use cases for the `git bisect` command include:
 
 1. **Identifying the Commit that Introduced a Bug**: When a bug is discovered, `git bisect` can help pinpoint the exact commit that introduced the bug by performing a binary search through the commit history.

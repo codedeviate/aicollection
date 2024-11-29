@@ -1,8 +1,8 @@
-# Update-index
+# update-index
 
 The `git update-index` command is used to manipulate the index (staging area) in Git. It allows you to manually update the index with information about the working tree, which can be useful for various advanced Git operations.
 
-### Detailed Explanation
+## Detailed Explanation
 
 1. **Adding Files to the Index**: You can add files to the index without using `git add`. This can be useful for scripting or advanced workflows.
 
@@ -12,7 +12,7 @@ The `git update-index` command is used to manipulate the index (staging area) in
 
 4. **Refreshing the Index**: You can refresh the index to match the working directory, which can be useful after making changes outside of Git.
 
-### Examples
+## Examples
 
 1. **Adding a File to the Index**:
    ```sh
