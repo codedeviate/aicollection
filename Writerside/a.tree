@@ -135,6 +135,7 @@
             <toc-element topic="Git-Restore.md"/>
             <toc-element topic="Git-Revert.md"/>
             <toc-element topic="Git-rm.md"/>
+            <toc-element topic="Git-shelve.md"/>
             <toc-element topic="Git-show.md"/>
             <toc-element topic="Git-Stash.md"/>
             <toc-element topic="Git-Status.md"/>
