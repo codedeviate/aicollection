@@ -10,9 +10,95 @@
     <toc-element topic="Architectures.md">
         <toc-element topic="x86-and-x86-64.md"/>
         <toc-element topic="Arm-and-Aarch64.md"/>
-        <toc-element topic="PowerPC.md"/>
+        <toc-element topic="PowerPC.md">
+        </toc-element>
+        <toc-element topic="Other-interesting-architectures.md">
+            <toc-element topic="Architecture-6500.md"/>
+            <toc-element topic="Architecture-68XX.md"/>
+            <toc-element topic="Architecture-68000.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Communication.md">
+        <toc-element topic="OSI-Model.md"/>
+        <toc-element topic="IP.md">
+            <toc-element topic="IP-TCP.md"/>
+            <toc-element topic="IP-UDP.md"/>
+            <toc-element topic="IP-ICMP.md"/>
+        </toc-element>
+        <toc-element topic="HTTP-S.md">
+            <toc-element topic="HTTP-Methods.md">
+                <toc-element topic="HTTP-Method-GET.md"/>
+                <toc-element topic="HTTP-Method-POST.md"/>
+                <toc-element topic="HTTP-Method-PUT.md"/>
+                <toc-element topic="HTTP-Method-DELETE.md"/>
+                <toc-element topic="HTTP-Method-PATCH.md"/>
+                <toc-element topic="HTTP-Method-HEAD.md"/>
+                <toc-element topic="HTTP-Method-OPTIONS.md"/>
+                <toc-element topic="HTTP-Method-TRACE.md"/>
+                <toc-element topic="HTTP-Method-CONNECT.md"/>
+            </toc-element>
+            <toc-element topic="HTTP-Status-codes.md">
+                <toc-element topic="HTTP-Status-Code-100.md"/>
+                <toc-element topic="HTTP-Status-Code-200.md"/>
+                <toc-element topic="HTTP-Status-Code-201.md"/>
+                <toc-element topic="HTTP-Status-Code-301.md"/>
+                <toc-element topic="HTTP-Status-Code-302.md"/>
+                <toc-element topic="HTTP-Status-Code-400.md"/>
+                <toc-element topic="HTTP-Status-Code-401.md"/>
+                <toc-element topic="HTTP-Status-Code-402.md"/>
+                <toc-element topic="HTTP-Status-Code-403.md"/>
+                <toc-element topic="HTTP-Status-Code-404.md"/>
+                <toc-element topic="HTTP-Status-Code-405.md"/>
+                <toc-element topic="HTTP-Status-Code-429.md"/>
+                <toc-element topic="HTTP-Status-Code-503.md"/>
+            </toc-element>
+            <toc-element topic="REST.md"/>
+            <toc-element topic="CRUD.md"/>
+        </toc-element>
+        <toc-element topic="Services.md">
+            <toc-element topic="Services-SMTP.md"/>
+            <toc-element topic="Services-IMAP.md"/>
+            <toc-element topic="Services-POP3.md"/>
+            <toc-element topic="Services-FTP.md">
+                <toc-element topic="Services-SFTP.md">
+                </toc-element>
+                <toc-element topic="Services-FTPS.md"/>
+            </toc-element>
+            <toc-element topic="Services-HTTP.md">
+                <toc-element topic="Services-HTTPS.md"/>
+            </toc-element>
+            <toc-element topic="Services-XMPP.md"/>
+            <toc-element topic="Services-MQTT.md"/>
+            <toc-element topic="Services-SIP.md"/>
+            <toc-element topic="Services-RTP.md"/>
+            <toc-element topic="Services-SSH.md"/>
+            <toc-element topic="Services-Telnet.md"/>
+            <toc-element topic="Services-RDP.md"/>
+            <toc-element topic="Services-DNS.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Docker.md">
+        <toc-element topic="Docker-Commands.md">
+            <toc-element topic="docker-run.md"/>
+            <toc-element topic="docker-ps.md"/>
+            <toc-element topic="docker-images.md"/>
+            <toc-element topic="docker-pull.md"/>
+            <toc-element topic="docker-build.md"/>
+            <toc-element topic="docker-stop.md"/>
+            <toc-element topic="docker-start.md"/>
+            <toc-element topic="docker-rm.md"/>
+            <toc-element topic="docker-rmi.md"/>
+            <toc-element topic="docker-exec.md"/>
+            <toc-element topic="docker-logs.md"/>
+            <toc-element topic="docker-network.md"/>
+            <toc-element topic="docker-volume.md"/>
+            <toc-element topic="docker-compose.md"/>
+            <toc-element topic="docker-inspect.md"/>
+            <toc-element topic="docker-tag.md"/>
+            <toc-element topic="docker-push.md"/>
+            <toc-element topic="docker-login.md"/>
+            <toc-element topic="docker-logout.md"/>
+        </toc-element>
         <toc-element topic="Docker-Language-test-environment.md"/>
     </toc-element>
     <toc-element topic="Languages.md">
@@ -92,15 +178,6 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Git.md">
-        <toc-element topic="Git-lists.md">
-            <toc-element topic="10-common-git-commands.md"/>
-            <toc-element topic="25-essential-git-commands.md"/>
-            <toc-element topic="Daily-Git-Commands.md"/>
-            <toc-element topic="Git-Cheat-Sheet.md"/>
-        </toc-element>
-        <toc-element topic="Debugging.md">
-            <toc-element topic="Verbose-output.md"/>
-        </toc-element>
         <toc-element topic="Commands.md">
             <toc-element topic="Git-Add.md"/>
             <toc-element topic="Git-apply.md"/>
@@ -144,6 +221,18 @@
             <toc-element topic="Git-Tag.md"/>
             <toc-element topic="Git-Update-index.md"/>
             <toc-element topic="Git-Worktree.md"/>
+        </toc-element>
+        <toc-element topic="Git-lists.md">
+            <toc-element topic="10-common-git-commands.md"/>
+            <toc-element topic="25-essential-git-commands.md"/>
+            <toc-element topic="Daily-Git-Commands.md"/>
+            <toc-element topic="Git-Cheat-Sheet.md"/>
+        </toc-element>
+        <toc-element topic="Git-Useful-stuff.md">
+            <toc-element topic="Debugging.md">
+                <toc-element topic="Verbose-output.md"/>
+            </toc-element>
+            <toc-element topic="Git-Wipe-history-from-repository.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Github.md">

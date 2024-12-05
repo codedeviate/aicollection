@@ -1,94 +1,91 @@
 # Arm and Aarch64
 
-## History of the ARM Architecture
+## Overview
 
-### 1. **Early Development (1980s)**
-- **Acorn Computers**: ARM (originally Acorn RISC Machine) was developed by Acorn Computers in the 1980s. The first ARM processor, the ARM1, was designed in 1985.
-- **ARM2**: The ARM2, released in 1986, was the first widely used ARM processor, featuring a 32-bit data bus and a 26-bit address space.
+The ARM architecture is a family of RISC (Reduced Instruction Set Computing) architectures developed by ARM Holdings. It is widely used in mobile devices, embedded systems, and increasingly in servers and desktops. AArch64 is the 64-bit extension of the ARM architecture, introduced with the ARMv8-A architecture.
 
-### 2. **Formation of ARM Ltd. (1990)**
-- **Joint Venture**: In 1990, Acorn Computers, Apple, and VLSI Technology formed a joint venture called Advanced RISC Machines Ltd. (ARM Ltd.) to further develop and license the ARM architecture.
+## History of ARM Architecture
 
-### 3. **ARM7 and ARM9 (1990s)**
-- **ARM7**: The ARM7 series, introduced in the early 1990s, became one of the most successful ARM cores, widely used in embedded systems.
-- **ARM9**: The ARM9 series, introduced in the late 1990s, offered improved performance and power efficiency, making it popular in mobile devices.
+1. **Early Development (1980s)**: ARM architecture was initially developed by Acorn Computers in the 1980s.
+2. **ARM7 and ARM9 (1990s)**: ARM7 became one of the most successful ARM cores, widely used in embedded systems. ARM9 offered improved performance and power efficiency.
+3. **ARM11 and Cortex Series (2000s)**: ARM11 was used in many early smartphones. The Cortex series introduced high-performance (Cortex-A), real-time (Cortex-R), and microcontroller (Cortex-M) cores.
+4. **ARMv8 and 64-bit Architecture (2011)**: ARMv8-A introduced 64-bit support (AArch64) alongside 32-bit support (AArch32).
+5. **Recent Developments (2020s)**: ARMv9 focuses on enhanced security, AI, and machine learning capabilities. Apple transitioned its Mac computers to ARM-based processors with the M1 chip.
 
-### 4. **ARM11 and Cortex Series (2000s)**
-- **ARM11**: The ARM11 series, introduced in the early 2000s, was used in many early smartphones, including the first iPhone.
-- **Cortex-A, Cortex-R, Cortex-M**: ARM introduced the Cortex series, with Cortex-A for high-performance applications, Cortex-R for real-time applications, and Cortex-M for microcontrollers.
+## Key Concepts
 
-### 5. **ARMv8 and 64-bit Architecture (2011)**
-- **ARMv8-A**: In 2011, ARM introduced the ARMv8-A architecture, which added 64-bit support (AArch64) alongside the existing 32-bit support (AArch32).
-- **Adoption**: ARMv8-A was quickly adopted in smartphones, tablets, and servers, with notable implementations like Apple's A7 chip and AWS Graviton processors.
+- **RISC Architecture**: ARM is based on the RISC design philosophy, which uses a small, highly optimized set of instructions.
+- **Registers**: ARM has a large number of general-purpose and special-purpose registers.
+- **Endianness**: ARM supports both little-endian and big-endian modes.
+- **SIMD Extensions**: ARM includes SIMD (Single Instruction, Multiple Data) extensions like NEON for parallel processing.
 
-### 6. **Recent Developments (2020s)**
-- **ARMv9**: In 2021, ARM announced the ARMv9 architecture, focusing on enhanced security, AI, and machine learning capabilities.
-- **Apple Silicon**: Apple transitioned its Mac computers to ARM-based processors with the introduction of the M1 chip in 2020, followed by the M1 Pro, M1 Max, and M2 chips.
+## ARM Architecture
 
-### Summary
-ARM architecture has evolved from its origins in the 1980s to become a dominant force in mobile and embedded computing, with recent advancements pushing it into high-performance computing and server markets.
+### ARM (AArch32) Registers
 
-## Technical Comparison: ARM (AArch32) vs. AArch64 (64-bit ARM)
-Here's a **detailed technical comparison** between ARM (AArch32) and AArch64:
+- **General-Purpose Registers (GPRs)**: 16 registers (`R0` to `R15`), used for integer operations.
+- **Floating-Point Registers (FPRs)**: Optional, used for floating-point operations.
+- **Special-Purpose Registers**: Program Counter (PC), Link Register (LR), Stack Pointer (SP), and Current Program Status Register (CPSR).
 
-### 1. **Architecture Versions and Modes**
-| Feature                  | ARM (AArch32)                | AArch64 (64-bit ARM)                                                       |
-|--------------------------|------------------------------|----------------------------------------------------------------------------|
-| **Architecture Version** | ARMv7 (32-bit) and earlier   | ARMv8 and later                                                            |
-| **Execution Mode**       | AArch32 (32-bit)             | AArch64 (64-bit)                                                           |
-| **Instruction Set**      | ARM, Thumb, and Thumb-2      | A64 (64-bit instruction set)                                               |
-| **Compatibility**        | Can execute only 32-bit code | Can execute both 32-bit (AArch32) and 64-bit (AArch64) code on ARMv8+ CPUs |
+### Example: ARM (AArch32) Simple Assembly Program
 
-### 2. **Instruction Set Differences**
-| Feature              | ARM (AArch32)                       | AArch64                                                               |
-|----------------------|-------------------------------------|-----------------------------------------------------------------------|
-| **Instruction Size** | Mostly 32-bit (ARM), 16-bit (Thumb) | Fixed 32-bit instruction width                                        |
-| **New Instructions** | Limited to ARMv7 extensions         | New atomic, cryptographic, and SIMD instructions (e.g., `LDP`, `STP`) |
-| **Floating Point**   | VFPv3 or NEON optional              | Integrated NEON and floating-point as standard                        |
-| **SIMD Extensions**  | Separate NEON (32 registers)        | Unified SIMD and floating-point registers (128-bit wide)              |
+```assembly
+.section .data
+    msg: .asciz "Hello, World!"
 
-### 3. **Registers**
-| Feature                       | ARM (AArch32)                 | AArch64                                        |
-|-------------------------------|-------------------------------|------------------------------------------------|
-| **General Purpose Registers** | 16 registers (R0–R15, 32-bit) | 31 registers (X0–X30, 64-bit)                  |
-| **Special Registers**         | PC (R15), LR (R14), SP (R13)  | PC (Program Counter), SP, LR (X30)             |
-| **Zero Register**             | No dedicated zero register    | XZR/WZR as a zero register                     |
-| **Stack Pointer**             | Single stack pointer (SP)     | Separate SP_ELx for different execution levels |
+.section .text
+    .globl _start
 
-### 4. **Memory Addressing**
-| Feature                   | ARM (AArch32)                          | AArch64                                  |
-|---------------------------|-----------------------------------------|------------------------------------------|
-| **Address Space**          | 4 GB (32-bit addressing)               | 16 EB (theoretical, limited to 48-bit/57-bit implementations) |
-| **Memory Model**           | Little-endian or big-endian            | Primarily little-endian, optional big-endian |
-| **Addressing Modes**       | Variety of complex addressing modes    | Simplified addressing modes for efficiency |
+_start:
+    ; Write message to stdout
+    mov r7, #4          ; syscall number for sys_write
+    mov r0, #1          ; file descriptor 1 (stdout)
+    ldr r1, =msg        ; address of message
+    mov r2, #13         ; message length
+    svc 0               ; system call
 
-### 5. **Operating Modes and Exception Levels**
-| Feature              | ARM (AArch32)                            | AArch64                                                          |
-|----------------------|------------------------------------------|------------------------------------------------------------------|
-| **Privileged Modes** | 7 processor modes (User, FIQ, IRQ, etc.) | 4 Exception Levels (EL0 to EL3)                                  |
-| **Exception Levels** | None                                     | EL0 (User), EL1 (Kernel), EL2 (Hypervisor), EL3 (Secure Monitor) |
-| **Virtualization**   | Minimal support                          | Full hardware virtualization (EL2)                               |
+    ; Exit program
+    mov r7, #1          ; syscall number for sys_exit
+    mov r0, #0          ; exit code 0
+    svc 0               ; system call
+```
 
-### 6. **Performance and Power**
-| Feature              | ARM (AArch32)                    | AArch64                                                                     |
-|----------------------|----------------------------------|-----------------------------------------------------------------------------|
-| **Power Efficiency** | Optimized for low power          | Maintains power efficiency but supports higher performance                  |
-| **Performance**      | Limited due to 32-bit operations | Higher performance due to 64-bit registers, SIMD, and advanced instructions |
+## AArch64 Architecture
 
-### 7. **Use Cases**
-| Use Case              | ARM (AArch32)                        | AArch64                                                  |
-|-----------------------|--------------------------------------|----------------------------------------------------------|
-| **Embedded Systems**  | Widely used in microcontrollers, IoT | Emerging use in advanced embedded systems                |
-| **Mobile Devices**    | ARMv7 (older smartphones, tablets)   | Standard in modern smartphones (ARMv8+)                  |
-| **Server/Datacenter** | Rare usage                           | Widely used in servers (e.g., AWS Graviton, Apple M1/M2) |
-| **Desktops/Laptops**  | Rare usage                           | Increasing use (Apple Silicon, Windows on ARM)           |
+### AArch64 Registers
 
-### Summary of Key Enhancements in AArch64:
-1. **Larger Register Set:** More general-purpose registers (31 vs. 16).
-2. **Unified NEON/SIMD:** Single set of registers for SIMD and floating-point operations.
-3. **Improved Exception Levels:** Cleaner privilege separation for better security.
-4. **64-bit Addressing:** Enables large memory support and better performance for data-intensive applications.
-5. **New Instructions:** For cryptography, virtualization, and atomic operations.
+- **General-Purpose Registers (GPRs)**: 31 registers (`X0` to `X30`), used for integer operations.
+- **Floating-Point Registers (FPRs)**: 32 registers (`V0` to `V31`), used for floating-point and SIMD operations.
+- **Special-Purpose Registers**: Program Counter (PC), Stack Pointer (SP), Link Register (LR), and Program Status Register (PSTATE).
 
-### Conclusion
-AArch64 is a major leap forward, designed for high performance, larger memory space, and modern computing needs, while maintaining ARM's hallmark efficiency. ARM (AArch32) remains relevant in low-power, constrained environments like IoT and embedded systems.
+### Example: AArch64 Simple Assembly Program
+
+```assembly
+.section .data
+    msg: .asciz "Hello, World!"
+
+.section .text
+    .globl _start
+
+_start:
+    ; Write message to stdout
+    mov w8, #64         ; syscall number for sys_write
+    mov x0, #1          ; file descriptor 1 (stdout)
+    ldr x1, =msg        ; address of message
+    mov x2, #13         ; message length
+    svc 0               ; system call
+
+    ; Exit program
+    mov w8, #93         ; syscall number for sys_exit
+    mov x0, #0          ; exit code 0
+    svc 0               ; system call
+```
+
+## Differences Between ARM (AArch32) and AArch64
+
+- **Addressable Memory**: AArch64 supports 64-bit memory addresses, allowing for more than 4 GB of RAM.
+- **Additional Registers**: AArch64 introduces more general-purpose registers (31 vs. 16).
+- **Instruction Set**: AArch64 uses a fixed 32-bit instruction width, while ARM (AArch32) uses a mix of 32-bit and 16-bit instructions.
+- **Calling Conventions**: AArch64 has different calling conventions, with arguments passed in registers rather than on the stack.
+
+Understanding these architectures is crucial for low-level programming, performance optimization, and system development in environments where ARM processors are used.
