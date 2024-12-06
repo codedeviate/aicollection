@@ -20,7 +20,7 @@ The Simple Mail Transfer Protocol (SMTP) is a protocol used for sending emails a
 
 - **220**: Service ready.
 - **250**: Requested mail action okay, completed.
-- **354**: Start mail input; end with <CRLF>.<CRLF>.
+- **354**: Start mail input; end with `<CRLF>.<CRLF>.`
 - **421**: Service not available, closing transmission channel.
 - **550**: Requested action not taken: mailbox unavailable.
 
