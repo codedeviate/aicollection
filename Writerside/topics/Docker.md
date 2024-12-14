@@ -30,7 +30,7 @@ Follow the instructions on the [Docker website](https://docs.docker.com/get-dock
 
 Create a `Dockerfile` to define your container. Here is an example for a simple Python application:
 
-```dockerfile
+```Docker
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 

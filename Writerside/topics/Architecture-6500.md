@@ -29,7 +29,7 @@ The 6500 architecture, also known as the MOS Technology 6502, is an 8-bit microp
 
 ### Example: Simple Assembly Program
 
-```assembly
+```nasm
     .org $8000
     .db $00, $10, $20, $30, $40, $50, $60, $70, $80, $90, $A0, $B0, $C0, $D0, $E0, $F0
 

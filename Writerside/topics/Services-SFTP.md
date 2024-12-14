@@ -19,6 +19,22 @@ The Secure File Transfer Protocol (SFTP) is a network protocol that provides fil
 - **mkdir**: Creates a directory on the server.
 - **rmdir**: Removes a directory on the server.
 
+## SFTP Status codes
+
+SFTP (Secure File Transfer Protocol) does not use response codes in the same way that FTP does. Instead, SFTP uses status codes to indicate the result of an operation. Here are some common SFTP status codes:
+
+- **0**: OK
+- **1**: EOF (End of File)
+- **2**: No such file
+- **3**: Permission denied
+- **4**: Failure
+- **5**: Bad message
+- **6**: No connection
+- **7**: Connection lost
+- **8**: Operation unsupported
+
+These status codes are used to indicate the success or failure of various SFTP operations.
+
 ## Example: Uploading and Downloading Files Using Python's Paramiko
 
 Here is an example of uploading and downloading files using Python's `paramiko` library:

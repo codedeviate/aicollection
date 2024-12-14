@@ -1,6 +1,6 @@
 # Languages
 
-Start typing here...## Background and History of Computer Languages
+## Background and History of Computer Languages
 
 Computer languages, also known as programming languages, are formal languages comprising a set of instructions that produce various kinds of output. They are used to implement algorithms and manipulate data structures. The history of computer languages dates back to the early 19th century and has evolved significantly over time.
 

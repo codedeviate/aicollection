@@ -14,15 +14,39 @@ The Simple Mail Transfer Protocol (SMTP) is a protocol used for sending emails a
 - **MAIL FROM**: Specifies the sender's email address.
 - **RCPT TO**: Specifies the recipient's email address.
 - **DATA**: Indicates the start of the message content.
+- **RSET**: Resets the current mail transaction.
+- **VRFY**: Verifies an email address.
+- **EXPN**: Expands a mailing list.
+- **HELP**: Provides help information.
+- **NOOP**: No operation (keeps the connection alive).
 - **QUIT**: Terminates the session.
+- **STARTTLS**: Initiates TLS encryption.
+- **AUTH**: Authenticates the client to the server.
 
 ## SMTP Responses
 
-- **220**: Service ready.
-- **250**: Requested mail action okay, completed.
-- **354**: Start mail input; end with `<CRLF>.<CRLF>.`
-- **421**: Service not available, closing transmission channel.
-- **550**: Requested action not taken: mailbox unavailable.
+- **211**: System status, or system help reply
+- **214**: Help message
+- **220**: Service ready
+- **221**: Service closing transmission channel
+- **250**: Requested mail action okay, completed
+- **251**: User not local; will forward to <forward-path>
+- **252**: Cannot VRFY user, but will accept message and attempt delivery
+- **354**: Start mail input; end with <CRLF>.<CRLF>
+- **421**: Service not available, closing transmission channel
+- **450**: Requested mail action not taken: mailbox unavailable
+- **451**: Requested action aborted: local error in processing
+- **452**: Requested action not taken: insufficient system storage
+- **500**: Syntax error, command unrecognized
+- **501**: Syntax error in parameters or arguments
+- **502**: Command not implemented
+- **503**: Bad sequence of commands
+- **504**: Command parameter not implemented
+- **550**: Requested action not taken: mailbox unavailable
+- **551**: User not local; please try <forward-path>
+- **552**: Requested mail action aborted: exceeded storage allocation
+- **553**: Requested action not taken: mailbox name not allowed
+- **554**: Transaction failed
 
 ## Example: Sending an Email Using Python's smtplib
 

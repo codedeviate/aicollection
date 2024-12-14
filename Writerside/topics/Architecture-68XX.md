@@ -29,7 +29,7 @@ The 68xx architecture, also known as the Motorola 6800 series, is an 8-bit micro
 
 ### Example: Simple Assembly Program
 
-```assembly
+```nasm
     ORG $8000
     LDAA #$00        ; Load A with 0
 loop:

@@ -29,7 +29,7 @@ The ARM architecture is a family of RISC (Reduced Instruction Set Computing) arc
 
 ### Example: ARM (AArch32) Simple Assembly Program
 
-```assembly
+```nasm
 .section .data
     msg: .asciz "Hello, World!"
 
@@ -60,7 +60,7 @@ _start:
 
 ### Example: AArch64 Simple Assembly Program
 
-```assembly
+```nasm
 .section .data
     msg: .asciz "Hello, World!"
 

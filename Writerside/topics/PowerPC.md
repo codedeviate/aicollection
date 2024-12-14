@@ -32,7 +32,7 @@ The PowerPC architecture is a RISC (Reduced Instruction Set Computing) architect
 
 ### Example: Simple Assembly Program
 
-```assembly
+```nasm
 .section .data
     msg: .asciz "Hello, World!"
 

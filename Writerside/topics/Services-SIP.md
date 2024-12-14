@@ -22,12 +22,68 @@ The Session Initiation Protocol (SIP) is a signaling protocol used for initiatin
 
 ## SIP Responses
 
-- **1xx (Provisional)**: Informational responses, such as 100 Trying, 180 Ringing.
-- **2xx (Success)**: Indicates that the request was successfully received, understood, and accepted, such as 200 OK.
-- **3xx (Redirection)**: Further action needs to be taken to complete the request, such as 302 Moved Temporarily.
-- **4xx (Client Error)**: The request contains bad syntax or cannot be fulfilled, such as 404 Not Found, 486 Busy Here.
-- **5xx (Server Error)**: The server failed to fulfill a valid request, such as 500 Internal Server Error.
-- **6xx (Global Failure)**: The request cannot be fulfilled at any server, such as 600 Busy Everywhere.
+- **1xx (Provisional)**: Informational responses
+    - **100 Trying**
+    - **180 Ringing**
+    - **181 Call Is Being Forwarded**
+    - **182 Queued**
+    - **183 Session Progress**
+
+- **2xx (Success)**: Indicates that the request was successfully received, understood, and accepted
+    - **200 OK**
+    - **202 Accepted**
+
+- **3xx (Redirection)**: Further action needs to be taken to complete the request
+    - **300 Multiple Choices**
+    - **301 Moved Permanently**
+    - **302 Moved Temporarily**
+    - **305 Use Proxy**
+    - **380 Alternative Service**
+
+- **4xx (Client Error)**: The request contains bad syntax or cannot be fulfilled
+    - **400 Bad Request**
+    - **401 Unauthorized**
+    - **402 Payment Required**
+    - **403 Forbidden**
+    - **404 Not Found**
+    - **405 Method Not Allowed**
+    - **406 Not Acceptable**
+    - **407 Proxy Authentication Required**
+    - **408 Request Timeout**
+    - **410 Gone**
+    - **413 Request Entity Too Large**
+    - **414 Request-URI Too Long**
+    - **415 Unsupported Media Type**
+    - **416 Unsupported URI Scheme**
+    - **420 Bad Extension**
+    - **421 Extension Required**
+    - **423 Interval Too Brief**
+    - **480 Temporarily Unavailable**
+    - **481 Call/Transaction Does Not Exist**
+    - **482 Loop Detected**
+    - **483 Too Many Hops**
+    - **484 Address Incomplete**
+    - **485 Ambiguous**
+    - **486 Busy Here**
+    - **487 Request Terminated**
+    - **488 Not Acceptable Here**
+    - **491 Request Pending**
+    - **493 Undecipherable**
+
+- **5xx (Server Error)**: The server failed to fulfill a valid request
+    - **500 Internal Server Error**
+    - **501 Not Implemented**
+    - **502 Bad Gateway**
+    - **503 Service Unavailable**
+    - **504 Server Time-out**
+    - **505 Version Not Supported**
+    - **513 Message Too Large**
+
+- **6xx (Global Failure)**: The request cannot be fulfilled at any server
+    - **600 Busy Everywhere**
+    - **603 Decline**
+    - **604 Does Not Exist Anywhere**
+    - **606 Not Acceptable**
 
 ## Example: Implementing a Basic SIP Client Using `pjsip` Library
 

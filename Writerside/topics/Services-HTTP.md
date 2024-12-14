@@ -36,6 +36,8 @@ The Hypertext Transfer Protocol (HTTP) is an application-layer protocol used for
     - **500 Internal Server Error**: The server has encountered a situation it doesn't know how to handle.
     - **503 Service Unavailable**: The server is not ready to handle the request.
 
+For more detailed information on HTTP status codes, refer to the [HTTP(S) Status Codes](HTTP-Status-codes.md) topic.
+
 ## Example: Making HTTP Requests Using Python's `requests` Library
 
 Here is an example of making HTTP requests using Python's `requests` library:

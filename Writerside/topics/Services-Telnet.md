@@ -15,6 +15,24 @@ Telnet is a network protocol used to provide a bidirectional interactive text-or
 - **Interactive Communication**: Supports interactive text-based communication between the client and server.
 - **Simple Protocol**: Easy to implement and use for basic remote access needs.
 
+## Telnet Commands and Tools
+
+Telnet does not have commands like HTTP or SIP. Instead, Telnet is a protocol designed for bidirectional interactive text-oriented communication. It operates by sending and receiving text commands and responses directly between the client and server.
+
+However, here are some common Telnet-related commands and tools used in a Telnet session:
+
+- **open**: Opens a connection to a specified host.
+- **close**: Closes the current Telnet session.
+- **quit**: Exits the Telnet client.
+- **send**: Sends special Telnet protocol characters.
+- **status**: Displays the current status of the Telnet session.
+- **set**: Sets various Telnet options.
+- **unset**: Unsets various Telnet options.
+- **z**: Suspends the Telnet session (if supported by the client).
+- **!**: Executes a command in the local shell.
+
+These commands are used to manage Telnet sessions and configure the Telnet client.
+
 ## Example: Using Telnet with Python's `telnetlib` Library
 
 Here is an example of using Python's `telnetlib` library to connect to a Telnet server, execute a command, and read the response.

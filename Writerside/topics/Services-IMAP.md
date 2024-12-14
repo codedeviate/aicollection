@@ -17,6 +17,19 @@ The Internet Message Access Protocol (IMAP) is a protocol used by email clients 
 - **STORE**: Changes the flags of messages (e.g., marking as read).
 - **SEARCH**: Searches for messages that match given criteria.
 - **LOGOUT**: Ends the session.
+- **NOOP**: No operation (keeps the connection alive).
+- **CAPABILITY**: Requests a list of capabilities that the server supports.
+- **LIST**: Lists mailboxes.
+- **LSUB**: Lists subscribed mailboxes.
+- **STATUS**: Requests the status of a mailbox.
+- **APPEND**: Adds a message to a mailbox.
+- **CHECK**: Requests a checkpoint of the currently selected mailbox.
+- **CLOSE**: Closes the currently selected mailbox.
+- **EXPUNGE**: Permanently removes messages marked for deletion.
+- **COPY**: Copies messages to another mailbox.
+- **UID**: Performs an operation using unique identifiers.
+- **STARTTLS**: Initiates TLS encryption.
+- **AUTHENTICATE**: Authenticates the client to the server using an authentication mechanism.
 
 ## IMAP Responses
 

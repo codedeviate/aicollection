@@ -16,6 +16,21 @@ The Secure Shell (SSH) protocol is a method for secure remote login from one com
 - **Port Forwarding**: Forward ports securely to access services behind firewalls.
 - **X11 Forwarding**: Forward X11 applications over SSH.
 
+## SSH Commands and Tools
+
+SSH (Secure Shell) does not have commands like HTTP or SIP. Instead, SSH is a protocol designed for secure remote login and other secure network services over an insecure network. It uses various methods and tools to perform tasks. Here are some common SSH-related commands and tools:
+
+- **ssh**: Connects to a remote machine.
+- **scp**: Securely copies files between hosts.
+- **sftp**: Securely transfers files using the SSH File Transfer Protocol.
+- **ssh-keygen**: Generates, manages, and converts authentication keys.
+- **ssh-agent**: Holds private keys used for public key authentication.
+- **ssh-add**: Adds private key identities to the authentication agent.
+- **ssh-copy-id**: Copies public keys to a remote machine for passwordless login.
+- **sshd**: The SSH daemon that runs on the server side.
+
+These commands are used to manage secure connections, file transfers, and key management in SSH.
+
 ## Example: Using SSH with Python's `paramiko` Library
 
 Here is an example of using Python's `paramiko` library to connect to an SSH server, execute a command, and transfer a file.

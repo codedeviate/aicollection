@@ -1,6 +1,6 @@
 # Creational Patterns
 
-Start typing here...Creational patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. They help make a system independent of how its objects are created, composed, and represented. Here are some common creational patterns with examples in a generic language:
+Creational patterns are design patterns that deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. They help make a system independent of how its objects are created, composed, and represented. Here are some common creational patterns with examples in a generic language:
 
 ## 1. Singleton
 Ensures a class has only one instance and provides a global point of access to it.

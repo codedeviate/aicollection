@@ -32,7 +32,7 @@ The 68000 architecture, also known as the Motorola 68k, is a 16/32-bit microproc
 
 ### Example: Simple Assembly Program
 
-```assembly
+```nasm
     ORG $1000
     MOVE.B #$00, D0    ; Load D0 with 0
 loop:
