@@ -122,7 +122,7 @@ rm newfile.txt
 #!/bin/csh
 set source_dir = "/path/to/source"
 set backup_dir = "/path/to/backup"
-set timestamp = `date +%Y%m%d%H%M%S`
+set timestamp = `date +%pct%Y%pct%m%pct%d%pct%H%pct%M%pct%S`
 set backup_file = "$backup_dir/backup_$timestamp.tar.gz"
 
 tar -czf $backup_file $source_dir

@@ -51,7 +51,7 @@ Here is an example of a shell script that uses some of these commands to create 
 #!/bin/bash
 source_dir="/path/to/source"
 backup_dir="/path/to/backup"
-timestamp=$(date +%Y%m%d%H%M%S)
+timestamp=$(date +%pct%Y%pct%m%pct%d%pct%H%pct%M%pct%S)
 backup_file="$backup_dir/backup_$timestamp.tar.gz"
 
 # Create a backup
