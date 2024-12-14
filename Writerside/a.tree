@@ -275,7 +275,17 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Shell.md">
-        <toc-element topic="Shell-Commands.md"/>
+        <toc-element topic="Shell-Commands.md">
+            <toc-element topic="Shell-Commands-sed.md"/>
+            <toc-element topic="Shell-Commands-grep.md"/>
+            <toc-element topic="Shell-Commands-awk.md"/>
+            <toc-element topic="Shell-Commands-find.md"/>
+            <toc-element topic="Shell-Commands-xargs.md"/>
+            <toc-element topic="Shell-Commands-sort.md"/>
+            <toc-element topic="Shell-Commands-cut.md"/>
+            <toc-element topic="Shell-Commands-tr.md"/>
+            <toc-element topic="Shell-Commands-tee.md"/>
+        </toc-element>
         <toc-element topic="Shell-Ideas-and-tips.md">
             <toc-element topic="Show-which-shell-is-running.md"/>
         </toc-element>
