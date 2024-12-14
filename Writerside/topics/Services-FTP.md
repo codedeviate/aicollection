@@ -45,7 +45,7 @@ The File Transfer Protocol (FTP) is a standard network protocol used to transfer
     - **257**: "PATHNAME" created.
 
 - **300 Series**: The command has been accepted, but the requested action is on hold, pending receipt of further information.
-    - **331**: User name okay, need password.
+    - **331**: Username okay, need password.
     - **332**: Need account for login.
     - **350**: Requested file action pending further information.
 

@@ -52,7 +52,7 @@ FTPS uses the same response codes as FTP, with additional codes for secure conne
     - **257**: "PATHNAME" created.
 
 - **300 Series**: The command has been accepted, but the requested action is on hold, pending receipt of further information.
-    - **331**: User name okay, need password.
+    - **331**: Username okay, need password.
     - **332**: Need account for login.
     - **350**: Requested file action pending further information.
 

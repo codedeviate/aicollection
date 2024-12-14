@@ -8,12 +8,22 @@
 
     <toc-element topic="aicollection.md"/>
     <toc-element topic="Architectures.md">
-        <toc-element topic="x86-and-x86-64.md"/>
-        <toc-element topic="Arm-and-Aarch64.md"/>
+        <toc-element topic="x86-and-x86-64.md">
+            <toc-element topic="x86-Calling-conventions.md"/>
+            <toc-element topic="x64-Calling-convention.md"/>
+        </toc-element>
+        <toc-element topic="Arm-and-Aarch64.md">
+            <toc-element topic="Arm64-Calling-convention.md"/>
+            <toc-element topic="Arm64-Syscall-calling-conventions.md"/>
+            <toc-element topic="Arm64-Syscalls.md"/>
+        </toc-element>
         <toc-element topic="PowerPC.md">
+            <toc-element topic="PowerPC-Calling-convention.md"/>
         </toc-element>
         <toc-element topic="Other-interesting-architectures.md">
-            <toc-element topic="Architecture-6500.md"/>
+            <toc-element topic="Architecture-6500.md">
+                <toc-element topic="6500-Calling-convention.md"/>
+            </toc-element>
             <toc-element topic="Architecture-68XX.md"/>
             <toc-element topic="68XX-Embedded.md"/>
             <toc-element topic="Architecture-68000.md"/>
@@ -84,86 +94,6 @@
         </toc-element>
     </toc-element>
     <toc-element topic="Docker.md">
-        <toc-element topic="Languages.md">
-            <toc-element topic="Assembly.md">
-                <toc-element topic="Assembly-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="C.md">
-                <toc-element topic="C-Hello-World.md"/>
-                <toc-element topic="C-Segmentation-faults-solutions.md"/>
-            </toc-element>
-            <toc-element topic="Cplusplus.md">
-                <toc-element topic="Cpp-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Csharp.md">
-                <toc-element topic="Csharp-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="CSS.md">
-                <toc-element topic="CSS-Flexbox.md"/>
-            </toc-element>
-            <toc-element topic="Fortran.md">
-                <toc-element topic="Fortran-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Go.md">
-                <toc-element topic="Go-Hello-World.md"/>
-                <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
-                <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
-                <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
-            </toc-element>
-            <toc-element topic="Java.md">
-                <toc-element topic="Java-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Javascript.md">
-                <toc-element topic="Javascript-Hello-World.md"/>
-                <toc-element topic="Javascript-Dialects.md">
-                    <toc-element topic="Node.md"/>
-                    <toc-element topic="Deno.md"/>
-                    <toc-element topic="Bun.md"/>
-                </toc-element>
-                <toc-element topic="DOM.md">
-                    <toc-element topic="Element-is-loaded.md"/>
-                </toc-element>
-                <toc-element topic="Promises.md"/>
-                <toc-element topic="Proxy.md"/>
-            </toc-element>
-            <toc-element topic="HTML.md"/>
-            <toc-element topic="Markdown.md">
-                <toc-element topic="Descriptive-basics-of-markdown.md"/>
-            </toc-element>
-            <toc-element topic="Perl.md">
-                <toc-element topic="Perl-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="PHP.md">
-                <toc-element topic="PHP-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Python.md">
-                <toc-element topic="Python-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Ruby.md">
-                <toc-element topic="Ruby-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Rust.md">
-                <toc-element topic="Rust-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="Language-Shell.md">
-                <toc-element topic="Shell-Hello-World.md"/>
-            </toc-element>
-            <toc-element topic="SQL.md">
-                <toc-element topic="The-SQL-language.md"/>
-                <toc-element topic="JOIN.md">
-                    <toc-element topic="SQL-INNER-JOIN.md"/>
-                    <toc-element topic="SQL-OUTER-JOIN.md"/>
-                    <toc-element topic="SQL-CROSS-JOIN.md"/>
-                    <toc-element topic="SQL-SELF-JOIN.md"/>
-                </toc-element>
-                <toc-element topic="Foreign-keys.md">
-                    <toc-element topic="Drop-existing-foreign-key.md"/>
-                </toc-element>
-            </toc-element>
-            <toc-element topic="Zig.md">
-                <toc-element topic="Zig-Hello-World.md"/>
-            </toc-element>
-        </toc-element>
         <toc-element topic="Docker-Commands.md">
             <toc-element topic="docker-run.md"/>
             <toc-element topic="docker-ps.md"/>
@@ -249,6 +179,87 @@
         <toc-element topic="Github-Copilot.md"/>
         <toc-element topic="Github-Copilot-Chat.md"/>
     </toc-element>
+    <toc-element topic="Languages.md">
+        <toc-element topic="Assembly.md">
+            <toc-element topic="Assembly-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="C.md">
+            <toc-element topic="C-Hello-World.md"/>
+            <toc-element topic="C-Segmentation-faults-solutions.md"/>
+        </toc-element>
+        <toc-element topic="Cplusplus.md">
+            <toc-element topic="Cpp-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Csharp.md">
+            <toc-element topic="Csharp-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="CSS.md">
+            <toc-element topic="CSS-Flexbox.md"/>
+        </toc-element>
+        <toc-element topic="Fortran.md">
+            <toc-element topic="Fortran-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Go.md">
+            <toc-element topic="Go-Hello-World.md"/>
+            <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
+            <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
+            <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
+            <toc-element topic="Go-Combined-Linked-List-and-BTree.md"/>
+        </toc-element>
+        <toc-element topic="Java.md">
+            <toc-element topic="Java-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Javascript.md">
+            <toc-element topic="Javascript-Hello-World.md"/>
+            <toc-element topic="Javascript-Dialects.md">
+                <toc-element topic="Node.md"/>
+                <toc-element topic="Deno.md"/>
+                <toc-element topic="Bun.md"/>
+            </toc-element>
+            <toc-element topic="DOM.md">
+                <toc-element topic="Element-is-loaded.md"/>
+            </toc-element>
+            <toc-element topic="Promises.md"/>
+            <toc-element topic="Proxy.md"/>
+        </toc-element>
+        <toc-element topic="HTML.md"/>
+        <toc-element topic="Markdown.md">
+            <toc-element topic="Descriptive-basics-of-markdown.md"/>
+        </toc-element>
+        <toc-element topic="Perl.md">
+            <toc-element topic="Perl-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="PHP.md">
+            <toc-element topic="PHP-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Python.md">
+            <toc-element topic="Python-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Ruby.md">
+            <toc-element topic="Ruby-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Rust.md">
+            <toc-element topic="Rust-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="Language-Shell.md">
+            <toc-element topic="Shell-Hello-World.md"/>
+        </toc-element>
+        <toc-element topic="SQL.md">
+            <toc-element topic="The-SQL-language.md"/>
+            <toc-element topic="JOIN.md">
+                <toc-element topic="SQL-INNER-JOIN.md"/>
+                <toc-element topic="SQL-OUTER-JOIN.md"/>
+                <toc-element topic="SQL-CROSS-JOIN.md"/>
+                <toc-element topic="SQL-SELF-JOIN.md"/>
+            </toc-element>
+            <toc-element topic="Foreign-keys.md">
+                <toc-element topic="Drop-existing-foreign-key.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Zig.md">
+            <toc-element topic="Zig-Hello-World.md"/>
+        </toc-element>
+    </toc-element>
     <toc-element topic="Programming.md">
         <toc-element topic="Patterns.md">
             <toc-element topic="Creational-patterns.md"/>
@@ -272,6 +283,13 @@
             <toc-element topic="TDD.md"/>
             <toc-element topic="BDD.md"/>
             <toc-element topic="DDD.md"/>
+        </toc-element>
+        <toc-element topic="Programming-Algorithms.md">
+            <toc-element topic="Programming-Algorithms-Binary-Tree.md"/>
+            <toc-element topic="Programming-Algorithms-Btree.md">
+                <toc-element topic="Programming-Algorithms-B-Tree.md"/>
+            </toc-element>
+            <toc-element topic="Programming-Algorithms-Linked-list.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Shell.md">

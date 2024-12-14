@@ -66,7 +66,7 @@ MQTT does not use response codes in the same way that HTTP or FTP does. Instead,
   - **1**: Connection refused, unacceptable protocol version.
   - **2**: Connection refused, identifier rejected.
   - **3**: Connection refused, server unavailable.
-  - **4**: Connection refused, bad user name or password.
+  - **4**: Connection refused, bad username or password.
   - **5**: Connection refused, not authorized.
 
 - **PUBACK**: Publish acknowledgment for QoS 1 messages.
