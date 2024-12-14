@@ -121,7 +121,7 @@ This script compresses the contents of a source directory into a tar.gz file and
 #!/bin/sh
 source_dir="/path/to/source"
 backup_dir="/path/to/backup"
-timestamp=$(date +%Y%m%d%H%M%S)
+timestamp=$(date +\%Y\%m\%d\%H\%M\%S)
 backup_file="$backup_dir/backup_$timestamp.tar.gz"
 
 tar -czf $backup_file $source_dir
