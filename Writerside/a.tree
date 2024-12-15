@@ -14,8 +14,6 @@
         </toc-element>
         <toc-element topic="Arm-and-Aarch64.md">
             <toc-element topic="Arm64-Calling-convention.md"/>
-            <toc-element topic="Arm64-Syscall-calling-conventions.md"/>
-            <toc-element topic="Arm64-Syscalls.md"/>
         </toc-element>
         <toc-element topic="PowerPC.md">
             <toc-element topic="PowerPC-Calling-convention.md"/>
@@ -259,6 +257,13 @@
         <toc-element topic="Zig.md">
             <toc-element topic="Zig-Hello-World.md"/>
         </toc-element>
+    </toc-element>
+    <toc-element topic="Operating-Systems.md">
+        <toc-element topic="OS-Linux.md">
+            <toc-element topic="OS-Linux-Arm64-Syscalls.md"/>
+        </toc-element>
+        <toc-element topic="OS-MacOS.md"/>
+        <toc-element topic="OS-Windows.md"/>
     </toc-element>
     <toc-element topic="Programming.md">
         <toc-element topic="Patterns.md">
