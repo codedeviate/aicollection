@@ -2,6 +2,8 @@
 
 Pico is a simple, easy-to-use text editor that is part of the Pine email client. It is designed to be user-friendly and is often used on Unix-like systems. Pico stands for "Pine Composer" and is known for its straightforward interface and ease of use, making it a popular choice for beginners.
 
+*In many modern systems, Pico is often linked to the `nano` text editor, which is a free replacement for Pico. Both editors share similar features and functionality, with `nano` being more actively maintained and updated.*
+
 ## Key Features of Pico
 
 1. **Simple Interface**: Pico provides a clean and intuitive interface with on-screen command prompts.

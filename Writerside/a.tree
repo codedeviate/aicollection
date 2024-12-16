@@ -350,14 +350,48 @@
     </toc-element>
     <toc-element topic="Tools.md">
         <toc-element topic="JetBrains.md">
+            <toc-element topic="IntelliJ-IDEA.md"/>
+            <toc-element topic="PyCharm.md"/>
+            <toc-element topic="WebStorm.md"/>
+            <toc-element topic="PhpStorm.md"/>
+            <toc-element topic="Rider.md"/>
+            <toc-element topic="CLion.md"/>
+            <toc-element topic="DataGrip.md"/>
+            <toc-element topic="ReSharper.md"/>
+            <toc-element topic="TeamCity.md"/>
+            <toc-element topic="YouTrack.md"/>
+            <toc-element topic="WriterSide.md"/>
+            <toc-element topic="GoLand.md"/>
+            <toc-element topic="RustRover.md"/>
+            <toc-element topic="Aqua.md"/>
+            <toc-element topic="Fleet.md"/>
+            <toc-element topic="DataSpell.md"/>
+            <toc-element topic="dotMemory.md"/>
+            <toc-element topic="dotTrace.md"/>
+            <toc-element topic="RubyMine.md"/>
+            <toc-element topic="Space-Desktop.md"/>
+            <toc-element topic="JetBrains-MPS.md"/>
+            <toc-element topic="JetBrains-Gateway.md"/>
             <toc-element topic="Shortcuts.md">
                 <toc-element topic="Git-shortcuts.md"/>
             </toc-element>
         </toc-element>
         <toc-element topic="Tools-Editors.md">
-            <toc-element topic="Tools-Editors-Vim.md"/>
             <toc-element topic="Tools-Editors-Nano.md"/>
             <toc-element topic="Tools-Editors-Pico.md"/>
+            <toc-element topic="Tools-Editors-Vim.md"/>
+            <toc-element topic="Tools-Editors-Emacs.md"/>
+            <toc-element topic="Tools-Editors-Sublime.md"/>
+            <toc-element topic="Tools-Editors-Kate.md"/>
+            <toc-element topic="Tools-Editors-Gedit.md"/>
+            <toc-element topic="Tools-Editors-JED.md"/>
+            <toc-element topic="Tools-Editors-TextEdit.md"/>
+            <toc-element topic="Tools-Editors-Visual-Studio-Code.md"/>
+            <toc-element topic="Tools-Editors-Zed.md"/>
+        </toc-element>
+        <toc-element topic="Tools-Visual-Studio.md"/>
+        <toc-element topic="Tools-Visual-Studio-Community-Edition.md">
+            <toc-element topic="Difference-between-Full-edition-and-Community-Edition.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="The-Dark-Side.md">

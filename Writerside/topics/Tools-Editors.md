@@ -6,7 +6,7 @@ Text editors are essential tools for developers, writers, and anyone who works w
 
 1. **Nano**: A simple, easy-to-use text editor for Unix-like systems, known for its straightforward interface and ease of use. It supports basic text editing operations, syntax highlighting, and multiple buffers. [More information](https://www.nano-editor.org/)
 <br/>
-<img src="compat-la-bg.png" alt="Linux, MacOS" width="72"/>
+<img src="compat-law-bg.png" alt="Linux, MacOS, Windows" width="72"/>
 
 2. **Pico**: Part of the Pine email client, Pico is designed to be user-friendly and is often used on Unix-like systems. It provides a clean and intuitive interface with on-screen command prompts and supports basic text editing operations. It should be noted that pico is often linked to nano in most modern systems. [More information](https://en.wikipedia.org/wiki/Pine_(email_client))
 <br/>
@@ -26,11 +26,11 @@ Text editors are essential tools for developers, writers, and anyone who works w
 
 6. **Kate**: A feature-rich text editor developed by the KDE project, known for its ease of use, flexibility, and compatibility with various file formats. Kate offers features like multi-document interface, powerful search and replace, and syntax highlighting. [More information](https://kate-editor.org/)
 <br/>
-<img src="compat-l-bg.png" alt="Linux" width="72"/>
+<img src="compat-law-bg.png" alt="Linux, MacOS, Windows" width="72"/>
 
 7. **Gedit**: A lightweight, user-friendly text editor that comes pre-installed on many Linux distributions. It's simple to use and offers a range of features, including syntax highlighting and code completion. [More information](https://wiki.gnome.org/Apps/Gedit)
 <br/>
-<img src="compat-l-bg.png" alt="Linux" width="72"/>
+<img src="compat-law-bg.png" alt="Linux, Mac, Windows" width="72"/>
 
 8. **JED**: A simple, yet powerful text editor that's designed for developers who want a fast and efficient editing experience. Its minimalist interface belies its feature-rich capabilities, including syntax highlighting and macro support. [More information](http://www.jedsoft.org/jed/)
 <br/>
