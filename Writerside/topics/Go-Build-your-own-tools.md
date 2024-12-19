@@ -20,6 +20,8 @@ This course is tailored to provide a step-by-step guide on how to build a variet
 The course is divided into four main sections, each focusing on a specific category of tools:
 
 ### 1. **Basic Network Tools**
+[Go to section](Go-Tools-Stage-1.md)
+
 Learn to implement classic networking utilities that are indispensable for diagnostics and troubleshooting. In this section, you'll build simple but powerful tools like:
 - **Ping**: Send ICMP echo requests to check host reachability.
 - **Whois**: Query domain ownership information.
@@ -33,6 +35,8 @@ By the end of this section, you will have developed foundational skills in creat
 ---
 
 ### 2. **Advanced Network Tools**
+[Go to section](Go-Tools-Stage-2.md)
+
 Expand your capabilities by building more sophisticated tools for analyzing and interacting with networks. This section covers:
 - **Port Scanner**: Scan for open ports on a target machine.
 - **IP Geolocation**: Determine a machine's geographical location based on its IP address.
@@ -47,6 +51,8 @@ These projects will give you hands-on experience with Go's advanced features, su
 ---
 
 ### 3. **Network Services**
+[Go to section](Go-Tools-Stage-3.md)
+
 Dive deeper into building and managing network services with tools like:
 - **HTTP/HTTPS Clients and Servers**: Create applications that interact with web protocols.
 - **FTP/FTPS Clients and Servers**: Handle file transfers over traditional and secure channels.
@@ -60,6 +66,8 @@ In this section, you will learn how to build both client and server-side applica
 ---
 
 ### 4. **Security Tools**
+[Go to section](Go-Tools-Stage-4.md)
+
 The final section emphasizes building security and infrastructure tools to enhance network reliability and protection:
 - **Firewall**: Monitor and control incoming/outgoing network traffic.
 - **Load Balancer**: Distribute traffic across multiple servers for better efficiency.
