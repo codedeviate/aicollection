@@ -225,6 +225,7 @@
             </toc-element>
             <toc-element topic="Go-How-To-s.md">
                 <toc-element topic="Go-Create-a-module.md"/>
+                <toc-element topic="Go-HowTo-Custom-marshal-unmarshal.md"/>
             </toc-element>
             <toc-element topic="Go-Stories.md">
                 <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>

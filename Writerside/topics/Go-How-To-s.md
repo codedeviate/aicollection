@@ -1,3 +1,3 @@
-# How-To&apos;s
+# How-To's
 
 Start typing here...
