@@ -8,7 +8,9 @@ The projects in this section will challenge you to leverage Go's powerful librar
 
 ## Tools We Will Build
 
-### 1. [Port Scanner](Go-Tools-Port-Scanner.md)
+### 1. Port Scanner
+[Go to lesson](Go-Tools-Port-Scanner.md)
+
 A port scanner identifies open ports on a target machine, providing insights into available services and potential security vulnerabilities. In this module, you will:
 - Implement both TCP and UDP port scanning techniques.
 - Optimize for performance using concurrency in Go.
@@ -18,7 +20,9 @@ This project will teach you how to efficiently scan networks and interpret port 
 
 ---
 
-### 2. [IP Geolocation](Go-Tools-IP-Geolocation.md)
+### 2. IP Geolocation
+[Go to lesson](Go-Tools-IP-Geolocation.md)
+
 The IP Geolocation tool maps an IP address to its physical location, providing details like city, region, country, and ISP. You will:
 - Use public APIs or databases to fetch geolocation information.
 - Parse and display results in an easy-to-read format.
@@ -28,7 +32,9 @@ This project will improve your skills in API integration and working with extern
 
 ---
 
-### 3. [Port Knocking](Go-Tools-Port-Knocking.md)
+### 3. Port Knocking
+[Go to lesson](Go-Tools-Port-Knocking.md)
+
 Port Knocking is a security technique where access to a system is granted only after a sequence of specific ports is "knocked." You will:
 - Implement a server-side port-knocking mechanism.
 - Build a client tool to send the correct sequence of packets.
@@ -38,7 +44,9 @@ This project introduces you to secure communication and custom protocol design.
 
 ---
 
-### 4. [Packet Sniffer](Go-Tools-Packet-Sniffer.md)
+### 4. Packet Sniffer
+[Go to lesson](Go-Tools-Packet-Sniffer.md)
+
 A Packet Sniffer captures and analyzes network traffic, allowing you to inspect packet details. You will:
 - Use Go libraries to access raw network data.
 - Parse protocols like TCP, UDP, and HTTP to extract meaningful information.
@@ -48,7 +56,9 @@ This tool will deepen your understanding of low-level networking and data parsin
 
 ---
 
-### 5. [Proxy Server](Go-Tools-Proxy-Server.md)
+### 5. Proxy Server
+[Go to lesson](Go-Tools-Proxy-Server.md)
+
 A Proxy Server acts as an intermediary for requests between clients and servers. In this module, you will:
 - Build an HTTP/HTTPS proxy that forwards and modifies requests.
 - Implement logging and caching for improved performance.
@@ -58,7 +68,9 @@ This project highlights the practical use of proxies in enhancing privacy, perfo
 
 ---
 
-### 6. [Port Forwarding](Go-Tools-Port-Forwarding.md)
+### 6. Port Forwarding
+[Go to lesson](Go-Tools-Port-Forwarding.md)
+
 Port Forwarding redirects network traffic from one port to another, often across different machines. You will:
 - Set up forwarding rules to reroute incoming traffic.
 - Handle multiple forwarding sessions concurrently.
@@ -68,7 +80,9 @@ This project explores how to control and manage network traffic effectively.
 
 ---
 
-### 7. [Bandwidth Monitor](Go-Tools-Bandwidth-Monitor.md)
+### 7. Bandwidth Monitor
+[Go to lesson](Go-Tools-Bandwidth-Monitor.md)
+
 A Bandwidth Monitor tracks and displays network usage in real-time. In this module, you will:
 - Measure inbound and outbound traffic on network interfaces.
 - Visualize usage trends using terminal-based charts or logs.
@@ -78,7 +92,9 @@ This tool is essential for monitoring network performance and troubleshooting ba
 
 ---
 
-### 8. [Web Crawler](Go-Tools-Web-Crawler.md)
+### 8. Web Crawler
+[Go to lesson](Go-Tools-Web-Crawler.md)
+
 A Web Crawler systematically browses web pages and retrieves data, making it a foundational tool for indexing or analysis. You will:
 - Build a crawler that follows links and downloads pages.
 - Respect robots.txt guidelines to avoid scraping restrictions.
@@ -88,7 +104,9 @@ This project demonstrates how to automate web navigation and data collection.
 
 ---
 
-### 9. [Web Scraper](Go-Tools-Web-Scraper.md)
+### 9. Web Scraper
+[Go to lesson](Go-Tools-Web-Scraper.md)
+
 A Web Scraper extracts specific information from web pages, such as prices, headlines, or metadata. In this module, you will:
 - Parse HTML and JSON responses to retrieve targeted data.
 - Use Go libraries like `net/http` and `goquery` for efficient scraping.

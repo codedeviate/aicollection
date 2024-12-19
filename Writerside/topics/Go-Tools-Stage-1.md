@@ -8,7 +8,9 @@ Through this section, you will learn how to implement classic tools that interac
 
 ## Tools We Will Build
 
-### 1. [Ping](Go-Tools-Ping.md)
+### 1. Ping
+[Go to lesson](Go-Tools-Ping.md)
+
 The Ping tool sends ICMP echo requests to a target host and measures the response time. It is widely used to verify the availability and responsiveness of a host. In this module, you will:
 - Learn how to send ICMP packets in Go.
 - Measure round-trip time (RTT) for network communication.
@@ -18,7 +20,9 @@ By the end, you'll have created a basic yet powerful utility to check the health
 
 ---
 
-### 2. [Whois](Go-Tools-Whois.md)
+### 2. Whois
+[Go to lesson](Go-Tools-Whois.md)
+
 Whois queries retrieve domain registration and ownership details. This tool is invaluable for network administrators and security professionals. You will:
 - Understand how the Whois protocol works.
 - Connect to Whois servers using TCP in Go.
@@ -28,7 +32,9 @@ This project will enhance your understanding of text-based protocols and server 
 
 ---
 
-### 3. [Dig/nslookup](Go-Tools-Dig-nslookup.md)
+### 3. Dig/nslookup
+[Go to lesson](Go-Tools-Dig-nslookup.md)
+
 Dig (Domain Information Groper) and Nslookup are tools for querying DNS records. These tools help you understand domain-to-IP resolution and DNS record types like A, MX, and TXT. You will:
 - Use Go's standard libraries to interact with DNS servers.
 - Parse and display DNS query responses.
@@ -38,7 +44,9 @@ These skills are critical for working with domain names and diagnosing DNS issue
 
 ---
 
-### 4. [Traceroute](Go-Tools-Traceroute.md)
+### 4. Traceroute
+[Go to lesson](Go-Tools-Traceroute.md)
+
 Traceroute maps the path packets take to reach a destination, showing intermediate hops along the way. This tool provides insights into network topology and potential bottlenecks. You will:
 - Implement Traceroute using ICMP and/or UDP packets.
 - Analyze and visualize packet routing paths.
@@ -48,7 +56,9 @@ Creating this tool will deepen your understanding of packet routing and network 
 
 ---
 
-### 5. [Netstat](Go-Tools-Netstat.md)
+### 5. Netstat
+[Go to lesson](Go-Tools-Netstat.md)
+
 Netstat displays active network connections and their statuses. It is a versatile tool for monitoring network activity. You will:
 - Learn to list open ports and active connections on your system.
 - Implement filtering options for protocols (TCP, UDP) and states.
@@ -58,7 +68,9 @@ This project will familiarize you with socket programming and system-level netwo
 
 ---
 
-### 6. [Netscan](Go-Tools-Netscan.md)
+### 6. Netscan
+[Go to lesson](Go-Tools-Netscan.md)
+
 Network scanning involves discovering active hosts and devices on a network. This tool is useful for network mapping and monitoring. You will:
 - Scan a given IP range to identify live hosts.
 - Use techniques like ARP (Address Resolution Protocol) and ICMP pings.
@@ -68,7 +80,9 @@ Building a network scanner will introduce you to concepts like subnetting and ho
 
 ---
 
-### 7. [What We Have Done So Far](Go-Tools-What-we-have-done-so-far.md)
+### 7. What We Have Done So Far
+[Go to lesson](Go-Tools-What-we-have-done-so-far.md)
+
 In this wrap-up module, we will review the tools you've built so far. You'll reflect on:
 - The skills and techniques you've learned.
 - The challenges you faced and how you solved them.

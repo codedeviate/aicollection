@@ -8,7 +8,9 @@ Through these projects, you will learn how to design and implement systems that 
 
 ## Tools We Will Build
 
-### 1. [Firewall](Go-Tools-Firewall.md)
+### 1. Firewall
+[Go to lesson](Go-Tools-Firewall.md)
+
 A firewall is a critical security tool that controls and monitors incoming and outgoing network traffic based on predefined rules. In this module, you will:
 - Build a packet filtering system that inspects network traffic.
 - Implement rules for allowing or blocking specific IPs, ports, and protocols.
@@ -18,7 +20,9 @@ You’ll gain an in-depth understanding of how firewalls enforce security polici
 
 ---
 
-### 2. [Load Balancer](Go-Tools-Load-Balancer.md)
+### 2. Load Balancer
+[Go to lesson](Go-Tools-Load-Balancer.md)
+
 A load balancer distributes incoming traffic across multiple servers to ensure high availability and reliability. You will:
 - Design a load balancer that uses algorithms like round-robin, least connections, or IP hashing.
 - Handle session persistence and server health checks.
@@ -28,7 +32,9 @@ This project will teach you how to manage heavy traffic loads and improve the pe
 
 ---
 
-### 3. [Reverse Proxy](Go-Tools-Reverse-Proxy.md)
+### 3. Reverse Proxy
+[Go to lesson](Go-Tools-Reverse-Proxy.md)
+
 A reverse proxy sits between clients and servers, forwarding client requests to the appropriate backend service. In this module, you will:
 - Build a reverse proxy that handles HTTP and HTTPS traffic.
 - Implement request routing based on paths, headers, or query parameters.
