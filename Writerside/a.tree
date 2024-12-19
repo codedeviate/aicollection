@@ -218,12 +218,80 @@
             <toc-element topic="Fortran-Hello-World.md"/>
         </toc-element>
         <toc-element topic="Go.md">
-            <toc-element topic="Go-Hello-World.md"/>
-            <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
-            <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
-            <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
-            <toc-element topic="Go-Combined-Linked-List-and-BTree.md"/>
-            <toc-element topic="Go-Programming-Course-for-Developers.md"/>
+            <toc-element topic="Go-Code-Examples.md">
+                <toc-element topic="Go-Hello-World.md">
+                </toc-element>
+                <toc-element topic="Go-Combined-Linked-List-and-BTree.md"/>
+            </toc-element>
+            <toc-element topic="Go-How-To-s.md">
+                <toc-element topic="Go-Create-a-module.md"/>
+            </toc-element>
+            <toc-element topic="Go-Stories.md">
+                <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
+                <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
+                <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
+            </toc-element>
+            <toc-element topic="Go-Programming-Course-for-Developers.md">
+                <toc-element topic="Module-1-Introduction.md"/>
+                <toc-element topic="Module-2-Go-Basics.md"/>
+                <toc-element topic="Module-3-Go-s-Unique-Features.md"/>
+                <toc-element topic="Module-4-Structs-and-Interfaces.md"/>
+                <toc-element topic="Module-5-Packages-and-Modules.md"/>
+                <toc-element topic="Module-6-Testing-and-Benchmarking.md"/>
+                <toc-element topic="Module-7-Advanced-Topics.md"/>
+                <toc-element topic="Module-8-Deployment-and-Optimization.md"/>
+                <toc-element topic="Go-Course-1-Final-Project.md"/>
+            </toc-element>
+            <toc-element topic="Go-Build-your-own-tools.md">
+                <toc-element topic="Go-Tools-Stage-1.md">
+                    <toc-element topic="Go-Tools-Ping.md"/>
+                    <toc-element topic="Go-Tools-Whois.md"/>
+                    <toc-element topic="Go-Tools-Dig-nslookup.md"/>
+                    <toc-element topic="Go-Tools-Traceroute.md"/>
+                    <toc-element topic="Go-Tools-Netstat.md"/>
+                    <toc-element topic="Go-Tools-Netscan.md"/>
+                    <toc-element topic="Go-Tools-What-we-have-done-so-far.md"/>
+                </toc-element>
+                <toc-element topic="Go-Tools-Stage-2.md">
+                    <toc-element topic="Go-Tools-Port-Scanner.md"/>
+                    <toc-element topic="Go-Tools-IP-Geolocation.md"/>
+                    <toc-element topic="Go-Tools-Port-Knocking.md">
+                    </toc-element>
+                    <toc-element topic="Go-Tools-Packet-Sniffer.md"/>
+                    <toc-element topic="Go-Tools-Proxy-Server.md"/>
+                    <toc-element topic="Go-Tools-Port-Forwarding.md"/>
+                    <toc-element topic="Go-Tools-Bandwidth-Monitor.md"/>
+                    <toc-element topic="Go-Tools-Web-Crawler.md"/>
+                    <toc-element topic="Go-Tools-Web-Scraper.md"/>
+                </toc-element>
+                <toc-element topic="Go-Tools-Stage-3.md">
+                    <toc-element topic="Go-Tools-HTTP-Client.md"/>
+                    <toc-element topic="Go-Tools-HTTP-Server.md"/>
+                    <toc-element topic="Go-Tools-HTTPS-Client.md"/>
+                    <toc-element topic="Go-Tools-HTTPS-Server.md"/>
+                    <toc-element topic="Go-Tools-FTP-Client.md"/>
+                    <toc-element topic="Go-Tools-FTP-Server.md"/>
+                    <toc-element topic="Go-Tools-FTPS-Client.md"/>
+                    <toc-element topic="Go-Tools-FTPS-Server.md"/>
+                    <toc-element topic="Go-Tools-SMTP-Client.md"/>
+                    <toc-element topic="Go-Tools-SMTP-Server.md"/>
+                    <toc-element topic="Go-Tools-Telnet-Client.md"/>
+                    <toc-element topic="Go-Tools-Telnet-Server.md"/>
+                    <toc-element topic="Go-Tools-SSH-Client.md"/>
+                    <toc-element topic="Go-Tools-SSH-Server.md"/>
+                    <toc-element topic="Go-Tools-DNS-Client.md"/>
+                    <toc-element topic="Go-Tools-DNS-Server.md"/>
+                    <toc-element topic="Go-Tools-DHCP-Client.md"/>
+                    <toc-element topic="Go-Tools-DHCP-Server.md"/>
+                    <toc-element topic="Go-Tools-VPN-Client.md"/>
+                    <toc-element topic="Go-Tools-VPN-Server.md"/>
+                </toc-element>
+                <toc-element topic="Go-Tools-Stage-4.md">
+                    <toc-element topic="Go-Tools-Firewall.md"/>
+                    <toc-element topic="Go-Tools-Load-Balancer.md"/>
+                    <toc-element topic="Go-Tools-Reverse-Proxy.md"/>
+                </toc-element>
+            </toc-element>
         </toc-element>
         <toc-element topic="Java.md">
             <toc-element topic="Java-Hello-World.md"/>
@@ -398,5 +466,12 @@
     <toc-element topic="The-Dark-Side.md">
         <toc-element topic="Pentesting.md"/>
         <toc-element topic="Buffer-overflow.md"/>
+    </toc-element>
+    <toc-element topic="Useful-Commands.md">
+        <toc-element topic="Useful-Commands-Linux.md">
+            <toc-element topic="Useful-Commands-lspci.md"/>
+            <toc-element topic="Useful-Commands-file.md"/>
+            <toc-element topic="Useful-Commands-uname.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>

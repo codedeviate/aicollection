@@ -1,5 +1,8 @@
 # Go Programming Course for Developers
 
+> Please note that this section is currently under development.
+> {style="warning"}
+
 ## Course Overview
 This course is designed for developers who are already proficient in at least one programming language and want to learn Go (Golang). The focus will be on Go-specific concepts, best practices, and idiomatic programming. By the end of the course, participants will be able to build efficient, clean, and maintainable Go applications.
 

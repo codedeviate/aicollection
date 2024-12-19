@@ -2,7 +2,7 @@
 
 To combine a doubly linked list and a B-tree into the same class in Go, we need to define a single structure that incorporates both data structures. Below is the implementation:
 
-### Doubly Linked List Node
+## Doubly Linked List Node
 
 ```go
 package main
@@ -14,7 +14,7 @@ type DllNode struct {
 }
 ```
 
-### B-tree Node
+## B-tree Node
 
 ```go
 package main
@@ -27,7 +27,7 @@ type BTreeNode struct {
 }
 ```
 
-### Combined Data Structure
+## Combined Data Structure
 
 ```go
 package main
@@ -105,7 +105,7 @@ func (cds *CombinedDataStructure) insertNonFull(node *BTreeNode, key int, dllNod
 }
 ```
 
-### Main Function
+## Main Function
 
 ```go
 package main

@@ -3,4 +3,5 @@
 <vars>
     <var name="product" value="AICollection"/>
     <var name="pct" value="%"/>
+    <var name="mdticks" value="```"/>
 </vars>
