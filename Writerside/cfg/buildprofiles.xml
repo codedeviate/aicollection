@@ -9,6 +9,8 @@
         <download-title>AICollection App</download-title>
         <download-page>https://codedeviate.github.io</download-page>
         <showDownloadButton>true</showDownloadButton>
+        <analytics-head-script-file>google-analytics.js</analytics-head-script-file>
+        <analytics-body-html-file>google-analytics-noscript.html</analytics-body-html-file>
     </variables>
     <build-profile instance="a">
         <variables>
