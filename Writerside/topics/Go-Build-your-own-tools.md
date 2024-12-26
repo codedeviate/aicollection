@@ -1,5 +1,8 @@
 # Build Your Own Tools in Go
 
+> Please note that this section is currently under development.
+> {style="warning"}
+
 Welcome to **Build Your Own Tools in Go**, a comprehensive mini-course designed to empower you to create your own command-line tools using the Go programming language.
 
 Go, also known as Golang, is a powerful yet simple programming language that is widely used for creating high-performance applications, particularly in the realm of networking and system-level programming. This course focuses on equipping you with the skills to design and implement practical tools that can be applied in real-world scenarios.
@@ -87,3 +90,5 @@ This course is perfect for:
 - Anyone passionate about learning Go and building practical tools.
 
 Embark on this journey, and let’s start creating tools that make a difference!
+
+<include from="_disclaimer.md" element-id="Course" />

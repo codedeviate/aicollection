@@ -10,21 +10,20 @@ First, create a new directory for your project and initialize the Go module.
 mkdir ping
 cd ping
 go mod init github.com/username/ping
+mkdir pingmod
 ```
 
 ## Step 2: Create the `ping.go` File
 
-Create a `ping.go` file to handle the ping functionality.
+Create a `ping.go` file in the `pingmod` directory to handle the ping functionality.
 
 ```go
 // ping.go
-package main
+package ping
 
 import (
-    "fmt"
-    "net"
-    "os"
-    "time"
+	"net"
+	"time"
 )
 
 // Ping sends a ping request to the specified address and returns the duration and any error encountered.
@@ -51,7 +50,7 @@ package main
 import (
     "fmt"
     "os"
-    "time"
+    "github.com/username/ping/pingmod"
 )
 
 func main() {

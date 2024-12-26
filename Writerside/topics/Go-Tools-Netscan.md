@@ -17,7 +17,6 @@ go mod init github.com/username/netscan
 Create a `netscan.go` file to handle the network scanning functionality.
 
 ```go
-```go
 // netscan.go
 package main
 

@@ -144,3 +144,4 @@ This course is designed for developers who are already proficient in at least on
 
 This course will provide developers with a solid foundation in Go programming, equipping them to tackle real-world projects with confidence and efficiency.
 
+<include from="_disclaimer.md" element-id="Course" />

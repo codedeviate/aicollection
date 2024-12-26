@@ -42,4 +42,8 @@
         <description>Created after removal of "git push" from AICollection</description>
         <accepts>git-push.html</accepts>
     </rule>
+    <rule id="1ef26aa">
+        <description>Created after removal of "Disclaimer" from AICollection</description>
+        <accepts>disclaimer.html</accepts>
+    </rule>
 </rules>
