@@ -232,6 +232,9 @@
                 <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
                 <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
             </toc-element>
+            <toc-element topic="Go-Tools-Development-tools.md">
+                <toc-element topic="Go-Course-Dev-Tools-Make.md"/>
+            </toc-element>
             <toc-element topic="Go-Programming-Course-for-Developers.md">
                 <toc-element topic="Module-1-Introduction.md"/>
                 <toc-element topic="Module-2-Go-Basics.md"/>
