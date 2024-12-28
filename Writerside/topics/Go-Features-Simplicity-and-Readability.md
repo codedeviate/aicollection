@@ -1,0 +1,3 @@
+# Simplicity and Readability
+
+Start typing here...

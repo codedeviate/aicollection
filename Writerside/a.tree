@@ -227,13 +227,26 @@
                 <toc-element topic="Go-Create-a-module.md"/>
                 <toc-element topic="Go-HowTo-Custom-marshal-unmarshal.md"/>
             </toc-element>
+            <toc-element topic="Go-Features.md">
+                <toc-element topic="Go-Features-Go-routines.md"/>
+                <toc-element topic="Go-Features-Channels.md"/>
+                <toc-element topic="Go-Features-Timers.md"/>
+                <toc-element topic="Go-Features-Select.md"/>
+                <toc-element topic="Go-Features-Defer.md"/>
+                <toc-element topic="Go-Features-Sync.md"/>
+                <toc-element topic="Go-Features-Interfaces.md"/>
+                <toc-element topic="Go-Features-Standard-Library.md"/>
+                <toc-element topic="Go-Features-Immutable-Strings.md"/>
+                <toc-element topic="Go-Features-Garbage-Collection.md"/>
+                <toc-element topic="Go-Features-Error-Handling.md"/>
+                <toc-element topic="Go-Features-Built-in-Testing.md"/>
+                <toc-element topic="Go-Features-Cross-Platform-Support.md"/>
+                <toc-element topic="Go-Features-Simplicity-and-Readability.md"/>
+            </toc-element>
             <toc-element topic="Go-Stories.md">
                 <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
                 <toc-element topic="Go-Moving-from-PHP-to-Go.md"/>
                 <toc-element topic="Go-10-Most-Common-Pitfalls.md"/>
-            </toc-element>
-            <toc-element topic="Go-Tools-Development-tools.md">
-                <toc-element topic="Go-Course-Dev-Tools-Make.md"/>
             </toc-element>
             <toc-element topic="Go-Programming-Course-for-Developers.md">
                 <toc-element topic="Module-1-Introduction.md"/>
@@ -245,6 +258,10 @@
                 <toc-element topic="Module-7-Advanced-Topics.md"/>
                 <toc-element topic="Module-8-Deployment-and-Optimization.md"/>
                 <toc-element topic="Go-Course-1-Final-Project.md"/>
+            </toc-element>
+            <toc-element topic="Go-Tools-Development-tools.md">
+                <toc-element topic="Go-Course-Dev-Tools-Make.md"/>
+                <toc-element topic="Go-Tools-Dev-Tools-Watcher.md"/>
             </toc-element>
             <toc-element topic="Go-Build-your-own-tools.md">
                 <toc-element topic="Go-Tools-Stage-1.md">
