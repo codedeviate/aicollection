@@ -4,7 +4,7 @@ The `defer` statement in Go is used to schedule a function call to be executed a
 
 ---
 
-## **How `defer` Works**
+## How `defer` Works
 
 1. **Syntax**:
    ```go
@@ -17,7 +17,7 @@ The `defer` statement in Go is used to schedule a function call to be executed a
 
 ---
 
-## **Basic Example**
+## Basic Example
 
 ```go
 package main
@@ -38,7 +38,7 @@ This runs last
 
 ---
 
-## **Deferred Function Calls Are Executed LIFO**
+## Deferred Function Calls Are Executed LIFO
 
 ```go
 package main
@@ -65,7 +65,7 @@ Explanation: Deferred calls are executed in reverse order, starting with the las
 
 ---
 
-## **Defer with Function Arguments**
+## Defer with Function Arguments
 
 Arguments to a deferred function are evaluated immediately, but the function execution is delayed.
 
@@ -94,9 +94,9 @@ Explanation: When `defer` is declared, the value of `x` (5) is captured and used
 
 ---
 
-## **Practical Use Cases**
+## Practical Use Cases
 
-### 1. **Resource Cleanup**
+### 1. Resource Cleanup
 
 Defer is commonly used to close resources like files, network connections, or database transactions.
 
@@ -125,7 +125,7 @@ func main() {
 
 ---
 
-### 2. **Unlocking a Mutex**
+### 2. Unlocking a Mutex
 
 ```go
 package main
@@ -149,7 +149,7 @@ func main() {
 
 ---
 
-### 3. **Releasing Memory or Cleanup**
+### 3. Releasing Memory or Cleanup
 
 ```go
 package main
@@ -172,7 +172,7 @@ Cleaning up memory: [1 2 3 4]
 
 ---
 
-## **Defer in Error Handling**
+## Defer in Error Handling
 
 Defer is often used in conjunction with `recover` to handle panics gracefully.
 
@@ -204,7 +204,7 @@ Recovered from panic: Something went wrong
 
 ---
 
-## **Defer with Anonymous Functions**
+## Defer with Anonymous Functions
 
 You can use `defer` with inline anonymous functions.
 
@@ -229,7 +229,7 @@ Deferred anonymous function executed
 
 ---
 
-## **Using Defer in Loops**
+## Using Defer in Loops
 
 Be cautious when using `defer` inside loops, as all deferred calls are executed at the end of the function.
 
@@ -258,7 +258,7 @@ Deferred: 0
 
 ---
 
-## **Defer with Multiple Return Values**
+## Defer with Multiple Return Values
 
 Deferred functions can interact with named return values in a function.
 
@@ -290,7 +290,7 @@ Result: 15
 
 ---
 
-## **Best Practices with Defer**
+## Best Practices with Defer
 
 1. **Use for Cleanup Tasks**: Use `defer` for closing files, unlocking resources, or releasing memory.
 2. **Avoid in Tight Loops**: Using `defer` inside loops can lead to unexpected memory consumption since all deferred calls are queued.
@@ -299,6 +299,6 @@ Result: 15
 
 ---
 
-## **Summary**
+## Summary
 
 The `defer` statement is a versatile tool in Go for managing resource cleanup and ensuring tasks are completed before a function exits. Its LIFO execution order, interaction with return values, and integration with `recover` make it an essential feature for writing robust and maintainable Go code.

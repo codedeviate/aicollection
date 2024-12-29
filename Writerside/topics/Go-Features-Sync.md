@@ -4,7 +4,7 @@ The `sync` package in Go provides a variety of synchronization primitives to han
 
 ---
 
-## **Key Features of the `sync` Package**
+## Key Features of the `sync` Package
 
 1. **Mutex and RWMutex**:
     - Used for mutual exclusion to protect shared resources.
@@ -21,7 +21,7 @@ The `sync` package in Go provides a variety of synchronization primitives to han
 
 ---
 
-## **1. Mutex**
+## 1. Mutex
 
 A `Mutex` is used to protect shared resources by allowing only one goroutine to access a critical section at a time.
 
@@ -78,7 +78,7 @@ Final Counter Value: 10
 
 ---
 
-## **2. RWMutex**
+## 2. RWMutex
 
 An `RWMutex` (Read-Write Mutex) allows multiple readers but only one writer at a time.
 
@@ -142,7 +142,7 @@ Name: GoLang
 
 ---
 
-## **3. WaitGroup**
+## 3. WaitGroup
 
 A `WaitGroup` is used to wait for multiple goroutines to finish execution.
 
@@ -192,7 +192,7 @@ All workers completed
 
 ---
 
-## **4. Once**
+## 4. Once
 
 A `Once` ensures that a block of code executes only once, no matter how many times it is called or in how many goroutines.
 
@@ -235,7 +235,7 @@ Initialization executed
 
 ---
 
-## **5. Cond**
+## 5. Cond
 
 A `Cond` provides signaling for goroutines to wait for or broadcast events.
 
@@ -292,7 +292,7 @@ Removed from queue
 
 ---
 
-## **Best Practices with `sync`**
+## Best Practices with `sync`
 
 1. **Avoid Overuse**: Use `sync` primitives judiciously. Go's channels and other high-level constructs often provide simpler solutions.
 2. **Avoid Deadlocks**: Be cautious with `Lock` and `Unlock` to prevent situations where two or more goroutines wait indefinitely.
@@ -306,6 +306,6 @@ Removed from queue
 
 ---
 
-## **Summary**
+## Summary
 
 The `sync` package provides low-level tools to coordinate goroutines and manage shared resources. While these primitives are powerful, they should be used thoughtfully to avoid complexity and ensure code correctness. With the right approach, `sync` enables safe and efficient concurrency in Go applications.

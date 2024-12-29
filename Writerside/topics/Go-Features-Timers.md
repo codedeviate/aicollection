@@ -4,13 +4,13 @@ Timers in Go, part of the `time` package, are used for executing actions after a
 
 ---
 
-## **What Are Timers in Go?**
+## What Are Timers in Go?
 
 A timer is an object that waits for a defined duration to elapse and then sends a signal over a channel. Timers use the `time.Timer` type and can be created using `time.NewTimer` or `time.After`.
 
 ---
 
-## **Key Timer Functions**
+## Key Timer Functions
 
 1. **`time.NewTimer(d time.Duration)`**
     - Creates a new `Timer` that waits for `d` duration and then sends the current time on its `C` channel.
@@ -26,7 +26,7 @@ A timer is an object that waits for a defined duration to elapse and then sends 
 
 ---
 
-## **Basic Timer Example**
+## Basic Timer Example
 
 ```go
 package main
@@ -55,7 +55,7 @@ This example creates a timer that expires after 2 seconds. The program waits on 
 
 ---
 
-## **Using `time.After`**
+## Using `time.After`
 
 `time.After` simplifies creating a timer when you only need the channel.
 
@@ -82,7 +82,7 @@ Time's up!
 
 ---
 
-## **Stopping a Timer**
+## Stopping a Timer
 
 A timer can be stopped using the `Stop` method to prevent it from firing.
 
@@ -118,7 +118,7 @@ In this example, the timer is stopped before it expires, preventing the goroutin
 
 ---
 
-## **Resetting a Timer**
+## Resetting a Timer
 
 You can reuse a timer by resetting it with a new duration.
 
@@ -156,7 +156,7 @@ The timer is reset to fire after an additional 3 seconds.
 
 ---
 
-## **Combining Timers with `select`**
+## Combining Timers with `select`
 
 Timers are often used with `select` to implement timeouts.
 
@@ -196,7 +196,7 @@ If the task completes before the timeout, the `done` channel is selected; otherw
 
 ---
 
-## **Timer Example in Retries**
+## Timer Example in Retries
 
 Timers can be used to introduce delays between retries.
 
@@ -242,7 +242,7 @@ Task succeeded!
 
 ---
 
-## **Using Timers in Long-Running Programs**
+## Using Timers in Long-Running Programs
 
 Timers can also be used to trigger periodic tasks.
 
@@ -289,7 +289,7 @@ Stopped ticking.
 
 ---
 
-## **Best Practices for Using Timers**
+## Best Practices for Using Timers
 1. **Avoid Leaks**: Always stop or reset timers you don’t need to prevent resource leaks.
 2. **Combine with `select`**: Use timers with `select` for efficient timeout handling.
 3. **Use Tickers for Repeated Tasks**: For periodic tasks, use `time.NewTicker` instead of resetting timers.

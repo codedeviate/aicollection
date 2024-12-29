@@ -4,7 +4,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **File and Directory Management**
+## File and Directory Management
 - **`ls`**: Lists files and directories.
     - **Example**: `ls -l` (detailed view with permissions and sizes)
 
@@ -28,7 +28,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **File Viewing and Editing**
+## File Viewing and Editing
 - **`cat`**: Displays file content.
     - **Example**: `cat file.txt`
 
@@ -46,7 +46,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **File and Disk Management**
+## File and Disk Management
 - **`df`**: Shows disk space usage.
     - **Example**: `df -h` (shows human-readable sizes)
 
@@ -74,7 +74,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **System Information**
+## System Information
 - **`top`/`htop`**: Displays running processes and system usage.
     - **Example**: `top` (real-time process monitoring)
 
@@ -92,7 +92,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Networking**
+## Networking
 - **`ping`**: Checks network connectivity to a host.
     - **Example**: `ping google.com`
 
@@ -107,7 +107,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **File Permissions**
+## File Permissions
 - **`chmod`**: Changes file permissions.
     - **Example**: `chmod 755 file.txt`
 
@@ -119,7 +119,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Process Management**
+## Process Management
 - **`ps`**: Displays running processes.
     - **Example**: `ps aux` (shows all processes)
 
@@ -134,7 +134,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Package Management (Varies by Distribution)**
+## Package Management (Varies by Distribution)
 - **`apt-get`/`apt`**: For Debian-based systems (e.g., Ubuntu).
     - **Example**: `sudo apt update && sudo apt upgrade`
 
@@ -146,7 +146,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Archiving and Compression**
+## Archiving and Compression
 - **`tar`**: Archives files.
     - **Example**: `tar -czvf archive.tar.gz folder_name`
 
@@ -158,7 +158,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Utilities**
+## Utilities
 - **`man`**: Displays the manual for a command.
     - **Example**: `man ls`
 
@@ -176,9 +176,9 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 
 ---
 
-## **Peripheral and System Status Commands**
+## Peripheral and System Status Commands
 
-### **Hardware Information**
+### Hardware Information
 - **`lscpu`**: Displays detailed CPU architecture information.
     - **Example**: `lscpu`
 
@@ -195,7 +195,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 - **`lshw`**: Displays detailed information about the system's hardware (requires superuser privileges).
     - **Example**: `sudo lshw`
 
-### **Disk and Storage**
+### Disk and Storage
 - **`blkid`**: Displays UUIDs and labels of storage devices.
     - **Example**: `blkid`
 
@@ -211,7 +211,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 - **`umount`**: Unmounts mounted filesystems.
     - **Example**: `umount /mnt`
 
-### **Memory and CPU**
+### Memory and CPU
 - **`free`**: Shows available and used memory (RAM and swap).
     - **Example**: `free -h`
 
@@ -224,7 +224,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 - **`top`** / **`htop`**: Shows a real-time view of system processes and resource usage.
     - **Example**: `top`, `htop`
 
-### **Network and Devices**
+### Network and Devices
 - **`ifconfig`** (deprecated, replaced by `ip`): Displays network interfaces and their configurations.
     - **Example**: `ifconfig`
 
@@ -270,7 +270,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 - **`nslookup`**: Another DNS lookup utility.
     - **Example**: `nslookup example.com`
 
-### **System Logs and Status**
+### System Logs and Status
 - **`dmesg`**: Displays kernel message buffer, useful for diagnosing hardware issues.
     - **Example**: `dmesg | grep error`
 
@@ -286,7 +286,7 @@ Here’s a list of some of the most useful Linux commands, organized by purpose,
 - **`iostat`**: Displays CPU, I/O, and disk usage statistics (from the `sysstat` package).
     - **Example**: `iostat`
 
-### **Battery and Power**
+### Battery and Power
 - **`acpi`**: Shows battery status and AC adapter information (requires `acpi` package).
     - **Example**: `acpi`
 

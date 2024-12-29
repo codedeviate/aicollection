@@ -1,6 +1,6 @@
 # OUTER JOIN
 
-## **SQL OUTER JOIN: Comprehensive Explanation**
+## SQL OUTER JOIN: Comprehensive Explanation
 
 An **OUTER JOIN** retrieves matching rows from two tables and also includes non-matching rows from one or both tables, depending on the type of OUTER JOIN used. It is useful for finding data that exists in one table but not the other.
 
@@ -12,7 +12,7 @@ There are three types of **OUTER JOINs**:
 
 ---
 
-## **Syntax**
+## Syntax
 ### LEFT JOIN:
 ```sql
 SELECT columns
@@ -39,7 +39,7 @@ ON table1.column_name = table2.column_name;
 
 ---
 
-## **Example Scenario**
+## Example Scenario
 We will use two tables:
 
 **1. `Customers` Table:**
@@ -62,7 +62,7 @@ We will use two tables:
 
 ---
 
-## **1. LEFT OUTER JOIN**
+## 1. LEFT OUTER JOIN
 Query to retrieve all customers and their orders, even if some customers have not placed any orders:
 ```sql
 SELECT Customers.CustomerID, Customers.Name, Orders.Product
@@ -86,7 +86,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 ---
 
-## **2. RIGHT OUTER JOIN**
+## 2. RIGHT OUTER JOIN
 Query to retrieve all orders and their associated customers, even if some orders were placed by non-existent customers:
 ```sql
 SELECT Orders.OrderID, Orders.Product, Customers.Name
@@ -111,7 +111,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 ---
 
-## **3. FULL OUTER JOIN**
+## 3. FULL OUTER JOIN
 Query to retrieve all customers and orders, including unmatched rows from both tables:
 ```sql
 SELECT Customers.CustomerID, Customers.Name, Orders.OrderID, Orders.Product
@@ -138,7 +138,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 ---
 
-## **Comparison of Outer Joins**
+## Comparison of Outer Joins
 
 | Join Type      | Included Rows                                                                                              |
 |----------------|------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ ON Customers.CustomerID = Orders.CustomerID;
 
 ---
 
-## **Key Points**
+## Key Points
 1. **Performance Considerations**:
     - Outer joins can be slower than inner joins because they process additional rows (non-matching ones).
 2. **Use Cases**:

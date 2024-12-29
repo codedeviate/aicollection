@@ -4,7 +4,7 @@ SQL commands are broadly grouped into categories based on their functionality: *
 
 ---
 
-## **1. Data Query Language (DQL)**
+## 1. Data Query Language (DQL)
 These commands retrieve data from the database.
 - `SELECT` – Retrieve data from one or more tables.
     - `SELECT * FROM table_name;` – Select all columns.
@@ -13,7 +13,7 @@ These commands retrieve data from the database.
 
 ---
 
-## **2. Data Definition Language (DDL)**
+## 2. Data Definition Language (DDL)
 These commands define the structure of the database (e.g., tables, schemas).
 - `CREATE DATABASE` – Create a new database.
 - `CREATE TABLE` – Create a new table.
@@ -29,7 +29,7 @@ These commands define the structure of the database (e.g., tables, schemas).
 
 ---
 
-## **3. Data Manipulation Language (DML)**
+## 3. Data Manipulation Language (DML)
 These commands handle data manipulation within tables.
 - `INSERT` – Add new rows to a table.
     - `INSERT INTO table_name (column1, column2) VALUES (value1, value2);`
@@ -40,7 +40,7 @@ These commands handle data manipulation within tables.
 
 ---
 
-## **4. Data Control Language (DCL)**
+## 4. Data Control Language (DCL)
 These commands control access to the database.
 - `GRANT` – Provide privileges to users.
     - `GRANT SELECT, INSERT ON table_name TO user_name;`
@@ -49,7 +49,7 @@ These commands control access to the database.
 
 ---
 
-## **5. Transaction Control Language (TCL)**
+## 5. Transaction Control Language (TCL)
 These commands handle transactions within the database.
 - `BEGIN TRANSACTION` – Start a transaction.
 - `COMMIT` – Save changes made in the transaction.
@@ -60,14 +60,14 @@ These commands handle transactions within the database.
 
 ---
 
-## **6. Miscellaneous Commands**
-### **Joins**
+## 6. Miscellaneous Commands
+### Joins
 - `INNER JOIN` – Select rows with matching values in both tables.
 - `LEFT JOIN` (or `LEFT OUTER JOIN`) – Select all rows from the left table and matching rows from the right table.
 - `RIGHT JOIN` (or `RIGHT OUTER JOIN`) – Select all rows from the right table and matching rows from the left table.
 - `FULL JOIN` (or `FULL OUTER JOIN`) – Select all rows with matches in either table.
 
-### **Constraints**
+### Constraints
 - `NOT NULL` – Ensure a column cannot have NULL values.
 - `UNIQUE` – Ensure all values in a column are unique.
 - `PRIMARY KEY` – Combine `NOT NULL` and `UNIQUE` for a column or set of columns.
@@ -75,27 +75,27 @@ These commands handle transactions within the database.
 - `CHECK` – Ensure all column values satisfy a condition.
 - `DEFAULT` – Set a default value for a column.
 
-### **Functions**
+### Functions
 - Aggregate Functions:
     - `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`
 - Scalar Functions:
     - `LEN()`, `ROUND()`, `UCASE()`/`UPPER()`, `LCASE()`/`LOWER()`
 
-### **Views**
+### Views
 - `CREATE VIEW` – Create a virtual table.
 - `DROP VIEW` – Remove a view.
 
-### **Indexes**
+### Indexes
 - `CREATE INDEX` – Create an index for faster retrieval.
 - `DROP INDEX` – Remove an index.
 
-### **Set Operations**
+### Set Operations
 - `UNION` – Combine results of two queries without duplicates.
 - `UNION ALL` – Combine results of two queries including duplicates.
 - `INTERSECT` – Return rows present in both queries.
 - `EXCEPT` (or `MINUS`) – Return rows from the first query not in the second.
 
-### **Conditions and Operators**
+### Conditions and Operators
 - Logical: `AND`, `OR`, `NOT`
 - Comparison: `=`, `!=`, `<`, `>`, `<=`, `>=`
 - Pattern Matching: `LIKE`, `NOT LIKE`
@@ -105,7 +105,7 @@ These commands handle transactions within the database.
 
 ---
 
-## **7. Advanced Commands**
+## 7. Advanced Commands
 - `WITH` (Common Table Expression or CTE) – Create temporary result sets.
 - `CASE` – Implement conditional logic in queries.
 - `GROUP BY` – Group rows sharing a property for aggregate functions.

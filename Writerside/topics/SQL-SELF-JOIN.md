@@ -1,6 +1,6 @@
 # SELF JOIN
 
-## **SQL Self Join: Comprehensive Explanation**
+## SQL Self Join: Comprehensive Explanation
 
 A **Self Join** is a type of join where a table is joined with itself. It is commonly used to compare rows within the same table or to represent hierarchical data (like employees and their managers).
 
@@ -10,7 +10,7 @@ In a Self Join:
 
 ---
 
-## **Syntax**
+## Syntax
 ```sql
 SELECT a.column1, b.column2
 FROM table_name a
@@ -23,16 +23,16 @@ ON a.column_name = b.column_name;
 
 ---
 
-## **Use Cases for Self Join**
+## Use Cases for Self Join
 1. Finding relationships within the same table (e.g., employees and their managers).
 2. Comparing rows to find similarities or differences.
 3. Constructing hierarchies or networks from a flat table.
 
 ---
 
-## **Example Scenarios**
+## Example Scenarios
 
-### **1. Employee-Manager Relationships**
+### 1. Employee-Manager Relationships
 Consider an `Employees` table:
 
 | EmployeeID | Name       | ManagerID |
@@ -70,7 +70,7 @@ ON e1.ManagerID = e2.EmployeeID;
 
 ---
 
-### **2. Finding Duplicates in a Table**
+### 2. Finding Duplicates in a Table
 Consider a `Products` table:
 
 | ProductID | ProductName   | Price |
@@ -101,7 +101,7 @@ AND a.ProductID < b.ProductID;
 
 ---
 
-### **3. Finding Relationships Between Rows**
+### 3. Finding Relationships Between Rows
 Consider a `Flights` table:
 
 | FlightID | Origin   | Destination |
@@ -133,7 +133,7 @@ ON f1.Destination = f2.Origin;
 
 ---
 
-### **4. Finding Pairs Based on Conditions**
+### 4. Finding Pairs Based on Conditions
 Consider a `Students` table:
 
 | StudentID | Name       | Grade |
@@ -164,7 +164,7 @@ AND a.StudentID < b.StudentID;
 
 ---
 
-## **Key Points About Self Join**
+## Key Points About Self Join
 1. **Aliases are Required**:
     - Since the table is being used twice in the same query, aliases are necessary to differentiate between the "instances" of the table.
 2. **Performance Considerations**:
@@ -177,6 +177,6 @@ AND a.StudentID < b.StudentID;
 
 ---
 
-## **Self Join vs Other Joins**
+## Self Join vs Other Joins
 - **Self Join** is distinct because it involves only one table.
 - Other joins (e.g., INNER, OUTER) combine rows from **two different tables**.

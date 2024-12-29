@@ -4,17 +4,17 @@ Channels in Go are a powerful mechanism for communication between goroutines, al
 
 ---
 
-## **What Are Channels?**
+## What Are Channels?
 
 A channel in Go acts as a conduit for passing data between goroutines. They are created using the `make` function and have a specific type that defines the type of data they can transport.
 
-### **Types of Channels:**
+### Types of Channels:
 1. **Unbuffered Channels:** Require both sender and receiver to be ready at the same time.
 2. **Buffered Channels:** Allow a limited number of values to be stored without requiring immediate synchronization.
 
 ---
 
-## **Creating Channels**
+## Creating Channels
 
 ```go
 ch := make(chan int) // Create an unbuffered channel of type int
@@ -27,16 +27,16 @@ ch := make(chan int, 3) // Create a buffered channel with capacity of 3
 
 ---
 
-## **Basic Channel Operations**
+## Basic Channel Operations
 
-### 1. **Sending Data**
+### 1. Sending Data
 To send data to a channel, use the `ch <- value` syntax.
 
 ```go
 ch <- 42 // Send value 42 to channel ch
 ```
 
-### 2. **Receiving Data**
+### 2. Receiving Data
 To receive data from a channel, use the `value := <-ch` syntax.
 
 ```go
@@ -45,7 +45,7 @@ value := <-ch // Receive a value from channel ch
 
 ---
 
-## **Examples**
+## Examples
 
 ### Example 1: Unbuffered Channel
 
@@ -143,7 +143,7 @@ func main() {
 
 ---
 
-## **Direction-Specific Channels**
+## Direction-Specific Channels
 
 Channels can be restricted to send-only or receive-only to improve clarity and safety.
 
@@ -176,7 +176,7 @@ func main() {
 
 ---
 
-## **Channel Synchronization**
+## Channel Synchronization
 
 Channels can synchronize execution between goroutines.
 
@@ -210,7 +210,7 @@ Work completed
 
 ---
 
-## **Select Statement**
+## Select Statement
 
 The `select` statement allows a goroutine to wait on multiple channel operations.
 
@@ -252,7 +252,7 @@ If you expect both messages to be received, you can use a loop to receive from b
 
 ---
 
-## **Closing a Channel**
+## Closing a Channel
 
 Channels can be closed using the `close` function. A closed channel cannot receive new values, but it can still be read until it's empty.
 
@@ -286,7 +286,7 @@ func main() {
 
 ---
 
-## **Best Practices**
+## Best Practices
 1. **Avoid Sending on Closed Channels:** Sending to a closed channel causes a panic.
 2. **Use `ok` Idiom:** To check if a channel is closed during a read.
    ```go

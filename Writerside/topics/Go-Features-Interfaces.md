@@ -4,7 +4,7 @@ In Go, **interfaces** are an essential feature that allows you to define behavio
 
 ---
 
-## **What is an Interface?**
+## What is an Interface?
 
 An interface is a type that specifies a collection of method signatures. Any type that implements those methods satisfies the interface, without explicitly declaring it. This is known as **structural typing**.
 
@@ -27,7 +27,7 @@ Any type that implements `Area()` and `Perimeter()` methods with the correct sig
 
 ---
 
-## **1. Basic Example**
+## 1. Basic Example
 
 ### Defining and Using Interfaces:
 ```go
@@ -93,7 +93,7 @@ Area: 40.00, Perimeter: 28.00
 
 ---
 
-## **2. Empty Interface**
+## 2. Empty Interface
 
 The empty interface (`interface{}`) is a special type that can hold any value.
 
@@ -125,7 +125,7 @@ Type: float64, Value: 3.14
 
 ---
 
-## **3. Type Assertions**
+## 3. Type Assertions
 
 A type assertion allows you to retrieve the underlying value of an interface.
 
@@ -157,7 +157,7 @@ String value: hello
 
 ---
 
-## **4. Type Switch**
+## 4. Type Switch
 
 A type switch is used to handle multiple types stored in an interface.
 
@@ -198,7 +198,7 @@ Float: 3.14
 
 ---
 
-## **5. Interface Composition**
+## 5. Interface Composition
 
 Go interfaces can be composed by embedding other interfaces.
 
@@ -248,7 +248,7 @@ Writing data: GoLang
 
 ---
 
-## **6. Interface and Nil**
+## 6. Interface and Nil
 
 An interface value is `nil` if both the dynamic type and the value are `nil`.
 
@@ -272,7 +272,7 @@ func main() {
 
 ---
 
-## **7. Using Interfaces for Dependency Injection**
+## 7. Using Interfaces for Dependency Injection
 
 Interfaces are often used to decouple components and allow different implementations.
 
@@ -316,7 +316,7 @@ Log: Application started
 
 ---
 
-## **Best Practices with Interfaces**
+## Best Practices with Interfaces
 
 1. **Define Small Interfaces**: Favor small, focused interfaces. Instead of creating one large interface, break it into smaller ones.
 2. **Use Interfaces for Behavior, Not Data**: Avoid putting fields in interfaces; they should define methods.
@@ -325,6 +325,6 @@ Log: Application started
 
 ---
 
-## **Summary**
+## Summary
 
 Go's interfaces are powerful tools for designing flexible, reusable, and decoupled code. With their implicit implementation and structural typing, interfaces promote clean design and enable polymorphism. By mastering interfaces and their associated techniques, you can create maintainable and robust Go programs.

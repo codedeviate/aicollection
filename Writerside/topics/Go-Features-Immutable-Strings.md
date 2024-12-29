@@ -4,7 +4,7 @@ In Go, **strings are immutable**, meaning their content cannot be changed after 
 
 ---
 
-## **Why Strings are Immutable**
+## Why Strings are Immutable
 
 1. **Safety**: Strings being immutable means that no other parts of the code can inadvertently change their content.
 2. **Efficiency**: Strings can be shared across different parts of a program without fear of unexpected modifications, which can save memory.
@@ -12,7 +12,7 @@ In Go, **strings are immutable**, meaning their content cannot be changed after 
 
 ---
 
-## **Understanding String Immutability**
+## Understanding String Immutability
 
 ### Example 1: Immutable Strings in Action
 ```go
@@ -39,7 +39,7 @@ cannot assign to str[0]
 
 ---
 
-## **Manipulating Strings**
+## Manipulating Strings
 
 To modify strings, you need to create a new string. Below are common ways to achieve this.
 
@@ -76,7 +76,7 @@ Modified String: hello, World!
 
 ---
 
-## **Performance Implications of String Manipulations**
+## Performance Implications of String Manipulations
 
 Since each string manipulation creates a new string, excessive operations can lead to performance issues due to memory allocation and garbage collection.
 
@@ -126,7 +126,7 @@ AAAAAAAAAA
 
 ---
 
-## **Working with Runes and Unicode**
+## Working with Runes and Unicode
 
 Strings in Go are sequences of bytes, and each byte represents a UTF-8 encoded character. Modifying strings at the rune level requires converting them to `[]rune`.
 
@@ -159,7 +159,7 @@ Modified String: Go码言
 
 ---
 
-## **String Copying Behavior**
+## String Copying Behavior
 
 Because strings are immutable, assigning one string to another does not copy its contents; both variables point to the same underlying data. However, this is safe because strings cannot be modified.
 
@@ -200,7 +200,7 @@ str2: New String
 
 ---
 
-## **Common String Operations**
+## Common String Operations
 
 ### Example 6: Splitting Strings
 ```go
@@ -252,7 +252,7 @@ func main() {
 
 ---
 
-## **Immutability in Practice**
+## Immutability in Practice
 
 Immutability is particularly beneficial in scenarios involving concurrent access, as strings do not require synchronization.
 
@@ -296,7 +296,7 @@ Immutable
 
 ---
 
-## **Best Practices with Strings**
+## Best Practices with Strings
 
 1. **Avoid Excessive Concatenation**: Use `strings.Builder` for efficient string manipulation.
 2. **Handle Unicode Properly**: Use `[]rune` when working with multi-byte characters.
@@ -305,6 +305,6 @@ Immutable
 
 ---
 
-## **Conclusion**
+## Conclusion
 
 In Go, immutable strings provide a robust and efficient mechanism for handling text. While this design has some limitations in terms of direct manipulation, Go provides powerful tools and techniques, like slices and the `strings` package, to work with strings effectively. Embracing the immutability of strings leads to safer, cleaner, and more predictable code.

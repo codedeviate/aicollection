@@ -10,7 +10,7 @@ This course is designed for developers who are already proficient in at least on
 
 ## Course Outline
 
-### **Module 1: Introduction to Go**
+### Module 1: Introduction to Go
 #### Topics (1):
 - Why Go? Overview of Go's features and use cases.
 - Setting up the Go environment.
@@ -24,7 +24,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 2: Go Basics**
+### Module 2: Go Basics
 #### Topics (2):
 - Go syntax and basic constructs (variables, constants, and functions).
 - Data types, arrays, slices, and maps.
@@ -36,7 +36,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 3: Go’s Unique Features**
+### Module 3: Go’s Unique Features
 #### Topics (3):
 - Pointers and memory management in Go.
 - Go’s concurrency model: goroutines and channels.
@@ -49,7 +49,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 4: Structs and Interfaces**
+### Module 4: Structs and Interfaces
 #### Topics (4):
 - Structs and methods.
 - Embedding and composition.
@@ -61,7 +61,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 5: Packages and Modules**
+### Module 5: Packages and Modules
 #### Topics (5):
 - Organizing code into packages.
 - Using and creating Go modules.
@@ -74,7 +74,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 6: Testing and Benchmarking**
+### Module 6: Testing and Benchmarking
 #### Topics (6):
 - Writing unit tests with `testing`.
 - Using table-driven tests.
@@ -87,7 +87,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 7: Advanced Topics**
+### Module 7: Advanced Topics
 #### Topics (7):
 - Reflection in Go.
 - Working with JSON and XML.
@@ -101,7 +101,7 @@ This course is designed for developers who are already proficient in at least on
 
 ---
 
-### **Module 8: Deployment and Optimization**
+### Module 8: Deployment and Optimization
 #### Topics (8):
 - Building and running Go applications in production.
 - Logging and debugging techniques.

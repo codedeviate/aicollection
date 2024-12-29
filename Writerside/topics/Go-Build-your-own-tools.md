@@ -22,7 +22,7 @@ This course is tailored to provide a step-by-step guide on how to build a variet
 
 The course is divided into four main sections, each focusing on a specific category of tools:
 
-### 1. **Basic Network Tools**
+### 1. Basic Network Tools
 [Go to section](Go-Tools-Stage-1.md)
 
 Learn to implement classic networking utilities that are indispensable for diagnostics and troubleshooting. In this section, you'll build simple but powerful tools like:
@@ -37,7 +37,7 @@ By the end of this section, you will have developed foundational skills in creat
 
 ---
 
-### 2. **Advanced Network Tools**
+### 2. Advanced Network Tools
 [Go to section](Go-Tools-Stage-2.md)
 
 Expand your capabilities by building more sophisticated tools for analyzing and interacting with networks. This section covers:
@@ -53,7 +53,7 @@ These projects will give you hands-on experience with Go's advanced features, su
 
 ---
 
-### 3. **Network Services**
+### 3. Network Services
 [Go to section](Go-Tools-Stage-3.md)
 
 Dive deeper into building and managing network services with tools like:
@@ -68,7 +68,7 @@ In this section, you will learn how to build both client and server-side applica
 
 ---
 
-### 4. **Security Tools**
+### 4. Security Tools
 [Go to section](Go-Tools-Stage-4.md)
 
 The final section emphasizes building security and infrastructure tools to enhance network reliability and protection:

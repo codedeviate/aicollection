@@ -6,9 +6,9 @@ Below, we'll explore key aspects of the standard library and provide examples to
 
 ---
 
-## **1. Basic Utilities**
+## 1. Basic Utilities
 
-### **fmt Package** (Formatted I/O)
+### fmt Package (Formatted I/O)
 The `fmt` package provides functions for formatted output and input.
 
 **Example: Formatted Output**
@@ -33,7 +33,7 @@ Hello Alice
 
 ---
 
-### **time Package** (Date and Time)
+### time Package (Date and Time)
 The `time` package provides functionality for working with dates and times.
 
 **Example: Get Current Time**
@@ -69,9 +69,9 @@ Two Hours Later: 2024-12-28 17:00:00
 
 ---
 
-## **2. File and Directory Operations**
+## 2. File and Directory Operations
 
-### **os and ioutil Packages**
+### os and ioutil Packages
 The `os` package provides low-level operating system functions, while `io/ioutil` (deprecated in Go 1.16, replaced by `os` and `io`) simplifies file handling.
 
 **Example: Reading and Writing Files**
@@ -111,9 +111,9 @@ File content: Hello, Go standard library!
 
 ---
 
-## **3. Networking**
+## 3. Networking
 
-### **net/http Package**
+### net/http Package
 The `net/http` package provides HTTP client and server implementations.
 
 **Example: HTTP Server**
@@ -140,7 +140,7 @@ func main() {
 
 ---
 
-### **HTTP Client**
+### HTTP Client
 **Example: HTTP Client**
 ```go
 package main
@@ -166,9 +166,9 @@ func main() {
 
 ---
 
-## **4. Data Structures**
+## 4. Data Structures
 
-### **container/list**
+### container/list
 Provides a doubly linked list implementation.
 
 **Example: Using `container/list`**
@@ -202,7 +202,7 @@ func main() {
 
 ---
 
-### **sort**
+### sort
 The `sort` package provides functions for sorting slices.
 
 **Example: Sorting Integers**
@@ -228,9 +228,9 @@ Sorted: [1 2 3 5 6]
 
 ---
 
-## **5. Cryptography**
+## 5. Cryptography
 
-### **crypto/md5**
+### crypto/md5
 Provides MD5 hashing.
 
 **Example: Generate MD5 Hash**
@@ -258,9 +258,9 @@ MD5 Hash: 482c811da5d5b4bc6d497ffa98491e38
 
 ---
 
-## **6. JSON Handling**
+## 6. JSON Handling
 
-### **encoding/json**
+### encoding/json
 The `encoding/json` package provides functions to encode and decode JSON data.
 
 **Example: Encode and Decode JSON**
@@ -298,9 +298,9 @@ Decoded: {Name:Alice Age:30}
 
 ---
 
-## **7. Concurrency**
+## 7. Concurrency
 
-### **sync Package**
+### sync Package
 The `sync` package provides primitives for synchronizing goroutines.
 
 **Example: Using WaitGroup**
@@ -342,7 +342,7 @@ All workers completed
 
 ---
 
-## **Best Practices with the Standard Library**
+## Best Practices with the Standard Library
 
 1. **Understand Core Packages**: Master frequently used packages like `fmt`, `time`, `os`, and `net/http`.
 2. **Leverage Built-in Tools**: Use `sync` for concurrency, `sort` for data structures, and `encoding/json` for JSON handling.
@@ -351,6 +351,6 @@ All workers completed
 
 ---
 
-## **Summary**
+## Summary
 
 Go's standard library is a robust collection of packages that cover a wide range of functionality. By understanding and utilizing these packages, you can build powerful and efficient applications with minimal dependencies. From I/O operations and networking to concurrency and cryptography, the standard library provides tools for virtually every common task in software development.

@@ -2,7 +2,7 @@
 
 ## Detailed Topics:
 
-### **Package Organization**
+### Package Organization
 Organizing your code into packages is essential for creating scalable and maintainable Go applications. Packages help encapsulate functionality, reduce code duplication, and improve code readability.
 
 #### Best Practices:
@@ -60,7 +60,7 @@ Run the project to verify the package structure works as intended.
 
 ---
 
-### **Modules**
+### Modules
 Modules in Go enable dependency management and versioning. The `go mod` tool helps manage modules effectively.
 
 #### Steps to Create and Manage Go Modules:
@@ -132,7 +132,7 @@ Create a Go module that uses an external dependency:
 
 ## Detailed Hands-On:
 
-### 1. **Split a Project into Reusable Packages**
+### 1. Split a Project into Reusable Packages
 - Create a `stringutils` package that provides functions for string manipulation, such as reversing a string or converting to uppercase.
 - Write a `main.go` file that imports and utilizes the `stringutils` package.
 
@@ -162,7 +162,7 @@ Example:
    }
    ```
 
-### 2. **Publish a Custom Go Module to GitHub**
+### 2. Publish a Custom Go Module to GitHub
 - Create a new GitHub repository.
 - Push your Go module code to the repository.
 - Update the `go.mod` file to use the repository URL as the module path.

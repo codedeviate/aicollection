@@ -4,7 +4,7 @@ Git's **cherry-pick** command allows you to select specific commits from one bra
 
 ---
 
-## **1. Identify the Commits**
+## 1. Identify the Commits
 To begin, identify the commits you want to cherry-pick. You can find these commits in the pull request, using a Git hosting service like GitHub or GitLab, or via the command line.
 
 ### Example 1:
@@ -18,7 +18,7 @@ commit ghi9012: "Improved documentation"
 
 ---
 
-## **2. Cherry-Pick a Single Commit**
+## 2. Cherry-Pick a Single Commit
 To cherry-pick one commit:
 
 ```bash
@@ -34,10 +34,10 @@ This applies the changes from commit `abc1234` to your current branch.
 
 ---
 
-## **3. Cherry-Pick Multiple Commits**
+## 3. Cherry-Pick Multiple Commits
 If you want to cherry-pick multiple commits:
 
-### **a. List each commit explicitly**
+### a. List each commit explicitly
 You can list all the commit hashes you want to cherry-pick in a single command:
 
 ```bash
@@ -51,7 +51,7 @@ git cherry-pick abc1234 def5678 ghi9012
 
 This will sequentially apply the three commits to your current branch.
 
-### **b. Use a range of commits**
+### b. Use a range of commits
 If the commits are consecutive (in a linear history), you can use a commit range:
 
 ```bash
@@ -72,7 +72,7 @@ This applies all the commits from `abc1234` to `ghi9012` inclusively.
 
 ---
 
-## **4. Resolve Conflicts (if any)**
+## 4. Resolve Conflicts (if any)
 If there are conflicts during the cherry-pick process, Git will pause and allow you to resolve them. You can resolve conflicts as follows:
 
 1. Open the conflicting files and manually fix the conflicts.
@@ -92,7 +92,7 @@ git cherry-pick --abort
 
 ---
 
-## **5. Verify the Changes**
+## 5. Verify the Changes
 After cherry-picking, verify that the commits have been successfully applied by checking the commit history:
 
 ```bash
@@ -101,7 +101,7 @@ git log
 
 ---
 
-## **6. Push the Changes**
+## 6. Push the Changes
 Once you're satisfied with the cherry-picks, push the changes to the remote repository:
 
 ```bash
@@ -110,7 +110,7 @@ git push origin <branch-name>
 
 ---
 
-## **Example Workflow**
+## Example Workflow
 You’re working on a branch `main` and want to cherry-pick commits from a feature branch `feature/awesome-feature` that were part of a pull request.
 
 1. Switch to `main`:
@@ -132,7 +132,7 @@ You’re working on a branch `main` and want to cherry-pick commits from a featu
 
 ---
 
-## **Best Practices**
+## Best Practices
 - **Keep commits clean:** Ensure that each cherry-picked commit has a clear and complete change set.
 - **Use squash when necessary:** If the commits are small and tightly related, squash them into a single commit before cherry-picking to simplify history:
   ```bash

@@ -4,7 +4,7 @@ The `select` statement in Go allows a goroutine to wait on multiple communicatio
 
 ---
 
-## **How `select` Works**
+## How `select` Works
 
 The `select` statement has a syntax similar to a `switch`, but instead of evaluating expressions, it operates on communication channels. Each `case` in a `select` must involve a channel operation.
 
@@ -26,9 +26,9 @@ default:
 
 ---
 
-## **Examples of `select`**
+## Examples of `select`
 
-### **1. Basic Example**
+### 1. Basic Example
 ```go
 package main
 
@@ -69,7 +69,7 @@ Explanation: The `select` waits until one of the channels is ready. Depending on
 
 ---
 
-### **2. Handling Timeouts**
+### 2. Handling Timeouts
 `select` is often used to implement timeouts by combining it with `time.After`.
 
 ```go
@@ -106,7 +106,7 @@ Explanation: Since the message on `ch` takes 2 seconds and the timeout is set to
 
 ---
 
-### **3. Multiplexing Channels**
+### 3. Multiplexing Channels
 `select` can be used to receive from multiple channels, effectively multiplexing them.
 
 ```go
@@ -159,7 +159,7 @@ Explanation: `select` alternates between the two channels based on which one is 
 
 ---
 
-### **4. Non-Blocking Operations with `default`**
+### 4. Non-Blocking Operations with `default`
 
 The `default` case is used to make the `select` non-blocking.
 
@@ -189,7 +189,7 @@ Explanation: Since no data is available on `ch`, the `default` case executes imm
 
 ---
 
-### **5. Using `select` with Send and Receive**
+### 5. Using `select` with Send and Receive
 
 You can mix send and receive operations in a `select`.
 
@@ -221,9 +221,9 @@ Explanation: Since the channel has space, the send case executes. If the channel
 
 ---
 
-## **Advanced Examples**
+## Advanced Examples
 
-### **6. Graceful Shutdown with `select`**
+### 6. Graceful Shutdown with `select`
 `select` can be used to handle graceful shutdowns by listening to a quit channel.
 
 ```go
@@ -272,7 +272,7 @@ Explanation: The `worker` function exits when it receives a signal on the `quit`
 
 ---
 
-### **7. Fan-in Pattern**
+### 7. Fan-in Pattern
 Combining multiple inputs into a single channel using `select`.
 
 ```go
@@ -321,7 +321,7 @@ Explanation: The `select` combines messages from both producers into one output.
 
 ---
 
-## **Best Practices**
+## Best Practices
 1. **Handle Channel Closure**: Ensure channels are properly closed to avoid deadlocks.
    ```go
    if val, ok := <-ch; !ok {

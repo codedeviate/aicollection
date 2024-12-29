@@ -1,12 +1,12 @@
 # CROSS JOIN
 
-## **SQL CROSS JOIN: Comprehensive Explanation**
+## SQL CROSS JOIN: Comprehensive Explanation
 
 A **CROSS JOIN** combines every row from one table with every row from another table, resulting in a Cartesian product. This type of join does not require any condition to match rows from the two tables, making it the simplest type of join in SQL.
 
 ---
 
-## **Syntax**
+## Syntax
 ```sql
 SELECT columns
 FROM table1
@@ -23,7 +23,7 @@ Both forms produce the same result.
 
 ---
 
-## **How it Works**
+## How it Works
 - Each row in the first table is paired with **every** row in the second table.
 - The total number of rows in the result is the product of the number of rows in the two tables:
   $ \text{Total Rows} = \text{Rows in Table1} \times \text{Rows in Table2} $
@@ -35,7 +35,7 @@ Both forms produce the same result.
 
 ---
 
-## **Example Scenario**
+## Example Scenario
 Suppose we have two tables:
 
 **1. `Colors` Table**
@@ -56,7 +56,7 @@ Suppose we have two tables:
 
 ---
 
-## **1. Simple CROSS JOIN**
+## 1. Simple CROSS JOIN
 Query to generate all combinations of colors and sizes:
 ```sql
 SELECT Colors.Color, Sizes.Size
@@ -83,7 +83,7 @@ CROSS JOIN Sizes;
 
 ---
 
-## **2. CROSS JOIN with a WHERE Filter**
+## 2. CROSS JOIN with a WHERE Filter
 CROSS JOINs are rarely used without filtering because they produce a large number of rows. Let’s filter the combinations:
 
 Query to find combinations where the `Color` is "Red" or the `Size` is "Large":
@@ -109,7 +109,7 @@ WHERE Colors.Color = 'Red' OR Sizes.Size = 'Large';
 
 ---
 
-## **3. CROSS JOIN for Generating Test Data**
+## 3. CROSS JOIN for Generating Test Data
 CROSS JOINs are helpful for generating test datasets or grids. For instance, if you want to simulate every pairing of a product and a sales region:
 
 **3.1. `Products` Table**
@@ -147,7 +147,7 @@ CROSS JOIN Regions;
 
 ---
 
-## **4. Using CROSS JOIN for Combinatorial Problems**
+## 4. Using CROSS JOIN for Combinatorial Problems
 CROSS JOINs can be useful in combinatorial scenarios. For instance, if you need to calculate all potential matches between two teams in a game:
 
 **4.1. `TeamA` Table**
@@ -185,7 +185,7 @@ CROSS JOIN TeamB;
 
 ---
 
-## **5. CROSS JOIN vs Other Joins**
+## 5. CROSS JOIN vs Other Joins
 ### Key Differences:
 - **CROSS JOIN** produces a Cartesian product and does not require a matching condition.
 - **INNER JOIN** only includes rows with matching values in both tables.
@@ -196,7 +196,7 @@ With the same `Colors` and `Sizes` tables, an **INNER JOIN** would require a mat
 
 ---
 
-## **Performance Considerations**
+## Performance Considerations
 1. **Caution with Large Tables**:
     - CROSS JOINs can quickly generate an unmanageable number of rows, especially with large datasets. For example, joining two tables with 1,000 rows each produces 1,000,000 rows.
 2. **Use with Filters**:
@@ -204,7 +204,7 @@ With the same `Colors` and `Sizes` tables, an **INNER JOIN** would require a mat
 
 ---
 
-## **Key Takeaways**
+## Key Takeaways
 1. **Purpose**:
     - CROSS JOIN is ideal for creating all combinations of rows between two tables.
 2. **Output**:

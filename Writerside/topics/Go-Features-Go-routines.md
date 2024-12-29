@@ -4,7 +4,7 @@ Goroutines are lightweight threads of execution in the Go programming language, 
 
 ---
 
-## **What are Goroutines?**
+## What are Goroutines?
 A goroutine is a function or method that executes concurrently with other goroutines. They are managed by the Go runtime rather than the operating system, making them lightweight compared to traditional threads. Goroutines are started with the `go` keyword.
 
 **Key Features:**
@@ -14,7 +14,7 @@ A goroutine is a function or method that executes concurrently with other gorout
 
 ---
 
-## **How to Create a Goroutine**
+## How to Create a Goroutine
 
 To start a goroutine, use the `go` keyword before a function call.
 
@@ -53,7 +53,7 @@ That's the reason why the sleep is longer in the main function than in the gorou
 
 ---
 
-## **Anonymous Goroutines**
+## Anonymous Goroutines
 
 You can start a goroutine with an anonymous function:
 
@@ -83,7 +83,7 @@ The "Inside goroutine" messages appear while the main function is running.
 
 ---
 
-## **Using Channels with Goroutines**
+## Using Channels with Goroutines
 
 Channels are used to communicate between goroutines safely.
 
@@ -133,7 +133,7 @@ func main() {
 
 ---
 
-## **Goroutines and Synchronization**
+## Goroutines and Synchronization
 
 Without proper synchronization, goroutines can cause race conditions. Use the `sync.WaitGroup` to wait for multiple goroutines to finish.
 
@@ -165,7 +165,7 @@ func main() {
 
 ---
 
-## **Common Use Cases**
+## Common Use Cases
 
 1. **Web Servers**
    Goroutines handle multiple client requests concurrently in web servers.
@@ -221,7 +221,7 @@ func main() {
 
 ---
 
-## **Key Considerations**
+## Key Considerations
 1. **Avoid Goroutine Leaks**: Ensure goroutines terminate or have a proper way to exit to avoid memory leaks.
 2. **Shared State**: Use channels or sync primitives (e.g., `sync.Mutex`) to manage shared data.
 3. **Panic Recovery**: Use `defer` and `recover` to handle panics within goroutines.
