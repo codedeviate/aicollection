@@ -226,6 +226,7 @@
             <toc-element topic="Go-How-To-s.md">
                 <toc-element topic="Go-Create-a-module.md"/>
                 <toc-element topic="Go-HowTo-Custom-marshal-unmarshal.md"/>
+                <toc-element topic="Go-HowTo-Read-data-from-stdin.md"/>
             </toc-element>
             <toc-element topic="Go-Features.md">
                 <toc-element topic="Go-Features-Go-routines.md"/>
@@ -312,6 +313,13 @@
                     <toc-element topic="Go-Tools-Load-Balancer.md"/>
                     <toc-element topic="Go-Tools-Reverse-Proxy.md"/>
                 </toc-element>
+                <toc-element topic="Go-Tools-Stage-5.md">
+                    <toc-element topic="Go-Tools-JQ.md"/>
+                    <toc-element topic="Go-Tools-Log-Analyzer.md"/>
+                    <toc-element topic="Go-Tools-File-Compressor.md"/>
+                    <toc-element topic="Go-Tools-Task-Scheduler.md"/>
+                    <toc-element topic="Go-Tools-Text-Processor.md"/>
+                </toc-element>
             </toc-element>
         </toc-element>
         <toc-element topic="Java.md">
@@ -329,6 +337,12 @@
             </toc-element>
             <toc-element topic="Promises.md"/>
             <toc-element topic="Proxy.md"/>
+            <toc-element topic="Javsscript-Which-way-to-go.md">
+                <toc-element topic="Javascript-Node-JS.md"/>
+                <toc-element topic="Javascript-Bun.md"/>
+                <toc-element topic="Javascript-Deno.md"/>
+            </toc-element>
+            <toc-element topic="Javascript-Package-Managers.md"/>
         </toc-element>
         <toc-element topic="HTML.md"/>
         <toc-element topic="Markdown.md">
@@ -425,6 +439,8 @@
             <toc-element topic="Shell-Commands-cut.md"/>
             <toc-element topic="Shell-Commands-tr.md"/>
             <toc-element topic="Shell-Commands-tee.md"/>
+            <toc-element topic="Shell-Commands-jq.md"/>
+            <toc-element topic="Shell-Commands-rm.md"/>
         </toc-element>
         <toc-element topic="Shell-Ideas-and-tips.md">
             <toc-element topic="Show-which-shell-is-running.md"/>

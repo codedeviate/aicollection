@@ -1,6 +1,6 @@
 # Security Tools
 
-In the final stage of this course, we focus on building **Security Tools**, which are essential for safeguarding networks, systems, and applications. These tools form the defensive layer of any infrastructure, protecting it against unauthorized access, mitigating attacks, and ensuring high availability.
+In this section of the course, we focus on building **Security Tools**, which are essential for safeguarding networks, systems, and applications. These tools form the defensive layer of any infrastructure, protecting it against unauthorized access, mitigating attacks, and ensuring high availability.
 
 Through these projects, you will learn how to design and implement systems that monitor, manage, and secure networks effectively. This stage emphasizes advanced concepts like traffic control, request routing, and intrusion prevention. By leveraging Go's powerful networking and concurrency features, you will build tools that are performant and scalable for real-world security challenges.
 
@@ -52,3 +52,4 @@ This stage brings together the knowledge and skills you’ve developed throughou
 - Gained the ability to design and implement scalable, secure systems.
 
 These security tools not only strengthen your understanding of Go programming but also equip you with expertise to tackle advanced networking and cybersecurity problems.
+

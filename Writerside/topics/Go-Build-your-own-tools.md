@@ -80,6 +80,20 @@ These projects will provide insight into creating robust and secure network appl
 
 ---
 
+### 5. Miscellaneous Tools
+[Go to section](Go-Tools-Stage-5.md)
+
+Explore additional tools that don't fit neatly into the previous categories but are invaluable for day-to-day tasks:
+- **jq-style JSON Parser**: Process and manipulate JSON data directly from the command line.
+- **Log Analyzer**: Parse and summarize log files.
+- **File Compressor**: Compress and decompress files in various formats.
+- **Task Scheduler**: Automate repetitive tasks using cron-like functionality.
+- **Text Processor**: Perform operations like search, replace, and formatting on text files.
+
+This section showcases the versatility of Go in building utilities that simplify complex workflows.
+
+---
+
 ## Why Take This Course?
 
 By the end of this course, you will have built a comprehensive toolkit of network and system utilities. You'll not only gain practical coding experience but also develop a deeper understanding of the underlying network protocols and concepts that power the internet and modern IT infrastructure.
@@ -92,3 +106,4 @@ This course is perfect for:
 Embark on this journey, and let’s start creating tools that make a difference!
 
 <include from="_disclaimer.md" element-id="Course" />
+

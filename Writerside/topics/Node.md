@@ -61,3 +61,9 @@ docker pull node:<version>-alpine
 
 </tab>
 </tabs>
+
+## Get the latest version in terminal
+
+```bash
+curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version' | sed 's/v//'
+```
