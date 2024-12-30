@@ -232,3 +232,19 @@ To decode URL encoded data read from a file:
 ```sh
 go run main.go --mode decode --method url --file path/to/input.txt
 ```
+
+### Example with default values
+
+The default mode is `encode` and the default method is `base64`. If no input is provided, the program will prompt for input.
+
+To enter input manually:
+
+```sh
+go run main.go
+```
+
+To base64 encode a file:
+
+```sh
+cat path/to/input.txt | go run main.go
+```
