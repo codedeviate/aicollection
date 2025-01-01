@@ -9,27 +9,28 @@ First, create a new directory for your project and initialize the Go module.
 ```sh
 mkdir hash_utility
 cd hash_utility
-go mod init github.com/username/hash_utility
+mkdir lib
+go mod init github.com/username/hash
 ```
 
 ## Step 2: Create the `hash.go` File
 
-Create a `hash.go` file to handle the hashing functionality.
+Create a `hash.go` file in the `lib` directory to handle the hashing functionality.
 
 ```go
 // hash.go
-package main
+package lib
 
 import (
-    "crypto/md5"
-    "crypto/sha1"
-    "crypto/sha256"
-    "crypto/sha512"
-    "encoding/hex"
-    "fmt"
-    "hash"
-    "io"
-    "os"
+	"crypto/md5"
+	"crypto/sha1"
+	"crypto/sha256"
+	"crypto/sha512"
+	"encoding/hex"
+	"fmt"
+	"hash"
+	"io"
+	"os"
 )
 
 // HashData hashes the input data using the specified hash algorithm.
@@ -96,64 +97,66 @@ Create a `main.go` file to use the hashing functionality.
 package main
 
 import (
-    "bufio"
-    "flag"
-    "fmt"
-    "io"
-    "os"
+	"bufio"
+	"flag"
+	"fmt"
+	"io"
+	"os"
+
+	"github.com/username/hash/lib"
 )
 
 func main() {
-    algorithm := flag.String("algorithm", "sha256", "Hash algorithm: md5, sha1, sha256, sha512")
-    input := flag.String("input", "", "Input string")
-    filePath := flag.String("file", "", "Path to input file")
-    flag.Parse()
+	algorithm := flag.String("algorithm", "sha256", "Hash algorithm: md5, sha1, sha256, sha512")
+	input := flag.String("input", "", "Input string")
+	filePath := flag.String("file", "", "Path to input file")
+	flag.Parse()
 
-    var data string
-    if *filePath != "" {
-        // Read from file
-        result, err := HashFile(*filePath, *algorithm)
-        if err != nil {
-            fmt.Printf("Error hashing file: %v\n", err)
-            os.Exit(1)
-        }
-        fmt.Println(result)
-        return
-    } else if *input == "" {
-        // Check if input is coming from a pipe
-        fi, err := os.Stdin.Stat()
-        if err != nil {
-            fmt.Printf("Error: %v\n", err)
-            os.Exit(1)
-        }
+	var data string
+	if *filePath != "" {
+		// Read from file
+		result, err := lib.HashFile(*filePath, *algorithm)
+		if err != nil {
+			fmt.Printf("Error hashing file: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Println(result)
+		return
+	} else if *input == "" {
+		// Check if input is coming from a pipe
+		fi, err := os.Stdin.Stat()
+		if err != nil {
+			fmt.Printf("Error: %v\n", err)
+			os.Exit(1)
+		}
 
-        if fi.Mode()&os.ModeNamedPipe != 0 {
-            // Read from stdin
-            reader := bufio.NewReader(os.Stdin)
-            inputBytes, err := io.ReadAll(reader)
-            if err != nil {
-                fmt.Printf("Error reading from stdin: %v\n", err)
-                os.Exit(1)
-            }
-            data = string(inputBytes)
-        } else {
-            fmt.Println("Enter input string:")
-            scanner := bufio.NewScanner(os.Stdin)
-            if scanner.Scan() {
-                data = scanner.Text()
-            }
-        }
-    } else {
-        data = *input
-    }
+		if fi.Mode()&os.ModeNamedPipe != 0 {
+			// Read from stdin
+			reader := bufio.NewReader(os.Stdin)
+			inputBytes, err := io.ReadAll(reader)
+			if err != nil {
+				fmt.Printf("Error reading from stdin: %v\n", err)
+				os.Exit(1)
+			}
+			data = string(inputBytes)
+		} else {
+			fmt.Println("Enter input string:")
+			scanner := bufio.NewScanner(os.Stdin)
+			if scanner.Scan() {
+				data = scanner.Text()
+			}
+		}
+	} else {
+		data = *input
+	}
 
-    result, err := HashData(data, *algorithm)
-    if err != nil {
-        fmt.Printf("Error hashing data: %v\n", err)
-        os.Exit(1)
-    }
+	result, err := lib.HashData(data, *algorithm)
+	if err != nil {
+		fmt.Printf("Error hashing data: %v\n", err)
+		os.Exit(1)
+	}
 
-    fmt.Println(result)
+	fmt.Println(result)
 }
 ```
 
