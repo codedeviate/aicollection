@@ -397,6 +397,7 @@
     </toc-element>
     <toc-element topic="Operating-Systems.md">
         <toc-element topic="OS-Linux.md">
+            <toc-element topic="OS-Linux-Distributions.md"/>
             <toc-element topic="OS-Linux-Arm64-Syscalls.md"/>
             <toc-element topic="OS-Linux-x64-Syscalls.md"/>
         </toc-element>
