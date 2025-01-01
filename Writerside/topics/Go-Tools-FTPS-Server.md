@@ -94,11 +94,7 @@ func main() {
 
 ## Step 4: Generate SSL Certificates
 
-Generate SSL certificates for the FTPS server. You can use OpenSSL to create a self-signed certificate.
-
-```sh
-openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 -nodes
-```
+<include from="_openssl.md" element-id="CreateSelfSignedCert"></include>
 
 ## Step 5: Run the Program
 

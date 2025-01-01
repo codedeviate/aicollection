@@ -6,7 +6,7 @@ Here is a simple "Hello World" program in Perl:
 print "Hello, World!\n";
 ```
 
-### Steps to Run
+## Steps to Run
 
 1. **Save the code**: Save the above code in a file named `hello.pl`.
 

@@ -69,11 +69,7 @@ func main() {
 
 ## Step 4: Generate SSL Certificates
 
-You need SSL certificates to run the HTTPS server. You can generate self-signed certificates using OpenSSL:
-
-```sh
-openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-```
+<include from="_openssl.md" element-id="CreateSelfSignedCert"></include>
 
 ## Step 5: Run the Program
 

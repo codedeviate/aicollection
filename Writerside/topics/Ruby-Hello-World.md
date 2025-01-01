@@ -1,6 +1,6 @@
 # Hello, World
 
-### Hello World Example in Ruby
+## Hello World Example in Ruby
 
 Here is a simple "Hello, World!" program written in Ruby:
 
@@ -9,7 +9,7 @@ Here is a simple "Hello, World!" program written in Ruby:
 puts 'Hello, World!'
 ```
 
-### Instructions to Run the Ruby Program
+## Instructions to Run the Ruby Program
 
 1. **Save the Code**: Save the above code in a file named `hello.rb`.
 
@@ -25,7 +25,7 @@ puts 'Hello, World!'
    Hello, World!
    ```
 
-### Summary
+## Summary
 
 1. Save the code in `hello.rb`.
 2. Run with `ruby hello.rb`.

@@ -7,7 +7,7 @@ Here is a simple "Hello World" program in PHP:
 echo "Hello, World!";
 ```
 
-### Steps to Run
+## Steps to Run
 
 1. **Save the code**: Save the above code in a file named `hello.php`.
 

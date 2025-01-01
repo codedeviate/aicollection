@@ -8,7 +8,7 @@ fn main() {
 }
 ```
 
-### Steps to Compile and Build
+## Steps to Compile and Build
 
 1. **Save the code**: Save the above code in a file named `main.rs`.
 

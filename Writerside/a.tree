@@ -358,6 +358,9 @@
         <toc-element topic="Markdown.md">
             <toc-element topic="Descriptive-basics-of-markdown.md"/>
         </toc-element>
+        <toc-element topic="Languages-Pascal.md">
+            <toc-element topic="Pascal-Hello-World.md"/>
+        </toc-element>
         <toc-element topic="Perl.md">
             <toc-element topic="Perl-Hello-World.md"/>
         </toc-element>
@@ -491,6 +494,9 @@
             <toc-element topic="Shortcuts.md">
                 <toc-element topic="Git-shortcuts.md"/>
             </toc-element>
+            <toc-element topic="Tools-JetBrains-Goodie-stuff.md">
+                <toc-element topic="Tools-JetBrains-Replace-bold-style-from-headers-in-markdown.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="Tools-Editors.md">
             <toc-element topic="Tools-Editors-Nano.md"/>
@@ -519,6 +525,11 @@
             <toc-element topic="Useful-Commands-lspci.md"/>
             <toc-element topic="Useful-Commands-file.md"/>
             <toc-element topic="Useful-Commands-uname.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="Security.md">
+        <toc-element topic="Security-Certificates.md">
+            <toc-element topic="Security-Certificates-Create-certificate-via-Let-s-Encrypt.md"/>
         </toc-element>
     </toc-element>
 </instance-profile>
