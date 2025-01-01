@@ -525,6 +525,7 @@
             <toc-element topic="Useful-Commands-lspci.md"/>
             <toc-element topic="Useful-Commands-file.md"/>
             <toc-element topic="Useful-Commands-uname.md"/>
+            <toc-element topic="Linux-Commands-pushd.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Security.md">
