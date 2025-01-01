@@ -268,6 +268,45 @@ Go, also known as Golang, offers several foundational features that contribute t
 
 [Read more](Go-Features-Simplicity-and-Readability.md)
 
+## 22. Concurrency in Go
+
+- **What It Is**: Go has built-in support for **concurrency**, making it easy to execute multiple tasks at the same time in a resource-efficient way. Its concurrency model is based on **goroutines** and **channels**, enabling lightweight and efficient concurrent execution.
+- **Why It Matters**:
+  - Go’s concurrency model simplifies working with multiple tasks without the complexity of threads or explicit synchronization.
+  - It allows writing scalable programs that can handle many tasks simultaneously, such as web servers, microservices, or networked applications.
+- **How It Works**:
+  - **Goroutines**: Concurrent functions or tasks that run independently of each other. They are managed by the Go runtime, which multiplexes them onto a small number of system threads.
+  - **Channels**: The primary mechanism for communicating between goroutines. Channels allow goroutines to send and receive messages, enabling safe data sharing.
+  - **Select Statement**: Used to wait on multiple channel operations, allowing you to work with multiple goroutines without blocking.
+
+### Example: Simple Concurrency in Go
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func printMessage(msg string) {
+	for i := 0; i < 5; i++ {
+		fmt.Println(msg)
+		time.Sleep(1 * time.Second)
+	}
+}
+
+func main() {
+	// Start two goroutines concurrently
+	go printMessage("Hello")
+	go printMessage("World")
+
+	// Wait for goroutines to finish
+	time.Sleep(6 * time.Second)
+}
+```
+
+[Read more](Go-Features-Concurrency.md)
+
 ---
 
 ### Putting It All Together

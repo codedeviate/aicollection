@@ -250,6 +250,7 @@
                 <toc-element topic="Go-Features-Cross-Platform-Support.md"/>
                 <toc-element topic="Go-Features-Performance.md"/>
                 <toc-element topic="Go-Features-Simplicity-and-Readability.md"/>
+                <toc-element topic="Go-Features-Concurrency.md"/>
             </toc-element>
             <toc-element topic="Go-Stories.md">
                 <toc-element topic="Go-Moving-from-C-Java-to-Go.md"/>
