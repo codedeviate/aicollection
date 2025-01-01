@@ -1,4 +1,4 @@
-# Create certificate via Let&apos;s Encrypt
+# Create certificate via Let's Encrypt
 
 To create a certificate through **Let's Encrypt**, a free and automated Certificate Authority (CA), follow these steps. Let's Encrypt provides SSL/TLS certificates for securing websites and supports automation through tools like **Certbot**.
 

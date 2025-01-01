@@ -476,6 +476,10 @@
             <toc-element topic="Rider.md"/>
             <toc-element topic="CLion.md"/>
             <toc-element topic="DataGrip.md"/>
+            <toc-element topic="The-Dark-Side.md">
+                <toc-element topic="Pentesting.md"/>
+                <toc-element topic="Buffer-overflow.md"/>
+            </toc-element>
             <toc-element topic="ReSharper.md"/>
             <toc-element topic="TeamCity.md"/>
             <toc-element topic="YouTrack.md"/>
@@ -515,10 +519,6 @@
         <toc-element topic="Tools-Visual-Studio-Community-Edition.md">
             <toc-element topic="Difference-between-Full-edition-and-Community-Edition.md"/>
         </toc-element>
-    </toc-element>
-    <toc-element topic="The-Dark-Side.md">
-        <toc-element topic="Pentesting.md"/>
-        <toc-element topic="Buffer-overflow.md"/>
     </toc-element>
     <toc-element topic="Useful-Commands.md">
         <toc-element topic="Useful-Commands-Linux.md">
