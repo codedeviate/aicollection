@@ -50,7 +50,7 @@ go-make/
 │   └── runner.go
 └── utils/
     ├── logger.go
-│   └── stack.go
+    └── stack.go
 ```
 
 ## Setup and Dependencies
