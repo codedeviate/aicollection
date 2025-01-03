@@ -2,6 +2,40 @@
 
 To create a traceroute program in Go, you need to create a few files: `main.go` for the main logic, and optionally, a `traceroute.go` file for the traceroute functionality. Here is a step-by-step guide:
 
+## What is Traceroute?
+
+Traceroute is a network diagnostic tool used to trace the path that data packets take from one computer to another across an IP network. It works by sending a series of Internet Control Message Protocol (ICMP) Echo Request packets (commonly known as "pings") to the destination, incrementally increasing the Time-to-Live (TTL) value for each packet. The TTL limits how many hops (routers or network devices) a packet can travel through before being discarded. Each intermediate hop along the route returns an ICMP Echo Reply, which contains the time it took for the packet to travel to that hop and back.
+
+Traceroute allows users to see each router or device that the packet passes through on its journey to the destination. This is especially useful for identifying where delays or network issues occur along the route.
+
+### What is Traceroute Used For?
+
+1. **Network Troubleshooting**: Traceroute helps network administrators diagnose issues like latency, packet loss, and routing problems. By identifying where packets are delayed or lost, it allows them to pinpoint bottlenecks or malfunctioning routers in the network.
+
+2. **Latency Measurement**: Traceroute shows the round-trip time for packets to travel between your computer and each router in the network. This helps assess the network performance and can help determine where delays are happening.
+
+3. **Path Identification**: It helps identify the exact route taken by data between two points on the internet. This can be useful when trying to understand or troubleshoot routing issues, such as when network traffic takes an inefficient or unexpected route.
+
+4. **Network Optimization**: Understanding how packets travel and where delays occur enables network engineers to optimize traffic flow, select the best routes, or redesign parts of the network to improve performance.
+
+5. **Security Analysis**: Traceroute can be used by security professionals to map out the topology of a network and identify potential attack points or weak links in the network.
+
+### Who Uses Traceroute?
+
+1. **Network Administrators**: They are the primary users of traceroute. It helps them monitor network health, troubleshoot problems, and optimize performance by identifying bottlenecks, slow links, and failing hardware.
+
+2. **System Administrators**: Similar to network admins, system administrators use traceroute to troubleshoot network connectivity issues between systems, especially when diagnosing problems related to specific servers or services.
+
+3. **IT Support Technicians**: When users report slow or unavailable connections, IT support technicians often use traceroute to check if the issue is due to network congestion, routing issues, or a problem with intermediate devices like routers and firewalls.
+
+4. **Security Professionals**: Traceroute is sometimes used by cybersecurity experts to analyze the route traffic takes to reach a target. This can help in analyzing how data is being intercepted, whether malicious traffic is entering the network, or if an attack is coming from a specific region.
+
+5. **Researchers and Engineers**: Those working in network design, performance analysis, and internet infrastructure can use traceroute as part of their toolset to analyze routing paths and improve global or regional network architecture.
+
+6. **End Users and Developers**: While not typically their main job, individuals who are troubleshooting internet connectivity issues or developing applications that rely on specific network paths can use traceroute to diagnose problems.
+
+In summary, **traceroute** is a valuable tool for anyone needing to diagnose, monitor, or optimize network paths, ensuring data travels efficiently and securely from point A to point B across the internet or private networks.
+
 ## Step 1: Initialize the Go Module
 
 First, create a new directory for your project and initialize the Go module.
@@ -251,3 +285,20 @@ go run main.go example.com
 ```
 
 This will output the traceroute hops to the specified address.
+
+## Describe the program
+
+The `traceroute` program in Go uses the ICMP protocol to send Echo Request messages to the target IP address and
+receive Echo Reply messages. It simulates the hop count by setting the TTL (Time To Live) value in the outgoing packets
+and waits for the response from each hop. The program prints the route taken by the packets, showing the response times
+for each hop.
+
+The flags `-d`, `-h`, and `-t` are used to configure the traceroute operation. The `-d` flag enables DNS lookup for
+resolving hostnames, the `-h` flag sets the maximum number of hops, and the `-t` flag sets the timeout duration in
+seconds for each hop. Additionally, the `-s1`, `-s2`, `-s3`, `-s4`, and `-s5` flags allow skipping hops 1-5, which can
+help avoid timeouts in certain scenarios. The program also handles errors such as failed address resolution, connection
+creation, and packet sending.
+
+By following these steps, you can create a simple traceroute program in Go to trace the route taken by packets to a
+specified address. This program can be further extended with additional features and error handling to enhance its
+functionality.
