@@ -1,6 +1,6 @@
 # Subsystem
 
-To create a program in Go that scans for subsystems (e.g., PHP, Python, or other technologies running on a web server), you need to create a few files: `main.go` for the main logic, and optionally, a `subsystem.go` file for the scanning functionality. Here is a step-by-step guide:
+To create a program in Go that scans for subsystems (e.g., PHP, Python, or other technologies running on a web server), you need to create a few files: `main.go` for the main logic, and optionally, a `server.go` file for the scanning functionality. Here is a step-by-step guide:
 
 ## Step 1: Initialize the Go Module
 
