@@ -80,16 +80,31 @@ Building a network scanner will introduce you to concepts like subnetting and ho
 
 ---
 
-### 7. What We Have Done So Far
-[Go to lesson](Go-Tools-What-we-have-done-so-far.md)
+### 7. Ifinfo
+[Go to lesson](Go-Tools-Ifinfo.md)
 
-In this wrap-up module, we will review the tools you've built so far. You'll reflect on:
-- The skills and techniques you've learned.
-- The challenges you faced and how you solved them.
-- Opportunities to enhance or extend the tools.
+Ifinfo lists network interfaces and their associated IP addresses on a system. This tool provides valuable information for network configuration and troubleshooting. You will:
+- Retrieve interface details using Go's `net` package.
+- Display interface names, IP addresses, and other network settings.
+- Enhance the tool with filtering and formatting options.
+- Explore advanced features like MAC address retrieval and interface status.
 
-This retrospective will solidify your understanding and prepare you for the next phase of the course: **Advanced Network Tools**.
+By creating Ifinfo, you'll gain insights into network interface management and system-level networking.
 
 ---
+
+### 8. Subsystem
+[Go to lesson](Go-Tools-Subsystem.md)
+
+Subsystem detection involves identifying technologies (e.g., web servers, programming languages) running on a remote host. This tool is useful for reconnaissance and security assessments. You will:
+- Fetch HTTP headers from a URL to extract server information.
+- Identify server software, versions, and other subsystems.
+- Analyze response headers for clues about the target system.
+- Extend the tool to detect common web technologies like PHP, Python, and more.
+
+Building a Subsystem detector will sharpen your web security skills and deepen your understanding of HTTP headers.
+
+---
+
 
 By completing the "Basic Network Tools" section, you’ll not only gain practical experience in Go programming but also develop a deep appreciation for the utility and simplicity of these essential tools. This stage sets the foundation for building more complex and feature-rich applications in the subsequent sections.

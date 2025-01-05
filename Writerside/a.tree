@@ -280,8 +280,8 @@
                     <toc-element topic="Go-Tools-Traceroute.md"/>
                     <toc-element topic="Go-Tools-Netstat.md"/>
                     <toc-element topic="Go-Tools-Netscan.md"/>
+                    <toc-element topic="Go-Tools-Ifinfo.md"/>
                     <toc-element topic="Go-Tools-Subsystem.md"/>
-                    <toc-element topic="Go-Tools-What-we-have-done-so-far.md"/>
                 </toc-element>
                 <toc-element topic="Go-Tools-Stage-2.md">
                     <toc-element topic="Go-Tools-Port-Scanner.md"/>
@@ -330,6 +330,8 @@
                     <toc-element topic="Go-Tools-Text-Processor.md"/>
                     <toc-element topic="Go-Tools-Encode-Decode.md"/>
                     <toc-element topic="Go-Tools-Hash.md"/>
+                    <toc-element topic="Go-Tools-Strings.md"/>
+                    <toc-element topic="Go-Tools-Decompress.md"/>
                 </toc-element>
             </toc-element>
         </toc-element>
