@@ -332,6 +332,7 @@
                     <toc-element topic="Go-Tools-Hash.md"/>
                     <toc-element topic="Go-Tools-Strings.md"/>
                     <toc-element topic="Go-Tools-Decompress.md"/>
+                    <toc-element topic="Go-Tools-Compression.md"/>
                 </toc-element>
             </toc-element>
         </toc-element>

@@ -126,6 +126,18 @@ This project will deepen your understanding of data compression techniques and f
 
 ---
 
+### 10. Compression
+[Go to lesson](Go-Tools-Compression.md)
+
+Compression algorithms reduce file sizes for efficient storage and transmission. In this module, you will:
+- Create a tool to compress files using algorithms like Gzip, deflate, zlib, lzw and snappy.
+- Implement support for custom compression levels and strategies.
+- Understand the principles of data compression and the role of compression in modern computing.
+
+This project will deepen your understanding of data compression techniques and their applications in file management and data transfer.
+
+---
+
 ## Why This Section Matters
 
 The tools in this section address common yet diverse challenges, showcasing the versatility of Go for solving practical problems. By the end of this section, you will have:
