@@ -138,6 +138,17 @@ This project will deepen your understanding of data compression techniques and t
 
 ---
 
+### 11. Hexdump
+[Go to lesson](Go-Tools-Hexdump.md)
+
+A hexdump displays the hexadecimal and ASCII representation of binary data. In this module, you will:
+- Develop a utility to generate hexdumps of files or input streams.
+- Implement features for customizing the output format and byte grouping.
+
+This project will enhance your skills in file processing and data visualization, essential for low-level data analysis and debugging.
+
+---
+
 ## Why This Section Matters
 
 The tools in this section address common yet diverse challenges, showcasing the versatility of Go for solving practical problems. By the end of this section, you will have:
