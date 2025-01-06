@@ -149,6 +149,17 @@ This project will enhance your skills in file processing and data visualization,
 
 ---
 
+### 12. Git-tool
+[Go to lesson](Go-Tools-git-tool.md)
+
+A Git tool simplifies common Git operations and enhances version control workflows. In this module, you will:
+- Create a utility to automate Git commands like commit, push, pull, and status.
+- Add support for custom Git configurations and error handling.
+
+This project will deepen your understanding of version control systems and streamline your Git workflows.
+
+---
+
 ## Why This Section Matters
 
 The tools in this section address common yet diverse challenges, showcasing the versatility of Go for solving practical problems. By the end of this section, you will have:

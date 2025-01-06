@@ -334,6 +334,7 @@
                     <toc-element topic="Go-Tools-Decompress.md"/>
                     <toc-element topic="Go-Tools-Compression.md"/>
                     <toc-element topic="Go-Tools-Hexdump.md"/>
+                    <toc-element topic="Go-Tools-git-tool.md"/>
                 </toc-element>
             </toc-element>
         </toc-element>
