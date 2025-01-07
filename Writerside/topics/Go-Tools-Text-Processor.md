@@ -7,9 +7,9 @@ To create a text processor program in Go, follow these steps:
 First, create a new directory for your project and initialize the Go module.
 
 ```sh
-mkdir text_processor
-cd text_processor
-go mod init github.com/username/text_processor
+mkdir textprocessor
+cd textprocessor
+go mod init github.com/username/textprocessor
 ```
 
 ## Step 2: Create the `processor.go` File
@@ -18,13 +18,12 @@ Create a `processor.go` file to handle the text processing functionality.
 
 ```go
 // processor.go
-package main
+package lib
 
 import (
-    "bufio"
-    "fmt"
-    "os"
-    "strings"
+	"bufio"
+	"os"
+	"strings"
 )
 
 // ProcessText processes the input text and applies transformations.
@@ -66,34 +65,36 @@ Create a `main.go` file to use the text processing functionality.
 package main
 
 import (
-    "flag"
-    "fmt"
-    "os"
+	"flag"
+	"fmt"
+	"os"
+
+	"github.com/username/textprocessor/lib"
 )
 
 func main() {
-    file := flag.String("file", "", "Path to the file")
-    flag.Parse()
+	file := flag.String("file", "", "Path to the file")
+	flag.Parse()
 
-    var data string
-    var err error
+	var data string
+	var err error
 
-    if *file != "" {
-        data, err = ReadFile(*file)
-        if err != nil {
-            fmt.Printf("Error reading file: %v\n", err)
-            os.Exit(1)
-        }
-    } else {
-        data, err = ReadStdin()
-        if err != nil {
-            fmt.Printf("Error reading stdin: %v\n", err)
-            os.Exit(1)
-        }
-    }
+	if *file != "" {
+		data, err = lib.ReadFile(*file)
+		if err != nil {
+			fmt.Printf("Error reading file: %v\n", err)
+			os.Exit(1)
+		}
+	} else {
+		data, err = lib.ReadStdin()
+		if err != nil {
+			fmt.Printf("Error reading stdin: %v\n", err)
+			os.Exit(1)
+		}
+	}
 
-    result := ProcessText(data)
-    fmt.Println(result)
+	result := lib.ProcessText(data)
+	fmt.Println(result)
 }
 ```
 

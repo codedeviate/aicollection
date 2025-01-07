@@ -7,9 +7,9 @@ To create a file compressor program in Go, follow these steps:
 First, create a new directory for your project and initialize the Go module.
 
 ```sh
-mkdir file_compressor
-cd file_compressor
-go mod init github.com/username/file_compressor
+mkdir filecompressor
+cd filecompressor
+go mod init github.com/username/filecompressor
 ```
 
 ## Step 2: Install Dependencies
@@ -22,13 +22,12 @@ Create a `compressor.go` file to handle the compression and decompression functi
 
 ```go
 // compressor.go
-package main
+package lib
 
 import (
-    "compress/gzip"
-    "fmt"
-    "io"
-    "os"
+	"compress/gzip"
+	"io"
+	"os"
 )
 
 // CompressFile compresses the given file using Gzip.
@@ -86,39 +85,41 @@ Create a `main.go` file to use the compression and decompression functionality.
 package main
 
 import (
-    "flag"
-    "fmt"
-    "os"
+	"flag"
+	"fmt"
+	"os"
+
+	"github.com/username/filecompressor/lib"
 )
 
 func main() {
-    compress := flag.Bool("compress", false, "Compress the file")
-    decompress := flag.Bool("decompress", false, "Decompress the file")
-    source := flag.String("source", "", "Source file path")
-    target := flag.String("target", "", "Target file path")
-    flag.Parse()
+	compress := flag.Bool("compress", false, "Compress the file")
+	decompress := flag.Bool("decompress", false, "Decompress the file")
+	source := flag.String("source", "", "Source file path")
+	target := flag.String("target", "", "Target file path")
+	flag.Parse()
 
-    if *source == "" || *target == "" {
-        fmt.Println("Usage: file_compressor --compress|--decompress --source <source_file> --target <target_file>")
-        os.Exit(1)
-    }
+	if *source == "" || *target == "" {
+		fmt.Println("Usage: file_compressor --compress|--decompress --source <source_file> --target <target_file>")
+		os.Exit(1)
+	}
 
-    var err error
-    if *compress {
-        err = CompressFile(*source, *target)
-    } else if *decompress {
-        err = DecompressFile(*source, *target)
-    } else {
-        fmt.Println("Specify either --compress or --decompress")
-        os.Exit(1)
-    }
+	var err error
+	if *compress {
+		err = lib.CompressFile(*source, *target)
+	} else if *decompress {
+		err = lib.DecompressFile(*source, *target)
+	} else {
+		fmt.Println("Specify either --compress or --decompress")
+		os.Exit(1)
+	}
 
-    if err != nil {
-        fmt.Printf("Operation failed: %v\n", err)
-        os.Exit(1)
-    }
+	if err != nil {
+		fmt.Printf("Operation failed: %v\n", err)
+		os.Exit(1)
+	}
 
-    fmt.Println("Operation successful")
+	fmt.Println("Operation successful")
 }
 ```
 
