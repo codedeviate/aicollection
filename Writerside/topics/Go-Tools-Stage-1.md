@@ -106,5 +106,17 @@ Building a Subsystem detector will sharpen your web security skills and deepen y
 
 ---
 
+### 9. Cert Info
+[Go to lesson](Go-Tools-Cert-info.md)
+
+Cert Info retrieves SSL certificate details from a web server, including expiration date, issuer, and certificate chain. This tool is essential for verifying secure connections. You will:
+- Connect to HTTPS endpoints and extract SSL certificates.
+- Parse certificate information like issuer and expiry date.
+- Display the certificate chain for validation.
+
+Creating Cert Info will enhance your knowledge of secure communication and certificate management.
+
+---
+
 
 By completing the "Basic Network Tools" section, you’ll not only gain practical experience in Go programming but also develop a deep appreciation for the utility and simplicity of these essential tools. This stage sets the foundation for building more complex and feature-rich applications in the subsequent sections.
