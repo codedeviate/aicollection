@@ -49,7 +49,7 @@ go mod init github.com/username/traceroute
 
 ## Step 2: Create the `traceroute.go` File
 
-Create a `traceroute.go` file in the `traceroutemod` directory to handle the traceroute functionality.
+Create a `traceroutemod/traceroute.go` file to handle the traceroute functionality.
 
 ```go
 package traceroute
@@ -213,6 +213,7 @@ func Traceroute(address string, config Config) error {
 
 	return nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -274,6 +275,7 @@ func main() {
 		os.Exit(1)
 	}
 }
+
 ```
 
 ## Step 4: Run the Program

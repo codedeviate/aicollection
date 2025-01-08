@@ -23,18 +23,18 @@ go get github.com/google/gopacket/pcap
 
 ## Step 3: Create the `monitor.go` File
 
-Create a `monitor.go` file to handle the bandwidth monitoring functionality.
+Create a `monitor/monitor.go` file to handle the bandwidth monitoring functionality.
 
 ```go
 // monitor.go
-package main
+package monitor
 
 import (
-    "fmt"
-    "github.com/google/gopacket"
-    "github.com/google/gopacket/pcap"
-    "log"
-    "time"
+	"fmt"
+	"time"
+
+	"github.com/google/gopacket"
+	"github.com/google/gopacket/pcap"
 )
 
 type BandwidthMonitor struct {
@@ -77,6 +77,7 @@ func (bm *BandwidthMonitor) Stop() {
 func (bm *BandwidthMonitor) Report() {
     fmt.Printf("Packets: %d, Bytes: %d\n", bm.packetCount, bm.byteCount)
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -88,36 +89,39 @@ Create a `main.go` file to use the bandwidth monitoring functionality.
 package main
 
 import (
-    "fmt"
-    "log"
-    "os"
-    "time"
+	"fmt"
+	"log"
+	"os"
+	"time"
+
+	"github.com/username/bandwidthmonitor/monitor"
 )
 
 func main() {
-    if len(os.Args) != 2 {
-        fmt.Println("Usage: bandwidthmonitor <network_interface>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: bandwidthmonitor <network_interface>")
+		os.Exit(1)
+	}
 
-    device := os.Args[1]
-    snapshotLen := int32(1024)
-    promiscuous := false
-    timeout := 30 * time.Second
+	device := os.Args[1]
+	snapshotLen := int32(1024)
+	promiscuous := true
+	timeout := 30 * time.Second
 
-    bm, err := NewBandwidthMonitor(device, snapshotLen, promiscuous, timeout)
-    if err != nil {
-        log.Fatalf("Error creating bandwidth monitor: %v", err)
-    }
+	bm, err := monitor.NewBandwidthMonitor(device, snapshotLen, promiscuous, timeout)
+	if err != nil {
+		log.Fatalf("Error creating bandwidth monitor: %v", err)
+	}
 
-    go bm.Start()
+	go bm.Start()
 
-    // Monitor for 10 seconds
-    time.Sleep(10 * time.Second)
+	// Monitor for 10 seconds
+	time.Sleep(10 * time.Second)
 
-    bm.Stop()
-    bm.Report()
+	bm.Stop()
+	bm.Report()
 }
+
 ```
 
 ## Step 5: Run the Program

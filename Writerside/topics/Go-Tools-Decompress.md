@@ -116,6 +116,7 @@ func extractZipFile(file *zip.File, dest string) error {
 	}
 	return nil
 }
+
 ```
 
 ##### 2.2 RAR Unpacker (`unpacker/rar.go`)
@@ -134,10 +135,11 @@ package unpacker
 
 import (
 	"fmt"
-	"github.com/nwaples/rardecode"
 	"io"
 	"os"
 	"path/filepath"
+
+	"github.com/nwaples/rardecode"
 )
 
 // Unrar extracts a .rar file to the specified destination folder.
@@ -192,6 +194,7 @@ func extractRarFile(header *rardecode.FileHeader, r *rardecode.Reader, dest stri
 	}
 	return nil
 }
+
 ```
 
 ##### 2.3 7z Unpacker (`unpacker/sevenzip.go`)
@@ -210,6 +213,7 @@ package unpacker
 
 import (
 	"fmt"
+
 	"github.com/mholt/archiver/v3"
 )
 
@@ -222,6 +226,7 @@ func Un7z(src string, dest string) error {
 	}
 	return nil
 }
+
 ```
 
 #### 3. Utility Module: `utils/utils.go`
@@ -233,16 +238,21 @@ The `utils` module contains helper functions for file path validation and type c
 package utils
 
 import (
+	"fmt"
 	"strings"
 )
 
 // GetExtension checks the file extension of the given file.
 func GetExtension(filePath string) string {
-	return strings.ToLower(strings.TrimPrefix(strings.ToLower(filePath), "."))
+	tempFilePath := strings.ToLower(filePath)
+	fileExtension := tempFilePath[strings.LastIndex(tempFilePath, ".")+1:]
+	return fileExtension
 }
 
 // IsZip checks if the file is a .zip file.
 func IsZip(filePath string) bool {
+	fmt.Println(filePath)
+	fmt.Println(GetExtension(filePath))
 	return GetExtension(filePath) == "zip"
 }
 
@@ -255,6 +265,7 @@ func IsRar(filePath string) bool {
 func Is7z(filePath string) bool {
 	return GetExtension(filePath) == "7z"
 }
+
 ```
 
 #### 4. Main Program: `main.go`
@@ -268,9 +279,9 @@ package main
 import (
 	"fmt"
 	"os"
-	"path/filepath"
-	"file-unpacker/unpacker"   // Import unpacker module
-	"file-unpacker/utils"      // Import utils module
+
+	"github.com/username/decompression/unpacker"
+	"github.com/username/decompression/utils"
 )
 
 func main() {
@@ -309,6 +320,7 @@ func main() {
 		fmt.Println("Unsupported file format:", filePath)
 	}
 }
+
 ```
 
 ### Running the Program

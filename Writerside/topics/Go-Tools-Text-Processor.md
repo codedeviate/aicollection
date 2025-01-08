@@ -14,7 +14,7 @@ go mod init github.com/username/textprocessor
 
 ## Step 2: Create the `processor.go` File
 
-Create a `processor.go` file to handle the text processing functionality.
+Create a `lib/processor.go` file to handle the text processing functionality.
 
 ```go
 // processor.go
@@ -54,6 +54,7 @@ func ReadStdin() (string, error) {
     }
     return sb.String(), nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -96,6 +97,7 @@ func main() {
 	result := lib.ProcessText(data)
 	fmt.Println(result)
 }
+
 ```
 
 ## Step 4: Run the Program

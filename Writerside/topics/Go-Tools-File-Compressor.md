@@ -18,7 +18,7 @@ You will need the `compress/gzip` package for Gzip compression.
 
 ## Step 3: Create the `compressor.go` File
 
-Create a `compressor.go` file to handle the compression and decompression functionality.
+Create a `lib/compressor.go` file to handle the compression and decompression functionality.
 
 ```go
 // compressor.go
@@ -74,6 +74,7 @@ func DecompressFile(source, target string) error {
     _, err = io.Copy(tgtFile, reader)
     return err
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -121,6 +122,7 @@ func main() {
 
 	fmt.Println("Operation successful")
 }
+
 ```
 
 ## Step 5: Run the Program

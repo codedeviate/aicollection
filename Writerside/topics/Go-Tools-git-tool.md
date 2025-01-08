@@ -67,6 +67,7 @@ func main() {
 		os.Exit(1)
 	}
 }
+
 ```
 
 ### Key Points (main.go):
@@ -106,6 +107,7 @@ func Clone(args []string) {
 		fmt.Printf("Error cloning repository: %v\n", err)
 	}
 }
+
 ```
 
 ### Key Points (clone.go):
@@ -155,6 +157,7 @@ func Commit(args []string) {
 		fmt.Printf("Error committing changes: %v\n", err)
 	}
 }
+
 ```
 
 ### Key Points (commit.go):
@@ -186,6 +189,7 @@ func Push(args []string) {
 		fmt.Printf("Error pushing changes: %v\n", err)
 	}
 }
+
 ```
 
 ### Key Points (push.go):
@@ -222,6 +226,7 @@ func Pull(args []string) {
 		fmt.Printf("Error pulling changes: %v\n", err)
 	}
 }
+
 ```
 
 ### Key Points (pull.go):
@@ -263,6 +268,7 @@ func Status(args []string) {
 
 	fmt.Println(status)
 }
+
 ```
 
 ### Key Points (status.go):

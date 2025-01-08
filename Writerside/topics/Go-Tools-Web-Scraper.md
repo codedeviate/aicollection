@@ -22,41 +22,43 @@ go get github.com/PuerkitoBio/goquery
 
 ## Step 3: Create the `scraper.go` File
 
-Create a `scraper.go` file to handle the web scraping functionality.
+Create a `scraper/scraper.go` file to handle the web scraping functionality.
 
 ```go
 // scraper.go
-package main
+package scraper
 
 import (
-    "fmt"
-    "log"
-    "net/http"
-    "github.com/PuerkitoBio/goquery"
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 // Scrape fetches the HTML content of a URL and prints the text of the specified elements.
 func Scrape(url string, selector string) {
-    resp, err := http.Get(url)
-    if err != nil {
-        log.Fatalf("Failed to fetch URL: %v", err)
-    }
-    defer resp.Body.Close()
+	resp, err := http.Get(url)
+	if err != nil {
+		log.Fatalf("Failed to fetch URL: %v", err)
+	}
+	defer resp.Body.Close()
 
-    if resp.StatusCode != 200 {
-        log.Fatalf("Failed to fetch URL: %s", resp.Status)
-    }
+	if resp.StatusCode != 200 {
+		log.Fatalf("Failed to fetch URL: %s", resp.Status)
+	}
 
-    doc, err := goquery.NewDocumentFromReader(resp.Body)
-    if err != nil {
-        log.Fatalf("Failed to parse HTML: %v", err)
-    }
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
+	if err != nil {
+		log.Fatalf("Failed to parse HTML: %v", err)
+	}
 
-    doc.Find(selector).Each(func(index int, item *goquery.Selection) {
-        text := item.Text()
-        fmt.Println(text)
-    })
+	doc.Find(selector).Each(func(index int, item *goquery.Selection) {
+		text := item.Text()
+		fmt.Println(text)
+	})
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -68,21 +70,24 @@ Create a `main.go` file to start the web scraper.
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
+
+	"github.com/username/webscraper/scraper"
 )
 
 func main() {
-    if len(os.Args) != 3 {
-        fmt.Println("Usage: webscraper <url> <selector>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 3 {
+		fmt.Println("Usage: webscraper <url> <selector>")
+		os.Exit(1)
+	}
 
-    url := os.Args[1]
-    selector := os.Args[2]
-    fmt.Printf("Scraping URL: %s with selector: %s\n", url, selector)
-    Scrape(url, selector)
+	url := os.Args[1]
+	selector := os.Args[2]
+	fmt.Printf("Scraping URL: %s with selector: %s\n", url, selector)
+	scraper.Scrape(url, selector)
 }
+
 ```
 
 ## Step 5: Run the Program

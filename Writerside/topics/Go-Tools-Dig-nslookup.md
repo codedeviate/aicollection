@@ -14,29 +14,29 @@ go mod init github.com/username/dnslookup
 
 ## Step 2: Create the `dnslookup.go` File
 
-Create a `dnslookup.go` file to handle the DNS lookup functionality.
+Create a `dnslookupmod/dnslookup.go` file to handle the DNS lookup functionality.
 
 ```go
 // dnslookup.go
-package main
+package dnslookup
 
 import (
-    "fmt"
-    "net"
+	"net"
 )
 
 // DNSLookup performs a DNS lookup for the given domain and returns the IP addresses.
 func DNSLookup(domain string) ([]string, error) {
-    ips, err := net.LookupIP(domain)
-    if err != nil {
-        return nil, err
-    }
-    var result []string
-    for _, ip := range ips {
-        result.append(result, ip.String())
-    }
-    return result, nil
+	ips, err := net.LookupIP(domain)
+	if err != nil {
+		return nil, err
+	}
+	var result []string
+	for _, ip := range ips {
+		result = append(result, ip.String())
+	}
+	return result, nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -48,28 +48,31 @@ Create a `main.go` file to use the DNS lookup functionality.
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
+
+	dnslookup "github.com/username/dnslookup/dnslookupmod"
 )
 
 func main() {
-    if len(os.Args) != 2 {
-        fmt.Println("Usage: dnslookup <domain>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: dnslookup <domain>")
+		os.Exit(1)
+	}
 
-    domain := os.Args[1]
-    ips, err := DNSLookup(domain)
-    if err != nil {
-        fmt.Printf("DNS lookup for %s failed: %v\n", domain, err)
-        os.Exit(1)
-    }
+	domain := os.Args[1]
+	ips, err := dnslookup.DNSLookup(domain)
+	if err != nil {
+		fmt.Printf("DNS lookup for %s failed: %v\n", domain, err)
+		os.Exit(1)
+	}
 
-    fmt.Printf("DNS lookup result for %s:\n", domain)
-    for _, ip := range ips {
-        fmt.Println(ip)
-    }
+	fmt.Printf("DNS lookup result for %s:\n", domain)
+	for _, ip := range ips {
+		fmt.Println(ip)
+	}
 }
+
 ```
 
 ## Step 4: Run the Program

@@ -33,6 +33,8 @@ package main
 import (
 	"fmt"
 	"os"
+
+	"github.com/username/compress/compression"
 )
 
 func main() {
@@ -47,28 +49,29 @@ func main() {
 
 	switch format {
 	case "gzip":
-		handleGzip(action, file)
+		compression.HandleGzip(action, file)
 	case "zlib":
-		handleZlib(action, file)
+		compression.HandleZlib(action, file)
 	case "deflate":
-		handleDeflate(action, file)
+		compression.HandleDeflate(action, file)
 	case "lzw":
-		handleLzw(action, file)
+		compression.HandleLzw(action, file)
 	case "snappy":
-		handleSnappy(action, file)
+		compression.HandleSnappy(action, file)
 	default:
 		fmt.Println("Unsupported format. Supported formats: gzip, zlib, deflate, lzw, snappy")
 	}
 }
+
 ```
 
 ---
 
-### 2. `gzip.go`
+### 2. `compression/gzip.go`
 Handles Gzip compression and decompression.
 
 ```go
-package main
+package compression
 
 import (
 	"compress/gzip"
@@ -77,7 +80,7 @@ import (
 	"os"
 )
 
-func handleGzip(action, file string) {
+func HandleGzip(action, file string) {
 	switch action {
 	case "compress":
 		compressGzip(file)
@@ -141,15 +144,16 @@ func decompressGzip(file string) {
 	}
 	fmt.Println("File decompressed to", outFile.Name())
 }
+
 ```
 
 ---
 
-### 3. `zlib.go`
+### 3. `compression/zlib.go`
 Handles Zlib compression and decompression.
 
 ```go
-package main
+package compression
 
 import (
 	"compress/zlib"
@@ -158,7 +162,7 @@ import (
 	"os"
 )
 
-func handleZlib(action, file string) {
+func HandleZlib(action, file string) {
 	switch action {
 	case "compress":
 		compressZlib(file)
@@ -222,15 +226,16 @@ func decompressZlib(file string) {
 	}
 	fmt.Println("File decompressed to", outFile.Name())
 }
+
 ```
 
 ---
 
-### 4. `deflate.go`
+### 4. `compression/deflate.go`
 Handles Deflate compression and decompression.
 
 ```go
-package main
+package compression
 
 import (
 	"compress/flate"
@@ -239,7 +244,7 @@ import (
 	"os"
 )
 
-func handleDeflate(action, file string) {
+func HandleDeflate(action, file string) {
 	switch action {
 	case "compress":
 		compressDeflate(file)
@@ -303,15 +308,16 @@ func decompressDeflate(file string) {
 	}
 	fmt.Println("File decompressed to", outFile.Name())
 }
+
 ```
 
 ---
 
-## 5. `lzw.go`
+## 5. `compression/lzw.go`
 Handles LZW compression and decompression.
 
 ```go
-package main
+package compression
 
 import (
 	"compress/lzw"
@@ -320,7 +326,7 @@ import (
 	"os"
 )
 
-func handleLzw(action, file string) {
+func HandleLzw(action, file string) {
 	switch action {
 	case "compress":
 		compressLzw(file)
@@ -382,11 +388,12 @@ func decompressLzw(file string) {
 	}
 	fmt.Println("File decompressed to", outFile.Name())
 }
+
 ```
 
 ---
 
-## 6. `snappy.go`
+## 6. `compression/snappy.go`
 Handles Snappy compression and decompression. This requires the `github.com/golang/snappy` package, so make sure to install it:
 
 ```bash
@@ -394,16 +401,17 @@ go get github.com/golang/snappy
 ```
 
 ```go
-package main
+package compression
 
 import (
 	"fmt"
-	"github.com/golang/snappy"
 	"io"
 	"os"
+
+	"github.com/golang/snappy"
 )
 
-func handleSnappy(action, file string) {
+func HandleSnappy(action, file string) {
 	switch action {
 	case "compress":
 		compressSnappy(file)
@@ -462,6 +470,7 @@ func decompressSnappy(file string) {
 	}
 	fmt.Println("File decompressed to", outFile.Name())
 }
+
 ```
 
 ---

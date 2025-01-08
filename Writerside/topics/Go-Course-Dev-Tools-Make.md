@@ -153,7 +153,7 @@ func Execute() error {
 
 ---
 
-### `makefile/parser.go`
+### `make_file/parser.go`
 ```go
 package make_file
 
@@ -302,7 +302,7 @@ func ParseMakefile(filename string) (map[string]*Task, error) {
 
 ---
 
-### `makefile/task.go`
+### `make_file/task.go`
 ```go
 package make_file
 

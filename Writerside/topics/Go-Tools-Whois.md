@@ -14,39 +14,40 @@ go mod init github.com/username/whois
 
 ## Step 2: Create the `whois.go` File
 
-Create a `whois.go` file to handle the Whois functionality.
+Create a `whoismod/whois.go` file to handle the Whois functionality.
 
 ```go
 // whois.go
-package main
+package whois
 
 import (
-    "bufio"
-    "fmt"
-    "net"
-    "strings"
-    "time"
+	"bufio"
+	"fmt"
+	"net"
+	"strings"
+	"time"
 )
 
 // Whois performs a whois query for the given domain and returns the result.
 func Whois(domain string) (string, error) {
-    conn, err := net.DialTimeout("tcp", "whois.verisign-grs.com:43", time.Second*10)
-    if err != nil {
-        return "", err
-    }
-    defer conn.Close()
+	conn, err := net.DialTimeout("tcp", "whois.nic.google:43", time.Second*10)
+	if err != nil {
+		return "", err
+	}
+	defer conn.Close()
 
-    fmt.Fprintf(conn, "%s\r\n", domain)
-    scanner := bufio.NewScanner(conn)
-    var result strings.Builder
-    for scanner.Scan() {
-        result.WriteString(scanner.Text() + "\n")
-    }
-    if err := scanner.Err(); err != nil {
-        return "", err
-    }
-    return result.String(), nil
+	fmt.Fprintf(conn, "%s\r\n", domain)
+	scanner := bufio.NewScanner(conn)
+	var result strings.Builder
+	for scanner.Scan() {
+		result.WriteString(scanner.Text() + "\n")
+	}
+	if err := scanner.Err(); err != nil {
+		return "", err
+	}
+	return result.String(), nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -58,25 +59,28 @@ Create a `main.go` file to use the Whois functionality.
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
+
+	whois "github.com/username/whois/whoismod"
 )
 
 func main() {
-    if len(os.Args) != 2 {
-        fmt.Println("Usage: whois <domain>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: whois <domain>")
+		os.Exit(1)
+	}
 
-    domain := os.Args[1]
-    result, err := Whois(domain)
-    if err != nil {
-        fmt.Printf("Whois query for %s failed: %v\n", domain, err)
-        os.Exit(1)
-    }
+	domain := os.Args[1]
+	result, err := whois.Whois(domain)
+	if err != nil {
+		fmt.Printf("Whois query for %s failed: %v\n", domain, err)
+		os.Exit(1)
+	}
 
-    fmt.Printf("Whois result for %s:\n%s", domain, result)
+	fmt.Printf("Whois result for %s:\n%s", domain, result)
 }
+
 ```
 
 ## Step 4: Run the Program

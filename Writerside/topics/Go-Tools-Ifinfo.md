@@ -15,7 +15,7 @@ go mod init github.com/username/ifinfo
 
 ## Step 2: Create the `interfaces.go` File
 
-Create a `interfaces.go` file in the `lib` directory to handle the functionality of listing network interfaces.
+Create a `lib/interfaces.go` file in to handle the functionality of listing network interfaces.
 
 ```go
 package lib
@@ -49,6 +49,7 @@ func ListInterfaces() {
 		fmt.Println()
 	}
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -65,6 +66,7 @@ import (
 func main() {
 	lib.ListInterfaces()
 }
+
 ```
 
 ## Step 4: Run the Program

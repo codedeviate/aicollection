@@ -15,7 +15,7 @@ go mod init github.com/username/hash
 
 ## Step 2: Create the `hash.go` File
 
-Create a `hash.go` file in the `lib` directory to handle the hashing functionality.
+Create a `lib/hash.go` file to handle the hashing functionality.
 
 ```go
 // hash.go
@@ -87,6 +87,7 @@ func HashFile(filePath string, algorithm string) (string, error) {
 
     return hex.EncodeToString(hasher.Sum(nil)), nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -158,6 +159,7 @@ func main() {
 
 	fmt.Println(result)
 }
+
 ```
 
 ## Step 4: Run the Program

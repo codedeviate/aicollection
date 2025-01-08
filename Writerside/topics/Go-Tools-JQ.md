@@ -29,75 +29,76 @@ go get github.com/jszwec/csvutil
 
 ## Step 3: Create the `jq.go` File
 
-Create a `jq.go` file to handle the JSON, XML, and CSV functionality.
+Create a `lib/jq.go` file to handle the JSON, XML, and CSV functionality.
 
 ```go
 // jq.go
-package main
+package lib
 
 import (
-    "encoding/csv"
-    "fmt"
-    "github.com/clbanning/mxj"
-    "github.com/jszwec/csvutil"
-    "github.com/tidwall/gjson"
-    "io"
-    "os"
+	"fmt"
+	"io"
+	"os"
+
+	"github.com/clbanning/mxj"
+	"github.com/jszwec/csvutil"
+	"github.com/tidwall/gjson"
 )
 
 // ProcessJSON processes JSON input and applies a query.
 func ProcessJSON(jsonData, query string) string {
-    result := gjson.Get(jsonData, query)
-    return result.String()
+	result := gjson.Get(jsonData, query)
+	return result.String()
 }
 
 // ProcessXML processes XML input and applies a query.
 func ProcessXML(xmlData, query string) string {
-    mv, err := mxj.NewMapXml([]byte(xmlData))
-    if err != nil {
-        return fmt.Sprintf("Error parsing XML: %v", err)
-    }
+	mv, err := mxj.NewMapXml([]byte(xmlData))
+	if err != nil {
+		return fmt.Sprintf("Error parsing XML: %v", err)
+	}
 
-    result, err := mv.ValueForPath(query)
-    if err != nil {
-        return fmt.Sprintf("Error querying XML: %v", err)
-    }
+	result, err := mv.ValueForPath(query)
+	if err != nil {
+		return fmt.Sprintf("Error querying XML: %v", err)
+	}
 
-    return fmt.Sprintf("%v", result)
+	return fmt.Sprintf("%v", result)
 }
 
 // ProcessCSV processes CSV input and applies a query.
 func ProcessCSV(csvData, query string) string {
-    var records []map[string]interface{}
-    if err := csvutil.Unmarshal([]byte(csvData), &records); err != nil {
-        return fmt.Sprintf("Error parsing CSV: %v", err)
-    }
+	var records []map[string]interface{}
+	if err := csvutil.Unmarshal([]byte(csvData), &records); err != nil {
+		return fmt.Sprintf("Error parsing CSV: %v", err)
+	}
 
-    for _, record := range records {
-        if value, ok := record[query]; ok {
-            return fmt.Sprintf("%v", value)
-        }
-    }
-    return "Query not found"
+	for _, record := range records {
+		if value, ok := record[query]; ok {
+			return fmt.Sprintf("%v", value)
+		}
+	}
+	return "Query not found"
 }
 
 // ReadFile reads the content of a file.
 func ReadFile(filePath string) (string, error) {
-    data, err := os.ReadFile(filePath)
-    if err != nil {
-        return "", err
-    }
-    return string(data), nil
+	data, err := os.ReadFile(filePath)
+	if err != nil {
+		return "", err
+	}
+	return string(data), nil
 }
 
 // ReadStdin reads the content from standard input.
 func ReadStdin() (string, error) {
-    data, err := io.ReadAll(os.Stdin)
-    if err != nil {
-        return "", err
-    }
-    return string(data), nil
+	data, err := io.ReadAll(os.Stdin)
+	if err != nil {
+		return "", err
+	}
+	return string(data), nil
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -109,54 +110,57 @@ Create a `main.go` file to use the JSON, XML, and CSV functionality.
 package main
 
 import (
-    "flag"
-    "fmt"
-    "os"
+	"flag"
+	"fmt"
+	"os"
+
+	"github.com/username/jq/lib"
 )
 
 func main() {
-    file := flag.String("file", "", "Path to the file (CSV, JSON, or XML)")
-    query := flag.String("query", "", "Query to apply to the data")
-    format := flag.String("format", "json", "Format of the input data (csv, json, or xml)")
-    flag.Parse()
+	file := flag.String("file", "", "Path to the file (CSV, JSON, or XML)")
+	query := flag.String("query", "", "Query to apply to the data")
+	format := flag.String("format", "json", "Format of the input data (csv, json, or xml)")
+	flag.Parse()
 
-    if *query == "" {
-        fmt.Println("Usage: jq_program --file <file_path> --query <query> --format <csv|json|xml>")
-        os.Exit(1)
-    }
+	if *query == "" {
+		fmt.Println("Usage: jq_program --file <file_path> --query <query> --format <csv|json|xml>")
+		os.Exit(1)
+	}
 
-    var data string
-    var err error
+	var data string
+	var err error
 
-    if *file != "" {
-        data, err = ReadFile(*file)
-        if err != nil {
-            fmt.Printf("Error reading file: %v\n", err)
-            os.Exit(1)
-        }
-    } else {
-        data, err = ReadStdin()
-        if err != nil {
-            fmt.Printf("Error reading stdin: %v\n", err)
-            os.Exit(1)
-        }
-    }
+	if *file != "" {
+		data, err = lib.ReadFile(*file)
+		if err != nil {
+			fmt.Printf("Error reading file: %v\n", err)
+			os.Exit(1)
+		}
+	} else {
+		data, err = lib.ReadStdin()
+		if err != nil {
+			fmt.Printf("Error reading stdin: %v\n", err)
+			os.Exit(1)
+		}
+	}
 
-    var result string
-    switch *format {
-    case "json":
-        result = ProcessJSON(data, *query)
-    case "xml":
-        result = ProcessXML(data, *query)
-    case "csv":
-        result = ProcessCSV(data, *query)
-    default:
-        fmt.Println("Unsupported format. Use 'csv', 'json', or 'xml'.")
-        os.Exit(1)
-    }
+	var result string
+	switch *format {
+	case "json":
+		result = lib.ProcessJSON(data, *query)
+	case "xml":
+		result = lib.ProcessXML(data, *query)
+	case "csv":
+		result = lib.ProcessCSV(data, *query)
+	default:
+		fmt.Println("Unsupported format. Use 'csv', 'json', or 'xml'.")
+		os.Exit(1)
+	}
 
-    fmt.Println(result)
+	fmt.Println(result)
 }
+
 ```
 
 ## Step 5: Run the Program

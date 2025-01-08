@@ -22,17 +22,18 @@ go get github.com/PuerkitoBio/goquery
 
 ## Step 3: Create the `crawler.go` File
 
-Create a `crawler.go` file to handle the web crawling functionality.
+Create a `crawler/crawler.go` file to handle the web crawling functionality.
 
 ```go
 // crawler.go
-package main
+package crawler
 
 import (
-    "fmt"
-    "log"
-    "net/http"
-    "github.com/PuerkitoBio/goquery"
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/PuerkitoBio/goquery"
 )
 
 // Crawl fetches the HTML content of a URL and prints the links found.
@@ -57,6 +58,7 @@ func Crawl(url string) {
         fmt.Println(link)
     })
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -68,20 +70,23 @@ Create a `main.go` file to start the web crawler.
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
+
+	"github.com/username/webcrawler/crawler"
 )
 
 func main() {
-    if len(os.Args) != 2 {
-        fmt.Println("Usage: webcrawler <url>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 2 {
+		fmt.Println("Usage: webcrawler <url>")
+		os.Exit(1)
+	}
 
-    url := os.Args[1]
-    fmt.Printf("Crawling URL: %s\n", url)
-    Crawl(url)
+	url := os.Args[1]
+	fmt.Printf("Crawling URL: %s\n", url)
+	crawler.Crawl(url)
 }
+
 ```
 
 ## Step 5: Run the Program

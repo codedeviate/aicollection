@@ -20,18 +20,18 @@ You will need the following library:
 
 ## Step 3: Create the `scheduler.go` File
 
-Create a `scheduler.go` file to handle the task scheduling functionality.
+Create a `lib/scheduler.go` file to handle the task scheduling functionality.
 
 ```go
 // scheduler.go
-package main
+package lib
 
 import (
-    "fmt"
-    "log"
-    "time"
+	"fmt"
+	"log"
+	"time"
 
-    "github.com/robfig/cron/v3"
+	"github.com/robfig/cron/v3"
 )
 
 // Task represents a scheduled task.
@@ -110,6 +110,7 @@ func (s *Scheduler) executeTask(task Task) {
     task.LastStatus = "completed"
     log.Printf("Task %s completed", task.Name)
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -121,67 +122,69 @@ Create a `main.go` file to use the task scheduling functionality.
 package main
 
 import (
-    "fmt"
-    "log"
-    "time"
+	"fmt"
+	"time"
+
+	"github.com/username/taskscheduler/lib"
 )
 
 func main() {
-    scheduler := NewScheduler()
+	scheduler := lib.NewScheduler()
 
-    // Example task: Print a message every 2 seconds
-    scheduler.AddTask(Task{
-        Name:     "PrintMessage",
-        Interval: 2 * time.Second,
-        Action: func() {
-            fmt.Println("Task executed: PrintMessage")
-        },
-    })
+	// Example task: Print a message every 2 seconds
+	scheduler.AddTask(lib.Task{
+		Name:     "PrintMessage",
+		Interval: 2 * time.Second,
+		Action: func() {
+			fmt.Println("Task executed: PrintMessage")
+		},
+	})
 
-    // Example task: Print a different message every 5 seconds
-    scheduler.AddTask(Task{
-        Name:     "PrintAnotherMessage",
-        Interval: 5 * time.Second,
-        Action: func() {
-            fmt.Println("Task executed: PrintAnotherMessage")
-        },
-    })
+	// Example task: Print a different message every 5 seconds
+	scheduler.AddTask(lib.Task{
+		Name:     "PrintAnotherMessage",
+		Interval: 5 * time.Second,
+		Action: func() {
+			fmt.Println("Task executed: PrintAnotherMessage")
+		},
+	})
 
-    // Example task: Print a message after a 10-second delay
-    scheduler.AddTask(Task{
-        Name:  "DelayedMessage",
-        Delay: 10 * time.Second,
-        Action: func() {
-            fmt.Println("Task executed: DelayedMessage")
-        },
-    })
+	// Example task: Print a message after a 10-second delay
+	scheduler.AddTask(lib.Task{
+		Name:  "DelayedMessage",
+		Delay: 10 * time.Second,
+		Action: func() {
+			fmt.Println("Task executed: DelayedMessage")
+		},
+	})
 
-    // Example task: Print a message based on a cron expression
-    scheduler.AddTask(Task{
-        Name:    "CronMessage",
-        CronExpr: "*/1 * * * *", // Every minute
-        Action: func() {
-            fmt.Println("Task executed: CronMessage")
-        },
-    })
+	// Example task: Print a message based on a cron expression
+	scheduler.AddTask(lib.Task{
+		Name:     "CronMessage",
+		CronExpr: "*/1 * * * *", // Every minute
+		Action: func() {
+			fmt.Println("Task executed: CronMessage")
+		},
+	})
 
-    // Example task: Print a message if a condition is met
-    scheduler.AddTask(Task{
-        Name: "ConditionalMessage",
-        Condition: func() bool {
-            return time.Now().Second()%2 == 0
-        },
-        Action: func() {
-            fmt.Println("Task executed: ConditionalMessage")
-        },
-    })
+	// Example task: Print a message if a condition is met
+	scheduler.AddTask(lib.Task{
+		Name: "ConditionalMessage",
+		Condition: func() bool {
+			return time.Now().Second()%2 == 0
+		},
+		Action: func() {
+			fmt.Println("Task executed: ConditionalMessage")
+		},
+	})
 
-    // Start the scheduler
-    scheduler.Start()
+	// Start the scheduler
+	scheduler.Start()
 
-    // Keep the main function running
-    select {}
+	// Keep the main function running
+	select {}
 }
+
 ```
 
 ## Step 5: Run the Program

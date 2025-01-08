@@ -64,6 +64,7 @@ func main() {
 		os.Exit(1)
 	}
 }
+
 ```
 
 ---
@@ -102,6 +103,7 @@ func Dump(input io.Reader, output io.Writer) error {
 	}
 	return nil
 }
+
 ```
 
 ---
@@ -110,7 +112,7 @@ func Dump(input io.Reader, output io.Writer) error {
 This file handles reading chunks of data from the file.
 
 ```go
-package hexdump
+package lib
 
 import (
 	"io"
@@ -134,6 +136,7 @@ func (r *Reader) ReadChunk() (int64, []byte, error) {
 	}
 	return int64(n), buffer[:n], err
 }
+
 ```
 
 ---
@@ -142,7 +145,7 @@ func (r *Reader) ReadChunk() (int64, []byte, error) {
 This file handles formatting the data into a hexdump format.
 
 ```go
-package hexdump
+package lib
 
 import (
 	"fmt"
@@ -170,6 +173,7 @@ func (f *Formatter) Format(offset int64, data []byte) string {
 
 	return fmt.Sprintf("%08x  %-48s  |%s|\n", offset, strings.Join(hexPart, " "), string(asciiPart))
 }
+
 ```
 
 ---

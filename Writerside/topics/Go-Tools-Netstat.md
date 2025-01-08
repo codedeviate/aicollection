@@ -6,15 +6,16 @@ Here is an example implementation:
 
 ## Step 2: Update the `netstat.go` File
 
+Create a `netstatmod/netstat.go` file to handle the `Netstat` functionality.
+
 ```go
 // netstat.go
-package main
+package netstat
 
 import (
-    "bufio"
-    "fmt"
-    "os/exec"
-    "strings"
+	"bufio"
+	"os/exec"
+	"strings"
 )
 
 // Netstat retrieves the list of active network connections.
@@ -35,31 +36,37 @@ func Netstat() ([]string, error) {
     }
     return connections, nil
 }
+
 ```
 
 ## Step 3: Update the `main.go` File
+
+Create a `main.go` file to use the `Netstat` functionality.
 
 ```go
 // main.go
 package main
 
 import (
-    "fmt"
-    "os"
+	"fmt"
+	"os"
+
+	netstat "github.com/username/netstat/netstatmod"
 )
 
 func main() {
-    connections, err := Netstat()
-    if err != nil {
-        fmt.Printf("Netstat failed: %v\n", err)
-        os.Exit(1)
-    }
+	connections, err := netstat.Netstat()
+	if err != nil {
+		fmt.Printf("Netstat failed: %v\n", err)
+		os.Exit(1)
+	}
 
-    fmt.Println("Active network connections:")
-    for _, conn := range connections {
-        fmt.Println(conn)
-    }
+	fmt.Println("Active network connections:")
+	for _, conn := range connections {
+		fmt.Println(conn)
+	}
 }
+
 ```
 
 ## Step 4: Run the Program

@@ -22,61 +22,63 @@ go get github.com/gorilla/mux
 
 ## Step 3: Create the `loadbalancer.go` File
 
-Create a `loadbalancer.go` file to handle the load balancer functionality.
+Create a `lib/loadbalancer.go` file to handle the load balancer functionality.
 
 ```go
 // loadbalancer.go
-package main
+package lib
 
 import (
-    "fmt"
-    "log"
-    "net/http"
-    "net/url"
-    "sync/atomic"
+	"fmt"
+	"log"
+	"net/http"
+	"net/http/httputil"
+	"net/url"
+	"sync/atomic"
 )
 
 type ServerPool struct {
-    servers []*url.URL
-    current uint64
+	servers []*url.URL
+	current uint64
 }
 
 func (p *ServerPool) AddServer(server *url.URL) {
-    p.servers = append(p.servers, server)
+	p.servers = append(p.servers, server)
 }
 
 func (p *ServerPool) NextServer() *url.URL {
-    next := atomic.AddUint64(&p.current, uint64(1))
-    return p.servers[next%uint64(len(p.servers))]
+	next := atomic.AddUint64(&p.current, uint64(1))
+	return p.servers[next%uint64(len(p.servers))]
 }
 
 func (p *ServerPool) LoadBalance(w http.ResponseWriter, r *http.Request) {
-    server := p.NextServer()
-    proxy := httputil.NewSingleHostReverseProxy(server)
-    proxy.ServeHTTP(w, r)
+	server := p.NextServer()
+	proxy := httputil.NewSingleHostReverseProxy(server)
+	proxy.ServeHTTP(w, r)
 }
 
 var pool ServerPool
 
-func main() {
-    servers := []string{
-        "http://localhost:8081",
-        "http://localhost:8082",
-        "http://localhost:8083",
-    }
+func Run() {
+	servers := []string{
+		"http://localhost:8081",
+		"http://localhost:8082",
+		"http://localhost:8083",
+	}
 
-    for _, server := range servers {
-        url, err := url.Parse(server)
-        if err != nil {
-            log.Fatalf("Failed to parse server URL: %v", err)
-        }
-        pool.AddServer(url)
-    }
+	for _, server := range servers {
+		url, err := url.Parse(server)
+		if err != nil {
+			log.Fatalf("Failed to parse server URL: %v", err)
+		}
+		pool.AddServer(url)
+	}
 
-    http.HandleFunc("/", pool.LoadBalance)
-    fmt.Println("Load balancer started on :8080")
-    log.Fatal(http.ListenAndServe(":8080", nil))
+	http.HandleFunc("/", pool.LoadBalance)
+	fmt.Println("Load balancer started on :8080")
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -87,9 +89,12 @@ Create a `main.go` file to start the load balancer.
 // main.go
 package main
 
+import "github.com/username/loadbalancer/lib"
+
 func main() {
-    main()
+	lib.Run()
 }
+
 ```
 
 ## Step 5: Run the Program

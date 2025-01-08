@@ -14,39 +14,40 @@ go mod init github.com/username/portscanner
 
 ## Step 2: Create the `scanner.go` File
 
-Create a `scanner.go` file to handle the port scanning functionality.
+Create a `scanner/portscanner.go` file to handle the port scanning functionality.
 
 ```go
-// scanner.go
-package main
+// portscanner.go
+package portscanner
 
 import (
-    "fmt"
-    "net"
-    "time"
+	"fmt"
+	"net"
+	"time"
 )
 
 // ScanPort checks if a port is open on a given host.
 func ScanPort(protocol, hostname string, port int) bool {
-    address := fmt.Sprintf("%s:%d", hostname, port)
-    conn, err := net.DialTimeout(protocol, address, 1*time.Second)
-    if err != nil {
-        return false
-    }
-    conn.Close()
-    return true
+	address := fmt.Sprintf("%s:%d", hostname, port)
+	conn, err := net.DialTimeout(protocol, address, 1*time.Second)
+	if err != nil {
+		return false
+	}
+	conn.Close()
+	return true
 }
 
 // ScanPorts scans a range of ports on a given host.
 func ScanPorts(protocol, hostname string, startPort, endPort int) []int {
-    var openPorts []int
-    for port := startPort; port <= endPort; port++ {
-        if ScanPort(protocol, hostname, port) {
-            openPorts = append(openPorts, port)
-        }
-    }
-    return openPorts
+	var openPorts []int
+	for port := startPort; port <= endPort; port++ {
+		if ScanPort(protocol, hostname, port) {
+			openPorts = append(openPorts, port)
+		}
+	}
+	return openPorts
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -58,37 +59,40 @@ Create a `main.go` file to use the scanning functionality.
 package main
 
 import (
-    "fmt"
-    "os"
-    "strconv"
+	"fmt"
+	"os"
+	"strconv"
+
+	portscanner "github.com/username/portscanner/scanner"
 )
 
 func main() {
-    if len(os.Args) != 5 {
-        fmt.Println("Usage: portscanner <protocol> <hostname> <startPort> <endPort>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 5 {
+		fmt.Println("Usage: portscanner <protocol> <hostname> <startPort> <endPort>")
+		os.Exit(1)
+	}
 
-    protocol := os.Args[1]
-    hostname := os.Args[2]
-    startPort, err := strconv.Atoi(os.Args[3])
-    if err != nil {
-        fmt.Printf("Invalid start port: %v\n", err)
-        os.Exit(1)
-    }
-    endPort, err := strconv.Atoi(os.Args[4])
-    if err != nil {
-        fmt.Printf("Invalid end port: %v\n", err)
-        os.Exit(1)
-    }
+	protocol := os.Args[1]
+	hostname := os.Args[2]
+	startPort, err := strconv.Atoi(os.Args[3])
+	if err != nil {
+		fmt.Printf("Invalid start port: %v\n", err)
+		os.Exit(1)
+	}
+	endPort, err := strconv.Atoi(os.Args[4])
+	if err != nil {
+		fmt.Printf("Invalid end port: %v\n", err)
+		os.Exit(1)
+	}
 
-    openPorts := ScanPorts(protocol, hostname, startPort, endPort)
-    if len(openPorts) == 0 {
-        fmt.Println("No open ports found.")
-    } else {
-        fmt.Printf("Open ports: %v\n", openPorts)
-    }
+	openPorts := portscanner.ScanPorts(protocol, hostname, startPort, endPort)
+	if len(openPorts) == 0 {
+		fmt.Println("No open ports found.")
+	} else {
+		fmt.Printf("Open ports: %v\n", openPorts)
+	}
 }
+
 ```
 
 ## Step 4: Run the Program

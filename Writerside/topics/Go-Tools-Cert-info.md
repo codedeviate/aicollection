@@ -33,7 +33,7 @@ import (
 	"log"
 	"os"
 
-	"certificate"
+	"github.com/username/certinfo/certificate"
 )
 
 func main() {
@@ -55,6 +55,7 @@ func main() {
 		fmt.Printf("  [%d] %s\n", i+1, chainCert.Subject)
 	}
 }
+
 ```
 
 ---
@@ -76,7 +77,7 @@ import (
 type CertInfo struct {
 	Issuer     string
 	ExpiryDate string
-	Chain      []x509.Certificate
+	Chain      []*x509.Certificate
 }
 
 // FetchCertificateInfo connects to a host and extracts SSL certificate details.
@@ -104,18 +105,20 @@ func FetchCertificateInfo(hostname string) (*CertInfo, error) {
 		Chain:      certs,
 	}, nil
 }
+
 ```
 
 ---
 
 #### 3. `utils/utils.go`
-This module contains utility functions for formatting certificate data. For now, we will keep it minimal.
+This module can contains utility functions for formatting certificate data. For now, we will keep it minimal.
 
 ```go
 package utils
 
 // No utility functions for this example, but you could add functions
 // like chain formatting or date comparison here.
+
 ```
 
 ---

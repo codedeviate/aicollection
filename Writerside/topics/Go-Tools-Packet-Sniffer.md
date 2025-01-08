@@ -24,7 +24,7 @@ go get github.com/google/gopacket/pcap
 
 ## Step 3: Create the `sniffer.go` File
 
-Create a `sniffer.go` file in the `sniffer` directory to handle the packet sniffing functionality.
+Create a `sniffer/sniffer.go` file to handle the packet sniffing functionality.
 
 ```go
 // sniffer.go
@@ -52,6 +52,7 @@ func SniffPackets(device string, snapshotLen int32, promiscuous bool, timeout ti
 
 	return nil
 }
+
 ```
 
 ## Step 4: Create the `main.go` File
@@ -85,6 +86,7 @@ func main() {
 		log.Fatalf("Error sniffing packets: %v", err)
 	}
 }
+
 ```
 
 ## Step 5: Run the Program

@@ -15,7 +15,7 @@ go mod init github.com/username/subsystem
 
 ## Step 2: Create the `subsystem.go` File
 
-Create a `server.go` file in `lib` directory to handle the functionality of identifying subsystems.
+Create a `lib/server.go` file to handle the functionality of identifying subsystems.
 
 ```go
 package lib
@@ -62,6 +62,7 @@ func GetServerInfo(url string) {
 		fmt.Println("Subsystem information not found in headers.")
 	}
 }
+
 ```
 
 ## Step 3: Create the `main.go` File

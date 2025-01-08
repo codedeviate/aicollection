@@ -14,16 +14,16 @@ go mod init github.com/username/proxyserver
 
 ## Step 2: Create the `proxy.go` File
 
-Create a `proxy.go` file to handle the proxy server functionality.
+Create a `proxy/proxy.go` file to handle the proxy server functionality.
 
 ```go
 // proxy.go
-package main
+package proxy
 
 import (
-    "io"
-    "log"
-    "net"
+	"io"
+	"log"
+	"net"
 )
 
 // handleConnection handles the incoming client connection and forwards data to the target server.
@@ -59,6 +59,7 @@ func StartProxy(listenPort, target string) error {
         go handleConnection(clientConn, target)
     }
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -70,25 +71,28 @@ Create a `main.go` file to use the proxy server functionality.
 package main
 
 import (
-    "fmt"
-    "log"
-    "os"
+	"fmt"
+	"log"
+	"os"
+
+	"github.com/username/packetsniffer/proxy"
 )
 
 func main() {
-    if len(os.Args) != 3 {
-        fmt.Println("Usage: proxyserver <listen_port> <target>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 3 {
+		fmt.Println("Usage: proxyserver <listen_port> <target>")
+		os.Exit(1)
+	}
 
-    listenPort := os.Args[1]
-    target := os.Args[2]
+	listenPort := os.Args[1]
+	target := os.Args[2]
 
-    fmt.Printf("Starting proxy server on port %s, forwarding to %s...\n", listenPort, target)
-    if err := StartProxy(listenPort, target); err != nil {
-        log.Fatalf("Proxy server failed: %v", err)
-    }
+	fmt.Printf("Starting proxy server on port %s, forwarding to %s...\n", listenPort, target)
+	if err := proxy.StartProxy(listenPort, target); err != nil {
+		log.Fatalf("Proxy server failed: %v", err)
+	}
 }
+
 ```
 
 ## Step 4: Run the Program

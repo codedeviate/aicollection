@@ -14,16 +14,16 @@ go mod init github.com/username/portforwarding
 
 ## Step 2: Create the `forwarder.go` File
 
-Create a `forwarder.go` file to handle the port forwarding functionality.
+Create a `forwarder/forwarder.go` file to handle the port forwarding functionality.
 
 ```go
 // forwarder.go
-package main
+package forwarder
 
 import (
-    "io"
-    "log"
-    "net"
+	"io"
+	"log"
+	"net"
 )
 
 // forward handles the forwarding of data between the client and the target server.
@@ -66,6 +66,7 @@ func StartForwarder(listenPort, target string) error {
         go handleConnection(clientConn, target)
     }
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -77,25 +78,28 @@ Create a `main.go` file to use the port forwarding functionality.
 package main
 
 import (
-    "fmt"
-    "log"
-    "os"
+	"fmt"
+	"log"
+	"os"
+
+	"github.com/username/portforwarding/forwarder"
 )
 
 func main() {
-    if len(os.Args) != 3 {
-        fmt.Println("Usage: portforwarding <listen_port> <target>")
-        os.Exit(1)
-    }
+	if len(os.Args) != 3 {
+		fmt.Println("Usage: portforwarding <listen_port> <target>")
+		os.Exit(1)
+	}
 
-    listenPort := os.Args[1]
-    target := os.Args[2]
+	listenPort := os.Args[1]
+	target := os.Args[2]
 
-    fmt.Printf("Starting port forwarder on port %s, forwarding to %s...\n", listenPort, target)
-    if err := StartForwarder(listenPort, target); err != nil {
-        log.Fatalf("Port forwarder failed: %v", err)
-    }
+	fmt.Printf("Starting port forwarder on port %s, forwarding to %s...\n", listenPort, target)
+	if err := forwarder.StartForwarder(listenPort, target); err != nil {
+		log.Fatalf("Port forwarder failed: %v", err)
+	}
 }
+
 ```
 
 ## Step 4: Run the Program

@@ -43,7 +43,7 @@ This will create the Go module, and you can now start organizing the code into d
 
 #### 2. Extractor Module: `extractor/extractor.go`
 
-The `extractor` module is responsible for the core functionality of extracting printable strings from a binary file.
+The `extractor/extractor.go` module is responsible for the core functionality of extracting printable strings from a binary file.
 
 ```go
 // extractor/extractor.go
@@ -51,16 +51,12 @@ package extractor
 
 import (
 	"os"
-	"unicode"
+
+	"github.com/username/strings/utils"
 )
 
 // Minimum length of printable strings to extract
 const MinStringLength = 4
-
-// isPrintable checks if a byte is a printable ASCII character.
-func isPrintable(c byte) bool {
-	return unicode.IsPrint(rune(c)) && !unicode.IsControl(rune(c))
-}
 
 // ExtractStrings reads a file and returns a slice of printable strings.
 func ExtractStrings(filePath string) ([]string, error) {
@@ -83,7 +79,7 @@ func ExtractStrings(filePath string) ([]string, error) {
 		// Process bytes in the buffer
 		for i := 0; i < n; i++ {
 			c := buf[i]
-			if isPrintable(c) {
+			if utils.IsPrintable(c) {
 				currentString = append(currentString, c)
 			} else {
 				if len(currentString) >= MinStringLength {
@@ -106,6 +102,7 @@ func ExtractStrings(filePath string) ([]string, error) {
 
 	return result, nil
 }
+
 ```
 
 ##### Explanation (extractor.go):
@@ -127,6 +124,7 @@ import "unicode"
 func IsPrintable(c byte) bool {
 	return unicode.IsPrint(rune(c)) && !unicode.IsControl(rune(c))
 }
+
 ```
 
 Although we have already implemented `isPrintable` inside the `extractor` module, splitting it into a separate `utils` package makes the code more reusable across different parts of the application.
@@ -142,7 +140,8 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings/extractor" // Importing the extractor package
+
+	"github.com/username/strings/extractor"
 )
 
 func main() {
@@ -162,6 +161,7 @@ func main() {
 		fmt.Println(s)
 	}
 }
+
 ```
 
 ##### Explanation (main.go):

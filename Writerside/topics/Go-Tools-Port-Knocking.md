@@ -14,31 +14,32 @@ go mod init github.com/username/portknocking
 
 ## Step 2: Create the `knock.go` File
 
-Create a `knock.go` file to handle the port knocking functionality.
+Create a `portknocking/portknocking.go` file to handle the port knocking functionality.
 
 ```go
-// knock.go
-package main
+// portknocking.go
+package portknocking
 
 import (
-    "fmt"
-    "net"
-    "time"
+	"fmt"
+	"net"
+	"time"
 )
 
 // Knock sends a sequence of packets to the specified ports.
 func Knock(host string, ports []int, delay time.Duration) error {
-    for _, port := range ports {
-        address := fmt.Sprintf("%s:%d", host, port)
-        conn, err := net.Dial("udp", address)
-        if err != nil {
-            return err
-        }
-        conn.Close()
-        time.Sleep(delay)
-    }
-    return nil
+	for _, port := range ports {
+		address := fmt.Sprintf("%s:%d", host, port)
+		conn, err := net.Dial("udp", address)
+		if err != nil {
+			return err
+		}
+		conn.Close()
+		time.Sleep(delay)
+	}
+	return nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -50,43 +51,46 @@ Create a `main.go` file to use the port knocking functionality.
 package main
 
 import (
-    "fmt"
-    "os"
-    "strconv"
-    "time"
+	"fmt"
+	"os"
+	"strconv"
+	"time"
+
+	portknocking "github.com/username/portknocking/knocking"
 )
 
 func main() {
-    if len(os.Args) < 4 {
-        fmt.Println("Usage: portknocking <host> <delay_ms> <port1> <port2> ... <portN>")
-        os.Exit(1)
-    }
+	if len(os.Args) < 4 {
+		fmt.Println("Usage: portknocking <host> <delay_ms> <port1> <port2> ... <portN>")
+		os.Exit(1)
+	}
 
-    host := os.Args[1]
-    delayMs, err := strconv.Atoi(os.Args[2])
-    if err != nil {
-        fmt.Printf("Invalid delay: %v\n", err)
-        os.Exit(1)
-    }
-    delay := time.Duration(delayMs) * time.Millisecond
+	host := os.Args[1]
+	delayMs, err := strconv.Atoi(os.Args[2])
+	if err != nil {
+		fmt.Printf("Invalid delay: %v\n", err)
+		os.Exit(1)
+	}
+	delay := time.Duration(delayMs) * time.Millisecond
 
-    var ports []int
-    for _, arg := range os.Args[3:] {
-        port, err := strconv.Atoi(arg)
-        if err != nil {
-            fmt.Printf("Invalid port: %v\n", err)
-            os.Exit(1)
-        }
-        ports = append(ports, port)
-    }
+	var ports []int
+	for _, arg := range os.Args[3:] {
+		port, err := strconv.Atoi(arg)
+		if err != nil {
+			fmt.Printf("Invalid port: %v\n", err)
+			os.Exit(1)
+		}
+		ports = append(ports, port)
+	}
 
-    if err := Knock(host, ports, delay); err != nil {
-        fmt.Printf("Port knocking failed: %v\n", err)
-        os.Exit(1)
-    }
+	if err := portknocking.Knock(host, ports, delay); err != nil {
+		fmt.Printf("Port knocking failed: %v\n", err)
+		os.Exit(1)
+	}
 
-    fmt.Println("Port knocking sequence completed.")
+	fmt.Println("Port knocking sequence completed.")
 }
+
 ```
 
 ## Step 4: Run the Program

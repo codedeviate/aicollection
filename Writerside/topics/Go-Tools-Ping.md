@@ -15,7 +15,7 @@ mkdir pingmod
 
 ## Step 2: Create the `ping.go` File
 
-Create a `ping.go` file in the `pingmod` directory to handle the ping functionality.
+Create a `pingmod/ping.go` file to handle the ping functionality.
 
 ```go
 // ping.go
@@ -37,6 +37,7 @@ func Ping(address string) (time.Duration, error) {
     duration := time.Since(start)
     return duration, nil
 }
+
 ```
 
 ## Step 3: Create the `main.go` File
@@ -60,7 +61,7 @@ func main() {
     }
 
     address := os.Args[1]
-    duration, err := Ping(address)
+    duration, err := ping.Ping(address)
     if err != nil {
         fmt.Printf("Ping to %s failed: %v\n", address, err)
         os.Exit(1)
@@ -68,6 +69,7 @@ func main() {
 
     fmt.Printf("Ping to %s: %v\n", address, duration)
 }
+
 ```
 
 ## Step 4: Run the Program
