@@ -6,7 +6,9 @@
                  name="AICollection"
                  start-page="aicollection.md">
 
-    <toc-element topic="aicollection.md"/>
+    <toc-element topic="aicollection.md">
+        <toc-element topic="Structured-chaos.md"/>
+    </toc-element>
     <toc-element topic="Architectures.md">
         <toc-element topic="x86-and-x86-64.md">
             <toc-element topic="Arch-x86-Registers.md"/>
@@ -110,6 +112,9 @@
             <toc-element topic="Services-RDP.md"/>
             <toc-element topic="Services-DNS.md"/>
         </toc-element>
+        <toc-element topic="Communication-SSL.md">
+            <toc-element topic="SSL-Is-a-host-certificate-valid.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Docker.md">
         <toc-element topic="Docker-Commands.md">
@@ -207,6 +212,9 @@
         </toc-element>
         <toc-element topic="Cplusplus.md">
             <toc-element topic="Cpp-Hello-World.md"/>
+            <toc-element topic="Cpp-How-To-s.md">
+                <toc-element topic="Detecting-and-Checking-for-System-Updates-with-Cpp.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="Csharp.md">
             <toc-element topic="Csharp-Hello-World.md"/>
@@ -227,6 +235,7 @@
                 <toc-element topic="Go-Create-a-module.md"/>
                 <toc-element topic="Go-HowTo-Custom-marshal-unmarshal.md"/>
                 <toc-element topic="Go-HowTo-Read-data-from-stdin.md"/>
+                <toc-element topic="Detecting-and-Checking-for-System-Updates-with-Go.md"/>
             </toc-element>
             <toc-element topic="Go-Features.md">
                 <toc-element topic="Go-Features-Go-routines.md"/>
@@ -484,10 +493,6 @@
             <toc-element topic="Rider.md"/>
             <toc-element topic="CLion.md"/>
             <toc-element topic="DataGrip.md"/>
-            <toc-element topic="The-Dark-Side.md">
-                <toc-element topic="Pentesting.md"/>
-                <toc-element topic="Buffer-overflow.md"/>
-            </toc-element>
             <toc-element topic="ReSharper.md"/>
             <toc-element topic="TeamCity.md"/>
             <toc-element topic="YouTrack.md"/>
@@ -540,5 +545,19 @@
         <toc-element topic="Security-Certificates.md">
             <toc-element topic="Security-Certificates-Create-certificate-via-Let-s-Encrypt.md"/>
         </toc-element>
+    </toc-element>
+    <toc-element topic="Misc-stories.md">
+        <toc-element topic="Examples-of-buzz-words-in-a-YouTube-video-on-security.md">
+            <toc-element topic="Buzz-word-list-part-1.md"/>
+            <toc-element topic="Buzz-word-list-part-2.md"/>
+            <toc-element topic="Buzz-word-list-part-3.md"/>
+            <toc-element topic="Buzz-word-list-part-4.md"/>
+            <toc-element topic="Buzz-word-list-part-5.md"/>
+            <toc-element topic="Buzz-word-list-part-6.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="The-Dark-Side.md">
+        <toc-element topic="Pentesting.md"/>
+        <toc-element topic="Buffer-overflow.md"/>
     </toc-element>
 </instance-profile>
