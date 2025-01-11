@@ -146,13 +146,13 @@ package utils
 
 ### Step 5: Explanation of Key Concepts
 
-#### 1. **TLS Dialing**:
+#### 1. TLS Dialing:
 The `tls.Dial` function establishes a secure connection to the server and retrieves the certificate chain. This approach ensures we work with live certificate data.
 
-#### 2. **Parsing Certificates**:
+#### 2. Parsing Certificates:
 The `PeerCertificates` field from the connection state provides the full certificate chain. This allows us to display not only the leaf certificate but also intermediate and root certificates.
 
-#### 3. **Time Formatting**:
+#### 3. Time Formatting:
 The `time.RFC1123` format ensures human-readable dates are displayed.
 
 ---
