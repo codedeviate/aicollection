@@ -12,8 +12,8 @@
     <toc-element topic="Architectures.md">
         <toc-element topic="x86-and-x86-64.md">
             <toc-element topic="x86-Registers-16-bit.md"/>
-            <toc-element topic="Arch-x86-Registers.md"/>
             <toc-element topic="x86-Calling-convention-16-bit.md"/>
+            <toc-element topic="Arch-x86-Registers.md"/>
             <toc-element topic="x86-Calling-conventions.md"/>
             <toc-element topic="Arch-x64-Registers.md"/>
             <toc-element topic="x64-Calling-convention.md"/>
