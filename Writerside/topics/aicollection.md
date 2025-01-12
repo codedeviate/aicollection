@@ -58,3 +58,5 @@ credibility.
 There will be a disclaimer at the beginning of each article that contains AI-generated content:
 
 ![AI Disclaimer example](ai-disclaimer-example.png)
+
+The content of AI-generated articles might not be verified and can therefor be of a lower quality. 

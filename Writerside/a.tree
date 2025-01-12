@@ -11,7 +11,9 @@
     </toc-element>
     <toc-element topic="Architectures.md">
         <toc-element topic="x86-and-x86-64.md">
+            <toc-element topic="x86-Registers-16-bit.md"/>
             <toc-element topic="Arch-x86-Registers.md"/>
+            <toc-element topic="x86-Calling-convention-16-bit.md"/>
             <toc-element topic="x86-Calling-conventions.md"/>
             <toc-element topic="Arch-x64-Registers.md"/>
             <toc-element topic="x64-Calling-convention.md"/>
@@ -280,6 +282,7 @@
             <toc-element topic="Go-Tools-Development-tools.md">
                 <toc-element topic="Go-Course-Dev-Tools-Make.md"/>
                 <toc-element topic="Go-Tools-Dev-Tools-Watcher.md"/>
+                <toc-element topic="Go-Course-Dev-Tools-Text-Diff.md"/>
             </toc-element>
             <toc-element topic="Go-Build-your-own-tools.md">
                 <toc-element topic="Go-Tools-Stage-1.md">
