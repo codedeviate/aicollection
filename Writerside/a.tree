@@ -207,6 +207,7 @@
     <toc-element topic="Languages.md">
         <toc-element topic="Assembly.md">
             <toc-element topic="Assembly-Hello-World.md"/>
+            <toc-element topic="Nasm-vs-as.md"/>
         </toc-element>
         <toc-element topic="C.md">
             <toc-element topic="C-Hello-World.md"/>
