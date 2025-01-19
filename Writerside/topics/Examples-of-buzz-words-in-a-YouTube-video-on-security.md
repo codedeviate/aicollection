@@ -100,7 +100,7 @@ The world of networking and system administration involves a vast array of techn
 
 ---
 
-### 1. **Network Fundamentals**
+### 1. Network Fundamentals
 
 **IP Address:**
 An IP (Internet Protocol) address is a unique identifier assigned to each device connected to a network. It enables devices to locate and communicate with one another over a network. There are two types:
@@ -148,7 +148,7 @@ A bridge connects two separate networks and operates at the data link layer. It 
 
 ---
 
-### 2. **Security and Privacy**
+### 2. Security and Privacy
 
 **Firewall:**
 A firewall is a network security system that monitors and controls incoming and outgoing network traffic. It can be hardware-based or software-based and is used to enforce security policies by blocking unauthorized access while allowing legitimate communication.
@@ -164,7 +164,7 @@ Iptables is a Linux utility used to configure the firewall rules for filtering n
 
 ---
 
-### 3. **Communication Protocols**
+### 3. Communication Protocols
 
 **TCP/IP (Transmission Control Protocol/Internet Protocol):**
 TCP/IP is the foundational suite of protocols that governs communication on the internet. TCP ensures reliable, ordered data transmission, while IP is responsible for addressing and routing data packets.
@@ -216,7 +216,7 @@ SSH is a secure alternative to Telnet, providing encrypted communication for rem
 
 ---
 
-### 4. **System Administration and User Management**
+### 4. System Administration and User Management
 
 **Root User:**
 The root user is the most privileged account in a Unix-like system. It has full control over the system and can perform administrative tasks.
@@ -262,7 +262,7 @@ The `/etc/hostname` file stores the system's hostname, which is used to identify
 
 ---
 
-### 5. **Virtualization and Cloud Computing**
+### 5. Virtualization and Cloud Computing
 
 **Docker:**
 Docker is a platform for developing, shipping, and running applications inside lightweight, portable containers.

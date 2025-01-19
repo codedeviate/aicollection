@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 1. **IP Address**
+### 1. IP Address
 
 #### Introduction (IP Address)
 An **IP address** (Internet Protocol address) is a unique identifier for devices connected to a network. It is necessary for devices to communicate with each other over the internet or within a local area network (LAN). Every device, whether it's a computer, smartphone, or printer, requires an IP address to send and receive data.
@@ -22,7 +22,7 @@ An IP address serves two main functions:
 
 ---
 
-### 2. **Netmask**
+### 2. Netmask
 
 #### Introduction (Netmask)
 A **netmask** (also called a subnet mask) is a 32-bit address used to divide an IP address into two parts: one part identifying the network and the other part identifying the host. Netmasks are essential for creating **subnets** within a network.
@@ -42,7 +42,7 @@ The netmask operates by "masking" a portion of the IP address to identify which 
 
 ---
 
-### 3. **Gateway**
+### 3. Gateway
 
 #### Introduction (Gateway)
 A **gateway** is a network device that acts as an intermediary between different networks, enabling data to flow from one network to another. It is typically used to connect a local network (LAN) to a larger network, such as the internet (WAN).
@@ -59,7 +59,7 @@ Gateways route traffic from one network to another. They work by examining the d
 
 ---
 
-### 4. **DNS (Domain Name System)**
+### 4. DNS (Domain Name System)
 
 #### Introduction (DNS)
 The **Domain Name System** (DNS) is the system that translates domain names, such as `www.example.com`, into IP addresses, such as `192.168.1.1`. DNS acts as the "phonebook" of the internet, enabling users to access websites using human-readable names instead of complex numerical IP addresses.
@@ -79,7 +79,7 @@ DNS uses different types of records to store information:
 
 ---
 
-### 5. **Subnet**
+### 5. Subnet
 
 #### Introduction (Subnet)
 A **subnet** is a smaller network that is part of a larger network. Subnets are used to partition networks for better organization, improved performance, and enhanced security.

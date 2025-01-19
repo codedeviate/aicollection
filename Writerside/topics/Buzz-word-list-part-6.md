@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 73. **NAT (Network Address Translation)**
+### 73. NAT (Network Address Translation)
 
 #### Introduction (NAT)
 **NAT** is a method used by routers to translate private (internal) IP addresses to public (external) IP addresses and vice versa. It is commonly used to allow multiple devices in a local network to share a single public IP address when accessing the internet.
@@ -15,7 +15,7 @@ When a device in a private network sends data to the internet, the router modifi
 
 ---
 
-### 74. **Network**
+### 74. Network
 
 #### Introduction (Network)
 A **network** refers to a group of devices (such as computers, printers, servers, etc.) that are connected together to communicate and share resources like data, files, and internet access. Networks can be either physical (wired connections) or virtual (wireless, cloud-based).
@@ -30,7 +30,7 @@ A **network** refers to a group of devices (such as computers, printers, servers
 
 ---
 
-### 75. **WAN (Wide Area Network)**
+### 75. WAN (Wide Area Network)
 
 #### Introduction (WAN)
 A **WAN** is a telecommunications network that covers a large geographic area, often spanning cities, countries, or even continents. It is used to connect local networks (LANs) and allow for communication over long distances.
@@ -43,7 +43,7 @@ WANs rely on various technologies like leased lines, satellite links, and the in
 
 ---
 
-### 76. **LAN (Local Area Network)**
+### 76. LAN (Local Area Network)
 
 #### Introduction (LAN)
 A **LAN** is a network that connects devices within a limited area, such as a home, office, or school. It typically uses wired (Ethernet) or wireless (Wi-Fi) connections to link devices, allowing them to share resources such as files, printers, and internet access.
@@ -56,7 +56,7 @@ LANs are usually confined to a single building or a group of buildings. Devices 
 
 ---
 
-### 77. **MAC Address (Media Access Control Address)**
+### 77. MAC Address (Media Access Control Address)
 
 #### Introduction (MAC Address)
 A **MAC address** is a unique identifier assigned to the network interface card (NIC) of a device. It operates at the data link layer of the OSI model and is used to identify devices on a local network.
@@ -69,7 +69,7 @@ MAC addresses are typically assigned by the manufacturer of the network device a
 
 ---
 
-### 78. **NIC (Network Interface Card)**
+### 78. NIC (Network Interface Card)
 
 #### Introduction (NIC)
 A **NIC** (Network Interface Card) is a hardware component that allows a computer or device to connect to a network. It can be wired (Ethernet) or wireless (Wi-Fi) and has a unique MAC address.
@@ -82,7 +82,7 @@ The NIC allows the device to communicate with other devices over a network by se
 
 ---
 
-### 79. **ICMP (Internet Control Message Protocol)**
+### 79. ICMP (Internet Control Message Protocol)
 
 #### Introduction (ICMP)
 **ICMP** is a network protocol used for error reporting and diagnostics in IP networks. It helps to manage and control network traffic, providing feedback about issues such as unreachable destinations or network congestion.

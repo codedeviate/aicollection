@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 38. **IaaS (Infrastructure as a Service)**
+### 38. IaaS (Infrastructure as a Service)
 
 #### Introduction (IaaS)
 **IaaS** is a cloud computing model where virtualized computing resources such as servers, storage, and networking are provided over the internet. IaaS allows businesses to rent infrastructure rather than investing in physical hardware.
@@ -15,7 +15,7 @@ With IaaS, users can provision and manage virtual machines, storage, and other i
 
 ---
 
-### 39. **PaaS (Platform as a Service)**
+### 39. PaaS (Platform as a Service)
 
 #### Introduction (PaaS)
 **PaaS** is a cloud computing model that provides a platform allowing developers to build, deploy, and manage applications without worrying about underlying infrastructure or software updates.
@@ -28,7 +28,7 @@ PaaS providers offer tools and frameworks to streamline application development,
 
 ---
 
-### 40. **SaaS (Software as a Service)**
+### 40. SaaS (Software as a Service)
 
 #### Introduction (SaaS)
 **SaaS** is a cloud-based service where software applications are hosted and provided over the internet, rather than being installed on local machines.
@@ -41,7 +41,7 @@ With SaaS, users can access software through a web browser, eliminating the need
 
 ---
 
-### 41. **AWS (Amazon Web Services)**
+### 41. AWS (Amazon Web Services)
 
 #### Introduction (AWS)
 **AWS** is a cloud platform provided by Amazon that offers a wide range of cloud services, including computing power, storage, databases, machine learning, and more.
@@ -54,7 +54,7 @@ AWS provides a variety of services that users can access on-demand and scale acc
 
 ---
 
-### 42. **Azure**
+### 42. Azure
 
 #### Introduction (Azure)
 **Azure** is Microsoft’s cloud computing platform that offers a variety of cloud services, including virtual machines, databases, and storage solutions. Azure supports both Windows and Linux-based applications.
@@ -67,7 +67,7 @@ Azure provides developers and businesses with access to tools, computing resourc
 
 ---
 
-### 43. **GCP (Google Cloud Platform)**
+### 43. GCP (Google Cloud Platform)
 
 #### Introduction (GCP)
 **GCP** is Google’s suite of cloud services that provides infrastructure, platform, and serverless computing services. It includes tools for data analytics, machine learning, storage, and computing.
@@ -80,7 +80,7 @@ GCP offers flexible, scalable solutions for businesses to deploy applications an
 
 ---
 
-### 44. **IBM Cloud**
+### 44. IBM Cloud
 
 #### Introduction (IBM Cloud)
 **IBM Cloud** offers cloud computing services, including IaaS, PaaS, and SaaS solutions. It combines infrastructure with AI, blockchain, and analytics to meet the needs of businesses.
@@ -93,7 +93,7 @@ IBM Cloud integrates AI and data analytics services with its cloud infrastructur
 
 ---
 
-### 45. **Oracle Cloud**
+### 45. Oracle Cloud
 
 #### Introduction (Oracle Cloud)
 **Oracle Cloud** is a cloud computing service provided by Oracle, offering IaaS, PaaS, and SaaS solutions. It is known for providing powerful database services and enterprise applications.
@@ -106,7 +106,7 @@ Oracle Cloud provides businesses with tools for managing databases, applications
 
 ---
 
-### 46. **Alibaba Cloud**
+### 46. Alibaba Cloud
 
 #### Introduction (Alibaba Cloud)
 **Alibaba Cloud** is the cloud computing arm of Alibaba Group, offering IaaS, PaaS, and SaaS services. It is one of the largest cloud providers in China and offers a wide range of services globally.
@@ -119,7 +119,7 @@ Alibaba Cloud provides scalable infrastructure and services such as Elastic Comp
 
 ---
 
-### 47. **VMware**
+### 47. VMware
 
 #### Introduction (VMware)
 **VMware** is a company that provides virtualization software and cloud computing services. VMware’s products allow organizations to run multiple virtual machines on a single physical machine.
@@ -132,7 +132,7 @@ VMware creates virtualized environments, allowing users to consolidate hardware 
 
 ---
 
-### 48. **Hyper-V**
+### 48. Hyper-V
 
 #### Introduction (Hyper-V)
 **Hyper-V** is Microsoft’s hypervisor for creating and managing virtual machines. It allows users to run multiple operating systems on a single physical server.
@@ -145,7 +145,7 @@ Hyper-V provides a virtualization layer that isolates virtual machines from the 
 
 ---
 
-### 49. **KVM (Kernel-based Virtual Machine)**
+### 49. KVM (Kernel-based Virtual Machine)
 
 #### Introduction (KVM)
 **KVM** is a Linux-based hypervisor that enables users to run multiple virtual machines on Linux systems. It is an open-source virtualization solution integrated into the Linux kernel.
@@ -158,7 +158,7 @@ KVM turns Linux into a bare-metal hypervisor, allowing users to run multiple vir
 
 ---
 
-### 50. **Xen**
+### 50. Xen
 
 #### Introduction (Xen)
 **Xen** is an open-source hypervisor used to create and manage virtual machines. It supports a variety of guest operating systems, including Linux and Windows.
@@ -171,7 +171,7 @@ Xen provides a high-performance, secure, and flexible platform for virtualizatio
 
 ---
 
-### 51. **OpenStack**
+### 51. OpenStack
 
 #### Introduction (OpenStack)
 **OpenStack** is an open-source cloud computing platform used to build private and public clouds. It provides a set of software tools to manage compute, storage, and networking resources in a cloud environment.
@@ -184,7 +184,7 @@ OpenStack is made up of various components that handle different aspects of clou
 
 ---
 
-### 52. **IPv4 (Internet Protocol Version 4)**
+### 52. IPv4 (Internet Protocol Version 4)
 
 #### Introduction (IPv4)
 **IPv4** is the fourth version of the Internet Protocol (IP) used to identify devices on a network. It uses a 32-bit address format, allowing for approximately 4.3 billion unique addresses.
@@ -197,7 +197,7 @@ IPv4 addresses are represented as four sets of numbers (octets), separated by pe
 
 ---
 
-### 53. **IPv6 (Internet Protocol Version 6)**
+### 53. IPv6 (Internet Protocol Version 6)
 
 #### Introduction (IPv6)
 **IPv6** is the most recent version of the Internet Protocol, designed to address the limitations of IPv4. It uses a 128-bit address format, providing an enormous number of unique addresses.
@@ -210,7 +210,7 @@ IPv6 addresses are represented using eight groups of four hexadecimal digits, se
 
 ---
 
-### 54. **TCP (Transmission Control Protocol)**
+### 54. TCP (Transmission Control Protocol)
 
 #### Introduction (TCP)
 **TCP** is a connection-oriented protocol used in networking to ensure reliable data transmission. It is part of the TCP/IP suite and guarantees the delivery of data between devices.
@@ -223,7 +223,7 @@ TCP breaks data into packets, ensures that packets are received in order, and ha
 
 ---
 
-### 55. **UDP (User Datagram Protocol)**
+### 55. UDP (User Datagram Protocol)
 
 #### Introduction (UDP)
 **UDP** is a connectionless protocol used in networking. Unlike TCP, it does not guarantee reliability or packet order, making it faster but less reliable.

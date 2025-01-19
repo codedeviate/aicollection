@@ -536,4 +536,3 @@ Here is a table format of the system calls along with an explanation of each sys
 | 473 | readlinkat                               | Reads a symbolic link relative to a directory file descriptor (macOS-specific).           | `rdi: int` (dirfd), `rsi: const char*` (path), `rdx: char*` (buf), `r10: size_t` (bufsize)                                                                                                                            |
 | 474 | symlinkat                                | Creates a symbolic link relative to a directory file descriptor (macOS-specific).         | `rdi: const char*` (old_name), `rsi: int` (dirfd), `rdx: const char*` (new_name)                                                                                                                                      |
 
-Let me know if you need any further information or adjustments!

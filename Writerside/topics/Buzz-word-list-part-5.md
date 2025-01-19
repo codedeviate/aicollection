@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 56. **Non-Root Admin User**
+### 56. Non-Root Admin User
 
 #### Introduction (Non-Root Admin User)
 A **non-root admin user** is a user account in a Unix-like operating system (such as Linux) that has administrative privileges, but is not the root user. This account can perform tasks like installing software or modifying system settings but does not have the unrestricted access that the root account has.
@@ -15,7 +15,7 @@ Non-root admin users are typically granted administrative privileges using `sudo
 
 ---
 
-### 57. **Root User**
+### 57. Root User
 
 #### Introduction (Root User)
 The **root user** is the highest level of user in Unix-like operating systems. It has unrestricted access to all commands, files, and resources on the system.
@@ -28,7 +28,7 @@ The root user can perform any action on the system, from installing software to 
 
 ---
 
-### 58. **Sudo**
+### 58. Sudo
 
 #### Introduction (Sudo)
 **Sudo** (SuperUser Do) is a command-line utility that allows a permitted user to execute a command as the root user or another user. It is commonly used in Unix-like systems to grant administrative privileges to non-root users.
@@ -41,7 +41,7 @@ When a user issues a command with `sudo`, the system asks for the user’s passw
 
 ---
 
-### 59. **Su (Substitute User)**
+### 59. Su (Substitute User)
 
 #### Introduction (Su)
 The `su` (substitute user) command is used in Unix-like systems to switch users or elevate to the root user. The most common usage is `su` alone, which switches to the root user.
@@ -54,7 +54,7 @@ When you run `su`, you are prompted for the target user's password (root passwor
 
 ---
 
-### 60. **Passwd**
+### 60. Passwd
 
 #### Introduction (Passwd)
 The `passwd` command is used to change a user's password in Unix-like operating systems. It allows both regular users to change their own password and administrators (root) to change others' passwords.
@@ -67,7 +67,7 @@ When a user runs `passwd`, they are prompted to enter their current password (fo
 
 ---
 
-### 61. **Systemctl**
+### 61. Systemctl
 
 #### Introduction (Systemctl)
 `systemctl` is a command used to interact with the systemd system and service manager. It is used to manage services (start, stop, restart) and control the system’s initialization process.
@@ -80,7 +80,7 @@ With `systemctl`, you can control system services and manage the system's state.
 
 ---
 
-### 62. **Journalctl**
+### 62. Journalctl
 
 #### Introduction (Journalctl)
 `journalctl` is a command used to query and view logs that are managed by `systemd`'s journal service. It allows users and administrators to view logs related to system services, kernel events, and user processes.
@@ -93,7 +93,7 @@ With `systemctl`, you can control system services and manage the system's state.
 
 ---
 
-### 63. **/etc/shadow**
+### 63. /etc/shadow
 
 #### Introduction (Shadow File)
 The **/etc/shadow** file in Unix-like systems stores user password information and other security-related data. It contains the password hashes and details about password expiration.
@@ -106,7 +106,7 @@ Only privileged users (such as root) can read the contents of `/etc/shadow`. The
 
 ---
 
-### 64. **/etc/passwd**
+### 64. /etc/passwd
 
 #### Introduction (Passwd File)
 The **/etc/passwd** file is a system file that contains essential information about user accounts on the system, including usernames, user IDs (UIDs), and group IDs (GIDs).
@@ -119,7 +119,7 @@ This file allows system processes to access basic user information such as the u
 
 ---
 
-### 65. **/etc/group**
+### 65. /etc/group
 
 #### Introduction (Group File)
 The **/etc/group** file contains information about user groups in Unix-like systems. It lists group names, group IDs (GIDs), and the users who belong to each group.
@@ -132,7 +132,7 @@ Each line in the file corresponds to a group and includes the group’s name, GI
 
 ---
 
-### 66. **/etc/sudoers**
+### 66. /etc/sudoers
 
 #### Introduction (Sudoers File)
 The **/etc/sudoers** file defines the sudo privileges for users and groups. It determines which users can execute commands as root or other users and under what conditions.
@@ -145,7 +145,7 @@ The `/etc/sudoers` file is read by the `sudo` command to check whether a user is
 
 ---
 
-### 67. **/etc/hosts**
+### 67. /etc/hosts
 
 #### Introduction (Hosts File)
 The **/etc/hosts** file is used to map hostnames to IP addresses on Unix-like systems. It is part of the system’s local name resolution mechanism, providing a simple way to resolve hostnames before querying DNS.
@@ -158,7 +158,7 @@ When an application or user requests to connect to a hostname, the system first 
 
 ---
 
-### 68. **/etc/resolv.conf**
+### 68. /etc/resolv.conf
 
 #### Introduction (Resolv.conf File)
 The **/etc/resolv.conf** file in Unix-like systems contains DNS server information. It defines the nameservers that should be used to resolve domain names into IP addresses.
@@ -171,7 +171,7 @@ The file typically includes one or more `nameserver` entries, each pointing to t
 
 ---
 
-### 69. **/etc/network/interfaces**
+### 69. /etc/network/interfaces
 
 #### Introduction (Network Interfaces File)
 The **/etc/network/interfaces** file in Debian-based Linux distributions is used to configure network interfaces. It contains settings such as static IP addresses, DHCP configurations, and more.
@@ -190,7 +190,7 @@ When the system boots, the settings in `/etc/network/interfaces` are applied to 
 
 ---
 
-### 70. **/etc/hostname**
+### 70. /etc/hostname
 
 #### Introduction (Hostname File)
 The **/etc/hostname** file contains the system's hostname, which is the name that identifies the machine on a network.
@@ -203,7 +203,7 @@ This file holds a single line that contains the system’s hostname. This name i
 
 ---
 
-### 71. **Motd (Message of the Day)**
+### 71. Motd (Message of the Day)
 
 #### Introduction (Motd)
 The **motd** (Message of the Day) is a file that displays messages to users when they log in to a Unix-like system. These messages are often used to provide information or warnings.
@@ -216,7 +216,7 @@ The `/etc/motd` file is read when a user logs in via a terminal, and its content
 
 ---
 
-### 72. **NDIS (Network Driver Interface Specification)**
+### 72. NDIS (Network Driver Interface Specification)
 
 #### Introduction (NDIS)
 **NDIS** is a Microsoft specification for network drivers that allows network hardware to communicate with the operating system. It acts as an abstraction layer between the network device drivers and the network protocols.

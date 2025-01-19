@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 6. **DHCP (Dynamic Host Configuration Protocol)**
+### 6. DHCP (Dynamic Host Configuration Protocol)
 
 #### Introduction (DHCP)
 **DHCP** is a network protocol used to automatically assign IP addresses to devices within a network. This eliminates the need for manual IP address configuration, simplifying network administration.
@@ -15,7 +15,7 @@ When a device (such as a computer or smartphone) connects to a network, it sends
 
 ---
 
-### 7. **Router**
+### 7. Router
 
 #### Introduction (Router)
 A **router** is a networking device that forwards data packets between different networks. It helps direct traffic from one network to another based on IP addresses, typically between a local network (LAN) and a wide-area network (WAN) such as the internet.
@@ -30,7 +30,7 @@ A **router** is a networking device that forwards data packets between different
 
 ---
 
-### 8. **Switch**
+### 8. Switch
 
 #### Introduction (Switch)
 A **switch** is a network device that connects devices within a LAN, forwarding data packets based on MAC addresses. Unlike a hub, which broadcasts data to all connected devices, a switch sends data only to the specific device it’s intended for.
@@ -43,7 +43,7 @@ When a switch receives a data packet, it looks at the destination MAC address an
 
 ---
 
-### 9. **Hub**
+### 9. Hub
 
 #### Introduction (Hub)
 A **hub** is a simple networking device that connects multiple devices in a LAN. Unlike a switch, a hub broadcasts incoming data to all devices, even those not intended to receive the data.
@@ -56,7 +56,7 @@ Hubs transmit data packets to all devices connected to them, regardless of the d
 
 ---
 
-### 10. **Bridge**
+### 10. Bridge
 
 #### Introduction (Bridge)
 A **bridge** is a networking device that connects two or more separate network segments and filters traffic based on MAC addresses. Bridges operate at the Data Link Layer (Layer 2) of the OSI model and can help reduce network traffic by segmenting the network.
@@ -69,7 +69,7 @@ A bridge receives data from one network segment and forwards it to the appropria
 
 ---
 
-### 11. **Firewall**
+### 11. Firewall
 
 #### Introduction (Firewall)
 A **firewall** is a security device that monitors and controls the incoming and outgoing network traffic based on predetermined security rules. Firewalls can be hardware-based, software-based, or a combination of both.
@@ -84,7 +84,7 @@ A **firewall** is a security device that monitors and controls the incoming and 
 
 ---
 
-### 12. **Proxy Server**
+### 12. Proxy Server
 
 #### Introduction (Proxy Server)
 A **proxy server** is an intermediary server that sits between a client (e.g., a user’s computer) and a destination server (e.g., a website). It can be used to improve security, filter content, and improve performance by caching data.
@@ -97,7 +97,7 @@ When a client makes a request (e.g., requesting a webpage), the proxy server for
 
 ---
 
-### 13. **VPN (Virtual Private Network)**
+### 13. VPN (Virtual Private Network)
 
 #### Introduction (VPN)
 A **VPN** creates a secure, encrypted connection between two networks or between a device and a network over the internet. It ensures that data transmitted over public networks remains private and secure.
@@ -110,7 +110,7 @@ A VPN establishes a secure tunnel for data by encrypting it before transmission.
 
 ---
 
-### 14. **ISP (Internet Service Provider)**
+### 14. ISP (Internet Service Provider)
 
 #### Introduction (ISP)
 An **ISP** is a company or organization that provides internet access to consumers and businesses. ISPs offer various services such as broadband, fiber, DSL, or wireless internet.
@@ -123,7 +123,7 @@ ISPs connect users to the internet, providing the necessary infrastructure and r
 
 ---
 
-### 15. **TCP/IP (Transmission Control Protocol/Internet Protocol)**
+### 15. TCP/IP (Transmission Control Protocol/Internet Protocol)
 
 #### Introduction (TCP/IP)
 **TCP/IP** is a set of protocols that govern communication over the internet. TCP is responsible for ensuring reliable transmission of data, while IP handles the addressing and routing of data.
@@ -137,7 +137,7 @@ ISPs connect users to the internet, providing the necessary infrastructure and r
 
 ---
 
-### 16. **HTTP (HyperText Transfer Protocol)**
+### 16. HTTP (HyperText Transfer Protocol)
 
 #### Introduction (HTTP)
 **HTTP** is a protocol used for transferring web pages and resources on the internet. It defines how messages are formatted and transmitted between clients (such as web browsers) and servers.
@@ -150,7 +150,7 @@ When a user enters a website address, the browser sends an HTTP request to the s
 
 ---
 
-### 17. **HTTPS (HyperText Transfer Protocol Secure)**
+### 17. HTTPS (HyperText Transfer Protocol Secure)
 
 #### Introduction (HTTPS)
 **HTTPS** is a secure version of HTTP. It uses SSL/TLS encryption to secure the communication between a client and a server, ensuring that data remains private and protected from eavesdropping.
@@ -163,7 +163,7 @@ When a user enters a website address, the browser sends an HTTP request to the s
 
 ---
 
-### 18. **FTP (File Transfer Protocol)**
+### 18. FTP (File Transfer Protocol)
 
 #### Introduction (FTP)
 **FTP** is a standard network protocol used to transfer files between a client and a server over a TCP/IP network. It allows for uploading and downloading files.
@@ -176,7 +176,7 @@ FTP operates on the client-server model. The client requests files from a server
 
 ---
 
-### 19. **SMTP (Simple Mail Transfer Protocol)**
+### 19. SMTP (Simple Mail Transfer Protocol)
 
 #### Introduction (SMTP)
 **SMTP** is the protocol used for sending email messages between servers. It is responsible for handling the email transmission process.
@@ -189,7 +189,7 @@ SMTP allows an email client to send messages to an SMTP server, which then route
 
 ---
 
-### 20. **POP3 (Post Office Protocol version 3)**
+### 20. POP3 (Post Office Protocol version 3)
 
 #### Introduction (POP3)
 **POP3** is an email protocol used to retrieve emails from a mail server. It downloads emails to a local device and removes them from the server by default.

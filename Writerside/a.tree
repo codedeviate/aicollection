@@ -142,6 +142,68 @@
         </toc-element>
         <toc-element topic="Docker-Language-test-environment.md"/>
     </toc-element>
+    <toc-element topic="Files.md">
+        <toc-element topic="Meta-data-in-files.md">
+            <toc-element topic="Executable-Header-ELF64.md"/>
+            <toc-element topic="Executable-Header-ELF32.md"/>
+            <toc-element topic="Executable-Header-Mach-O.md"/>
+            <toc-element topic="Executable-Header-PE.md"/>
+            <toc-element topic="Executable-Header-a-out.md"/>
+            <toc-element topic="Executable-Header-COFF.md"/>
+            <toc-element topic="Executable-Header-MZ.md"/>
+            <toc-element topic="Executable-Header-LE.md"/>
+            <toc-element topic="Executable-Header-LX.md"/>
+            <toc-element topic="Executable-Header-PEF.md"/>
+            <toc-element topic="Executable-Header-XCOFF.md"/>
+        </toc-element>
+        <toc-element topic="File-system.md">
+            <toc-element topic="File-System-APFS.md"/>
+            <toc-element topic="File-System-APS.md"/>
+            <toc-element topic="File-System-BeFS.md"/>
+            <toc-element topic="File-System-BFS.md"/>
+            <toc-element topic="File-System-Btrfs.md"/>
+            <toc-element topic="File-System-CDFS.md"/>
+            <toc-element topic="File-System-CephFS.md"/>
+            <toc-element topic="File-System-CIFS.md"/>
+            <toc-element topic="File-System-ext.md">
+                <toc-element topic="File-System-ext2.md"/>
+                <toc-element topic="File-System-ext3.md"/>
+                <toc-element topic="File-System-ext4.md"/>
+            </toc-element>
+            <toc-element topic="File-System-FAT.md">
+                <toc-element topic="File-System-FAT12.md"/>
+                <toc-element topic="File-System-FAT16.md"/>
+                <toc-element topic="File-System-FAT32.md"/>
+                <toc-element topic="File-System-exFAT.md"/>
+            </toc-element>
+            <toc-element topic="File-System-FATX.md"/>
+            <toc-element topic="File-System-FFS.md">
+                <toc-element topic="File-System-FFS2.md"/>
+            </toc-element>
+            <toc-element topic="File-System-GlusterFS.md"/>
+            <toc-element topic="File-System-HAMMER.md"/>
+            <toc-element topic="File-System-HFS.md">
+                <toc-element topic="File-System-HFS-plus.md"/>
+                <toc-element topic="File-System-HFSX.md"/>
+            </toc-element>
+            <toc-element topic="File-System-HPFS.md"/>
+            <toc-element topic="File-System-ISO9660.md"/>
+            <toc-element topic="File-System-JFFS.md">
+                <toc-element topic="File-SYstem-JFFS2.md"/>
+            </toc-element>
+            <toc-element topic="File-System-JFS.md"/>
+            <toc-element topic="File-System-MFS.md"/>
+            <toc-element topic="File-System-NFS.md"/>
+            <toc-element topic="File-System-NTFS.md"/>
+            <toc-element topic="File-System-ReiserFS.md"/>
+            <toc-element topic="File-System-tmpfs.md"/>
+            <toc-element topic="File-System-UDF.md"/>
+            <toc-element topic="File-System-UFS.md"/>
+            <toc-element topic="File-System-XFS.md"/>
+            <toc-element topic="File-System-YAFFS.md"/>
+            <toc-element topic="File-System-ZFS.md"/>
+        </toc-element>
+    </toc-element>
     <toc-element topic="Git.md">
         <toc-element topic="Commands.md">
             <toc-element topic="Git-Add.md"/>
@@ -284,6 +346,7 @@
                 <toc-element topic="Go-Course-Dev-Tools-Make.md"/>
                 <toc-element topic="Go-Tools-Dev-Tools-Watcher.md"/>
                 <toc-element topic="Go-Course-Dev-Tools-Text-Diff.md"/>
+                <toc-element topic="Go-Course-Dev-Tools-Detect-Executable-Format.md"/>
             </toc-element>
             <toc-element topic="Go-Build-your-own-tools.md">
                 <toc-element topic="Go-Tools-Stage-1.md">

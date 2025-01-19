@@ -2,7 +2,7 @@
 
 <include from="_ai.md" element-id="disclaimer" />
 
-### 21. **IMAP (Internet Message Access Protocol)**
+### 21. IMAP (Internet Message Access Protocol)
 
 #### Introduction (IMAP)
 **IMAP** is an email protocol used to retrieve messages from a mail server. Unlike POP3, IMAP allows users to view their emails while they remain stored on the mail server. This makes it ideal for accessing email across multiple devices.
@@ -15,7 +15,7 @@ IMAP enables users to store their emails on the server and view them from any de
 
 ---
 
-### 22. **ICMP (Internet Control Message Protocol)**
+### 22. ICMP (Internet Control Message Protocol)
 
 #### Introduction (ICMP)
 **ICMP** is a network protocol used to send error messages and operational information about the network. It is primarily used by utilities such as `ping` and `traceroute` to diagnose network issues.
@@ -28,7 +28,7 @@ ICMP helps diagnose problems in network communication. For instance, if a router
 
 ---
 
-### 23. **ARP (Address Resolution Protocol)**
+### 23.*ARP (Address Resolution Protocol)
 
 #### Introduction (ARP)
 **ARP** is a protocol used to map an IP address to a MAC address in a local area network. ARP is essential for devices to communicate on a local network, as it helps them identify each other using both IP addresses and MAC addresses.
@@ -41,7 +41,7 @@ When a device needs to send data to another device within the same local network
 
 ---
 
-### 24. **RARP (Reverse Address Resolution Protocol)**
+### 24. RARP (Reverse Address Resolution Protocol)
 
 #### Introduction (RARP)
 **RARP** is the reverse of ARP. It is used to map a MAC address to an IP address. Although RARP was once used by diskless workstations to discover their IP addresses, it has largely been replaced by more modern protocols such as DHCP.
@@ -54,7 +54,7 @@ RARP enables a device to determine its IP address when it only knows its MAC add
 
 ---
 
-### 25. **Iptables**
+### 25. Iptables
 
 #### Introduction (Iptables)
 **Iptables** is a utility in Linux used to configure the firewall rules for managing network traffic. It allows system administrators to define rules for accepting, rejecting, or modifying network packets based on various criteria, such as IP addresses, ports, and protocols.
@@ -67,7 +67,7 @@ Iptables works by defining a set of rules in tables that decide how to handle ne
 
 ---
 
-### 26. **Ping**
+### 26. Ping
 
 #### Introduction (Ping)
 **Ping** is a network utility used to test the reachability of a host on an IP network. It measures the round-trip time for messages sent from the originating host to a destination host.
@@ -80,7 +80,7 @@ The ping command sends an ICMP Echo Request packet to a destination host, which 
 
 ---
 
-### 27. **Traceroute**
+### 27. Traceroute
 
 #### Introduction (Traceroute)
 **Traceroute** is a network diagnostic tool used to trace the path that packets take from one device to another across a network, identifying each hop along the way.
@@ -93,7 +93,7 @@ Traceroute sends packets with incrementally increasing time-to-live (TTL) values
 
 ---
 
-### 28. **Netstat**
+### 28. Netstat
 
 #### Introduction (Netstat)
 **Netstat** is a network utility that displays network connections, routing tables, and interface statistics. It helps administrators monitor and troubleshoot network activity.
@@ -106,7 +106,7 @@ Netstat shows active connections, the ports that are being used, and the status 
 
 ---
 
-### 29. **Nslookup**
+### 29. Nslookup
 
 #### Introduction (Nslookup)
 **Nslookup** is a command-line tool used to query DNS servers for information about domain names and IP addresses.
@@ -119,7 +119,7 @@ By using Nslookup, users can request the DNS records for a domain name, such as 
 
 ---
 
-### 30. **Telnet**
+### 30. Telnet
 
 #### Introduction (Telnet)
 **Telnet** is a protocol used for remote communication with devices over a network. It allows users to access a remote system's command line interface, but it transmits data, including usernames and passwords, in plaintext.
@@ -132,7 +132,7 @@ Telnet establishes a virtual terminal connection between two systems. However, i
 
 ---
 
-### 31. **SSH (Secure Shell)**
+### 31. SSH (Secure Shell)
 
 #### Introduction (SSH)
 **SSH** is a protocol for securely accessing remote devices over a network. Unlike Telnet, SSH encrypts data, including login credentials, making it more secure.
@@ -145,7 +145,7 @@ SSH works by creating an encrypted channel between the client and the server. Au
 
 ---
 
-### 32. **Docker**
+### 32. Docker
 
 #### Introduction (Docker)
 **Docker** is an open-source platform that automates the deployment, scaling, and management of applications inside containers.
@@ -158,7 +158,7 @@ Docker containers package an application and its dependencies into a lightweight
 
 ---
 
-### 33. **Kubernetes**
+### 33. Kubernetes
 
 #### Introduction (Kubernetes)
 **Kubernetes** is an open-source platform used for automating the deployment, scaling, and management of containerized applications. It works with container technologies like Docker.
@@ -171,7 +171,7 @@ Kubernetes orchestrates containers, ensuring they are deployed, scaled, and mana
 
 ---
 
-### 34. **Container**
+### 34. Container
 
 #### Introduction (Container)
 A **container** is a lightweight, standalone, and executable software package that includes everything needed to run a piece of software, including the code, runtime, libraries, and dependencies.
@@ -184,7 +184,7 @@ Containers encapsulate an application and its environment, ensuring consistency 
 
 ---
 
-### 35. **Virtualization**
+### 35. Virtualization
 
 #### Introduction (Virtualization)
 **Virtualization** is the creation of virtual versions of physical resources, such as servers, storage devices, or network resources, enabling more efficient use of hardware.
@@ -197,7 +197,7 @@ Virtualization allows a single physical machine to run multiple virtual machines
 
 ---
 
-### 36. **Hypervisor**
+### 36. Hypervisor
 
 #### Introduction (Hypervisor)
 A **hypervisor** is software that creates and manages virtual machines. It abstracts the physical hardware to allow multiple VMs to run on a single physical host.
@@ -211,7 +211,7 @@ A **hypervisor** is software that creates and manages virtual machines. It abstr
 
 ---
 
-### 37. **Cloud Computing**
+### 37. Cloud Computing
 
 #### Introduction (Cloud Computing)
 **Cloud computing** refers to the delivery of computing resources over the internet, allowing users to access and use software, storage, and processing power remotely.
