@@ -524,6 +524,9 @@
             </toc-element>
             <toc-element topic="Programming-Algorithms-Linked-list.md"/>
         </toc-element>
+        <toc-element topic="Programming-Thoughts.md">
+            <toc-element topic="Programming-Thoughts-void-vs-undefined-vs-null.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Shell.md">
         <toc-element topic="Shell-Commands.md">

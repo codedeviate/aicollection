@@ -1,0 +1,3 @@
+# Thoughts
+
+Start typing here...

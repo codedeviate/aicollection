@@ -1,9 +1,13 @@
 # Building a Go Program to Identify Executable File Formats
 
-Executable files are core components in computing, representing machine-readable instructions that the operating system can execute. In this article, we'll walk through creating a Go program to read executable files and interpret their headers to determine the file type and architecture. This tutorial is designed with beginners in mind, so we'll break down every step of the process and provide detailed explanations of the concepts involved.
+Executable files are core components in computing, representing machine-readable instructions that the operating system
+can execute. In this article, we'll walk through creating a Go program to read executable files and interpret their
+headers to determine the file type and architecture. This tutorial is designed with beginners in mind, so we'll break
+down every step of the process and provide detailed explanations of the concepts involved.
 
 ## What We Will Build
-Our program will analyze the headers of executable files to identify their type and architecture. It will support detecting the following formats:
+Our program will analyze the headers of executable files to identify their type and architecture. It will support
+detecting the following formats:
 
 - ELF (Executable and Linkable Format) - ELF32 and ELF64
 - Mach-O (Mach Object) - 32-bit and 64-bit
@@ -32,7 +36,7 @@ touch main.go
 
 ## Step 2: Reading the Executable File
 
-First, we need to read the contents of the file. Go provides an excellent `os` package for working with files. Here's the updated code to open and read the file:
+First, we need to read the contents of the file. Go provides an excellent `os` package for working with files.
 
 ```go
 package main
@@ -76,7 +80,8 @@ func main() {
 
 ## Step 3: Identifying the File Type
 
-Each file format has a unique signature (magic number) at the beginning of its header. The updated function to identify the file type is as follows:
+Each file format has a unique signature (magic number) at the beginning of its header. The updated function to identify
+the file type is as follows:
 
 ```go
 func identifyFileType(header []byte) string {
@@ -242,4 +247,5 @@ func identifyDOS(header []byte) string {
 
 
 ### Conclusion of Code Integration
-The code has the ability to identify ELF, Mach-O, and DOS/PE file formats. By running the program with the `go run` command and providing a valid executable file path, you can determine the file's format and architecture.
+The code has the ability to identify ELF, Mach-O, and DOS/PE file formats. By running the program with the `go run`
+command and providing a valid executable file path, you can determine the file's format and architecture.
