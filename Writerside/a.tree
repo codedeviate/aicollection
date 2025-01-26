@@ -534,6 +534,70 @@
             <toc-element topic="Programming-Thoughts-void-vs-undefined-vs-null.md"/>
             <toc-element topic="Programming-Static-values-and-variables-in-a-comparison.md"/>
         </toc-element>
+        <toc-element topic="Programming-Courses.md">
+            <toc-element topic="Welcome-to-the-World-of-Programming-An-Introduction-for-Beginners.md">
+                <toc-element topic="BPC-Chapter-1-Install-and-setup-tools.md"/>
+                <toc-element topic="BPC-Chapter-2-Values.md"/>
+                <toc-element topic="BPC-Chapter-3-Variables.md"/>
+                <toc-element topic="BPC-Chapter-4-Constants.md"/>
+                <toc-element topic="BPC-Chapter-5-Loops.md">
+                    <toc-element topic="BPC-Chapter-5a-For-loops.md"/>
+                    <toc-element topic="BPC-Chapter-5b-While.md"/>
+                </toc-element>
+                <toc-element topic="BPC-Chapter-6-If-statements.md"/>
+                <toc-element topic="BPC-Chapter-7-Switch-Case.md"/>
+                <toc-element topic="BPC-Chapter-8-Arrays-lists-maps-slices-hashes.md"/>
+                <toc-element topic="BPC-Chapter-9-Functions.md"/>
+                <toc-element topic="BPC-Chapter-10-Multiple-return-values.md"/>
+                <toc-element topic="BPC-Chapter-11-Variadic-functions.md"/>
+                <toc-element topic="BPC-Chapter-12-Closure.md"/>
+                <toc-element topic="BPC-Chapter-13-Recursion.md"/>
+                <toc-element topic="BPC-Chapter-14-Built-in-Types.md">
+                    <toc-element topic="BPC-Chapter-14a-Data-types.md"/>
+                </toc-element>
+                <toc-element topic="BPC-Chapter-15-Pointers.md"/>
+                <toc-element topic="BPC-Chapter-16-Strings.md"/>
+                <toc-element topic="BPC-Chapter-17-Structs.md"/>
+                <toc-element topic="BPC-Chapter-18-Classes.md"/>
+                <toc-element topic="BPC-Chapter-19-Class-Methods.md"/>
+                <toc-element topic="BPC-Chapter-20-Interface.md"/>
+                <toc-element topic="BPC-Chapter-21-Enums.md"/>
+                <toc-element topic="BPC-Chapter-22-Struct-Embedding-Inheritance-and-Polymorphism.md"/>
+                <toc-element topic="BPC-Chapter-23-Generics.md"/>
+                <toc-element topic="BPC-Chapter-24-Errors.md"/>
+                <toc-element topic="BPC-Chapter-25-Threads.md">
+                    <toc-element topic="BPC-Chapter-25a-Channels.md"/>
+                    <toc-element topic="BPC-Chapter-25b-Atomic-Counters.md"/>
+                    <toc-element topic="BPC-Chapter-25c-Mutex.md"/>
+                </toc-element>
+                <toc-element topic="BPC-Chapter-26-Defer.md"/>
+                <toc-element topic="BPC-Chapter-27-Regular-Expressions.md"/>
+                <toc-element topic="BPC-Chapter-28-JSON.md"/>
+                <toc-element topic="BPC-Chapter-30-XML.md"/>
+                <toc-element topic="BPC-Chapter-31-Time.md">
+                    <toc-element topic="BPC-Chapter-31a-Epoch.md"/>
+                    <toc-element topic="BPC-Chapter-31b-UTC.md"/>
+                </toc-element>
+                <toc-element topic="BPC-Chapter-32-Random-Numbers.md"/>
+                <toc-element topic="BPC-Chapter-33-Number-Parsing.md"/>
+                <toc-element topic="BPC-Chapter-34-URL-Parsing.md"/>
+                <toc-element topic="BPC-Chapter-35-Hashes.md"/>
+                <toc-element topic="BPC-Chapter-36-Base64.md"/>
+                <toc-element topic="BPC-Chapter-37-Files.md">
+                    <toc-element topic="BPC-Chapter-37a-Reading-Files.md"/>
+                    <toc-element topic="BPC-Chapter-37b-Writing-Files.md"/>
+                </toc-element>
+                <toc-element topic="BPC-Chapter-38-Command-Line-Arguments.md"/>
+                <toc-element topic="BPC-Chapter-39-Command-Line-Flags.md"/>
+                <toc-element topic="BPC-Chapter-40-Environment-Variables.md"/>
+                <toc-element topic="BPC-Chapter-41-Logging.md"/>
+                <toc-element topic="BPC-Chapter-42-Executing-Processes.md"/>
+                <toc-element topic="BPC-Chapter-43-Spawning-Processes.md"/>
+                <toc-element topic="BPC-Chapter-44-Signals.md"/>
+                <toc-element topic="BPC-Chapter-45-Exit.md"/>
+                <toc-element topic="BPC-Chapter-46-Testing.md"/>
+            </toc-element>
+        </toc-element>
     </toc-element>
     <toc-element topic="Shell.md">
         <toc-element topic="Shell-Commands.md">
