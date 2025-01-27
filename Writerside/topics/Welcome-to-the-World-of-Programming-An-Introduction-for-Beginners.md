@@ -26,14 +26,16 @@ No matter your background, this course will guide you in a beginner-friendly way
 ## What Will You Learn?
 By the end of this course, you'll:
 - Understand fundamental programming concepts such as variables, loops, and functions.
-- Write your first programs using Python, PHP, C++, Go, and Zig, some of the most versatile programming languages.
+- Write your first programs using Python, PHP, C++, Go, and/or Zig, some of the most versatile programming languages.
 - Solve real-world problems by applying your coding skills.
 - Gain confidence to explore advanced topics and specialized areas like web development, data analysis, or game design.
+
+## Must I learn all the languages?
+No, you don't have to learn all the languages mentioned in this course. The goal is to introduce you to different programming languages to help you understand the similarities and differences between them. You can choose to focus on one language that aligns with your interests or career goals.
 
 ## How Will This Course Work?
 This course is structured to be interactive and hands-on:
 - **Step-by-Step Lessons:** Each topic builds on the previous one, ensuring a smooth learning curve.
-- **Examples and Exercises:** Practice coding with real-world examples and challenges to reinforce your learning.
 - **Supportive Community:** You're not alone! Join our community to share your progress, ask questions, and get feedback.
 
 ## Getting Ready to Start
