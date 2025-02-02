@@ -426,6 +426,11 @@
         </toc-element>
         <toc-element topic="Javascript.md">
             <toc-element topic="Javascript-Hello-World.md"/>
+            <toc-element topic="Browsers.md">
+                <toc-element topic="Javascript-Compatibility.md">
+                    <toc-element topic="Javascript-Compatibility-var-let-and-const.md"/>
+                </toc-element>
+            </toc-element>
             <toc-element topic="Javascript-Dialects.md">
                 <toc-element topic="Node.md"/>
                 <toc-element topic="Deno.md"/>
@@ -442,6 +447,9 @@
                 <toc-element topic="Javascript-Deno.md"/>
             </toc-element>
             <toc-element topic="Javascript-Package-Managers.md"/>
+            <toc-element topic="Javascript-Short-and-nice.md">
+                <toc-element topic="Javascript-ShortAndNice-Canonical-URL.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="HTML.md"/>
         <toc-element topic="Markdown.md">
