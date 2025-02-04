@@ -15,6 +15,7 @@
     <build-profile instance="a">
         <variables>
             <noindex-content>false</noindex-content>
+            <offline-docs>true</offline-docs>
             <generate-sitemap-url-prefix>https://codedeviate.github.io/aicollection/</generate-sitemap-url-prefix>
         </variables>
         <sitemap priority="0.35" change-frequency="monthly"/>
