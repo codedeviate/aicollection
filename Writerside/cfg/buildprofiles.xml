@@ -7,14 +7,15 @@
         <custom-favicons>logo.png</custom-favicons>
         <header-logo>logo-white.png</header-logo>
         <download-title>AICollection App</download-title>
-        <download-page>https://codedeviate.github.io</download-page>
+        <download-page>https://codedeviate.github.io/aicollection</download-page>
         <showDownloadButton>true</showDownloadButton>
         <analytics-head-script-file>google-analytics.js</analytics-head-script-file>
         <analytics-body-html-file>google-analytics-noscript.html</analytics-body-html-file>
     </variables>
     <build-profile instance="a">
         <variables>
-            <noindex-content>true</noindex-content>
+            <noindex-content>false</noindex-content>
+            <generate-sitemap-url-prefix>https://codedeviate.github.io/aicollection/</generate-sitemap-url-prefix>
         </variables>
         <sitemap priority="0.35" change-frequency="monthly"/>
     </build-profile>

@@ -210,63 +210,70 @@
             <toc-element topic="File-System-ZFS.md"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="Git.md">
-        <toc-element topic="Commands.md">
-            <toc-element topic="Git-Add.md"/>
-            <toc-element topic="Git-apply.md"/>
-            <toc-element topic="Git-Bisect.md"/>
-            <toc-element topic="Git-Blame.md"/>
-            <toc-element topic="Git-Branch.md"/>
-            <toc-element topic="Git-Checkout.md"/>
-            <toc-element topic="Git-Cherry-picking.md">
-                <toc-element topic="Git-Cherry-pick-mulitple-commits-at-once.md"/>
+    <toc-element topic="VCS.md">
+        <toc-element topic="Git.md">
+            <toc-element topic="Commands.md">
+                <toc-element topic="Git-Add.md"/>
+                <toc-element topic="Git-apply.md"/>
+                <toc-element topic="Git-Bisect.md"/>
+                <toc-element topic="Git-Blame.md"/>
+                <toc-element topic="Git-Branch.md"/>
+                <toc-element topic="Git-Checkout.md"/>
+                <toc-element topic="Git-Cherry-picking.md">
+                    <toc-element topic="Git-Cherry-pick-mulitple-commits-at-once.md"/>
+                </toc-element>
+                <toc-element topic="Git-Clone.md"/>
+                <toc-element topic="Git-Commit.md"/>
+                <toc-element topic="Git-Diff.md"/>
+                <toc-element topic="Git-Fetch.md"/>
+                <toc-element topic="Git-Filter-branch.md"/>
+                <toc-element topic="Git-Gc.md"/>
+                <toc-element topic="Git-grep.md"/>
+                <toc-element topic="Git-Init.md"/>
+                <toc-element topic="Git-Instaweb.md"/>
+                <toc-element topic="Git-Log.md"/>
+                <toc-element topic="Git-Merge.md"/>
+                <toc-element topic="Git-mv.md"/>
+                <toc-element topic="Git-Notes.md"/>
+                <toc-element topic="Git-Pull.md"/>
+                <toc-element topic="Git-Push.md"/>
+                <toc-element topic="Git-Rebase.md"/>
+                <toc-element topic="Git-Reflog.md"/>
+                <toc-element topic="Git-Remote.md"/>
+                <toc-element topic="Git-Remote-Add.md"/>
+                <toc-element topic="Git-Rerere.md"/>
+                <toc-element topic="Git-Reset.md"/>
+                <toc-element topic="Git-Restore.md"/>
+                <toc-element topic="Git-Revert.md"/>
+                <toc-element topic="Git-rm.md"/>
+                <toc-element topic="Git-shelve.md"/>
+                <toc-element topic="Git-show.md"/>
+                <toc-element topic="Git-Stash.md"/>
+                <toc-element topic="Git-Status.md"/>
+                <toc-element topic="Git-Submodule.md"/>
+                <toc-element topic="Git-Submodule-foreach.md"/>
+                <toc-element topic="Git-Tag.md"/>
+                <toc-element topic="Git-Update-index.md"/>
+                <toc-element topic="Git-Worktree.md"/>
             </toc-element>
-            <toc-element topic="Git-Clone.md"/>
-            <toc-element topic="Git-Commit.md"/>
-            <toc-element topic="Git-Diff.md"/>
-            <toc-element topic="Git-Fetch.md"/>
-            <toc-element topic="Git-Filter-branch.md"/>
-            <toc-element topic="Git-Gc.md"/>
-            <toc-element topic="Git-grep.md"/>
-            <toc-element topic="Git-Init.md"/>
-            <toc-element topic="Git-Instaweb.md"/>
-            <toc-element topic="Git-Log.md"/>
-            <toc-element topic="Git-Merge.md"/>
-            <toc-element topic="Git-mv.md"/>
-            <toc-element topic="Git-Notes.md"/>
-            <toc-element topic="Git-Pull.md"/>
-            <toc-element topic="Git-Push.md"/>
-            <toc-element topic="Git-Rebase.md"/>
-            <toc-element topic="Git-Reflog.md"/>
-            <toc-element topic="Git-Remote.md"/>
-            <toc-element topic="Git-Remote-Add.md"/>
-            <toc-element topic="Git-Rerere.md"/>
-            <toc-element topic="Git-Reset.md"/>
-            <toc-element topic="Git-Restore.md"/>
-            <toc-element topic="Git-Revert.md"/>
-            <toc-element topic="Git-rm.md"/>
-            <toc-element topic="Git-shelve.md"/>
-            <toc-element topic="Git-show.md"/>
-            <toc-element topic="Git-Stash.md"/>
-            <toc-element topic="Git-Status.md"/>
-            <toc-element topic="Git-Submodule.md"/>
-            <toc-element topic="Git-Submodule-foreach.md"/>
-            <toc-element topic="Git-Tag.md"/>
-            <toc-element topic="Git-Update-index.md"/>
-            <toc-element topic="Git-Worktree.md"/>
-        </toc-element>
-        <toc-element topic="Git-lists.md">
-            <toc-element topic="10-common-git-commands.md"/>
-            <toc-element topic="25-essential-git-commands.md"/>
-            <toc-element topic="Daily-Git-Commands.md"/>
-            <toc-element topic="Git-Cheat-Sheet.md"/>
-        </toc-element>
-        <toc-element topic="Git-Useful-stuff.md">
-            <toc-element topic="Debugging.md">
-                <toc-element topic="Verbose-output.md"/>
+            <toc-element topic="Git-lists.md">
+                <toc-element topic="10-common-git-commands.md"/>
+                <toc-element topic="25-essential-git-commands.md"/>
+                <toc-element topic="Daily-Git-Commands.md"/>
+                <toc-element topic="Git-Cheat-Sheet.md"/>
             </toc-element>
-            <toc-element topic="Git-Wipe-history-from-repository.md"/>
+            <toc-element topic="Git-Useful-stuff.md">
+                <toc-element topic="Debugging.md">
+                    <toc-element topic="Verbose-output.md"/>
+                </toc-element>
+                <toc-element topic="Git-Wipe-history-from-repository.md"/>
+            </toc-element>
         </toc-element>
+        <toc-element topic="Bazaar.md"/>
+        <toc-element topic="Breezy.md"/>
+        <toc-element topic="SVN.md"/>
+        <toc-element topic="Mercurial.md"/>
+        <toc-element topic="Perforce.md"/>
     </toc-element>
     <toc-element topic="Github.md">
         <toc-element topic="Github-Copilot.md"/>
@@ -689,6 +696,8 @@
             <toc-element topic="Useful-Commands-uname.md"/>
             <toc-element topic="Linux-Commands-pushd.md"/>
             <toc-element topic="Linux-Commands-less.md"/>
+            <toc-element topic="Linux-Commands-scp.md"/>
+            <toc-element topic="Linux-Commands-rsync.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Security.md">
