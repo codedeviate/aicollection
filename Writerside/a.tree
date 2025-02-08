@@ -617,6 +617,16 @@
     </toc-element>
     <toc-element topic="Regular-expressions.md">
         <toc-element topic="Regular-Expression-Dialects-and-Implementations.md"/>
+        <toc-element topic="Regular-Expressions-beyond-A-Z.md"/>
+        <toc-element topic="Regular-Expressions-in-Cpp.md"/>
+        <toc-element topic="Regular-Expressions-in-Go.md"/>
+        <toc-element topic="Regular-Expressions-in-Javascript-Browsers.md"/>
+        <toc-element topic="Regular-Expressions-in-Javascript-Node-Bun-and-Deno.md"/>
+        <toc-element topic="Regular-Expressions-in-Perl.md"/>
+        <toc-element topic="Regular-Expressions-in-PHP.md"/>
+        <toc-element topic="Regular-Expressions-in-Rust.md"/>
+        <toc-element topic="Regular-Expressions-in-Shell.md"/>
+        <toc-element topic="Regular-Expressions-in-Zig.md"/>
     </toc-element>
     <toc-element topic="Shell.md">
         <toc-element topic="Shell-Commands.md">
@@ -705,6 +715,7 @@
         </toc-element>
         <toc-element topic="Useful-Commands-in-depth.md">
             <toc-element topic="Useful-Commands-awk.md"/>
+            <toc-element topic="Useful-Commands-cat.md"/>
             <toc-element topic="Useful-Commands-columns.md"/>
             <toc-element topic="Useful-Commands-comm.md"/>
             <toc-element topic="Useful-Commands-cut.md"/>
@@ -716,12 +727,15 @@
             <toc-element topic="Useful-Commands-head-and-tail.md"/>
             <toc-element topic="Useful-Commands-join.md"/>
             <toc-element topic="Useful-Commands-paste.md"/>
+            <toc-element topic="Useful-Commands-pipe.md"/>
             <toc-element topic="Useful-Commands-rsync.md"/>
             <toc-element topic="Useful-Commands-sed.md"/>
             <toc-element topic="Useful-Commands-sort.md"/>
             <toc-element topic="Useful-Commands-tr.md"/>
             <toc-element topic="Useful-Commands-uniq.md"/>
+            <toc-element topic="Useful-Commands-wc.md"/>
             <toc-element topic="Useful-Commands-xargs.md"/>
+            <toc-element topic="Useful-Commands-Linux-vs-macOS-vs-Windows.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Security.md">
@@ -742,5 +756,17 @@
     <toc-element topic="The-Dark-Side.md">
         <toc-element topic="Pentesting.md"/>
         <toc-element topic="Buffer-overflow.md"/>
+        <toc-element topic="The-Dark-Side-Introduction-Course.md">
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-1.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-2.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-3.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-4.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-5.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-6.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-7.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-8.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-9.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-10.md"/>
+        </toc-element>
     </toc-element>
 </instance-profile>
