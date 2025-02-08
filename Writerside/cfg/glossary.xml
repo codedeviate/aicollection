@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
 <terms>
-    <term name="foo">
-        Description of what "foo" is.
+    <term name="AVX">
+        AVX (Advanced Vector Extensions): A set of CPU instructions designed to accelerate performance for tasks like multimedia processing, scientific computations, and data analytics by enabling parallel processing with 256-bit vector operations.
+    </term>
+    <term name="AVX2">
+        AVX2: An enhanced version of AVX that expands the capabilities to support integer-based operations and additional vector processing instructions, improving performance for a broader range of workloads.
+    </term>
+    <term name="AVX-512">
+        AVX-512: A further extension of AVX offering 512-bit vector operations, delivering significant performance boosts for highly parallel workloads, such as cryptography, machine learning, and data-intensive tasks, but with higher power consumption.
     </term>
 </terms>
