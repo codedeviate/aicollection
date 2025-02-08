@@ -757,16 +757,36 @@
         <toc-element topic="Pentesting.md"/>
         <toc-element topic="Buffer-overflow.md"/>
         <toc-element topic="The-Dark-Side-Introduction-Course.md">
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-1.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-2.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-3.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-4.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-5.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-6.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-7.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-8.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-9.md"/>
-            <toc-element topic="The-Dark-Side-Introduction-Course-Module-10.md"/>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-1.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-1.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-2.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-2.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-3.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-3.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-4.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-4.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-5.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-5.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-6.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-6.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-7.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-7.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-8.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-8.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-9.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-9.md"/>
+            </toc-element>
+            <toc-element topic="The-Dark-Side-Introduction-Course-Module-10.md">
+                <toc-element topic="The-Dark-Side-Introduction-Course-Example-code-for-module-10.md"/>
+            </toc-element>
         </toc-element>
     </toc-element>
 </instance-profile>
