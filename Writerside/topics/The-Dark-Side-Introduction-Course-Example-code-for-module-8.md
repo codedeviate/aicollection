@@ -184,7 +184,7 @@ import logging
 import datetime
 
 # Configure logging to include timestamps
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%pct%Y-%pct%m-%pct%d %pct%H:%pct%M:%pct%S')
 
 def log_event(event_description):
     logging.info(event_description)
