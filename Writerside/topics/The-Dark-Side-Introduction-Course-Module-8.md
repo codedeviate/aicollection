@@ -16,10 +16,10 @@ Real-world breaches provide invaluable insights into the tactics and techniques 
 
 ## 2. Case Study 1: The SQL Injection Breach on a Retail Website
 
-### **Overview**
+### **Overview Case Study 1**
 A major retail chain experienced a breach that exposed sensitive customer data through an SQL injection vulnerability in their online storefront. This case underscores the risks of improper input validation and highlights the importance of secure coding practices.
 
-### **Timeline and Attack Flow**
+### **Timeline and Attack Flow Case Study 1**
 - **Reconnaissance:**  
   The attacker began by probing the website for input fields that could be exploited. Publicly accessible pages and search forms were targeted.
 
@@ -36,7 +36,7 @@ A major retail chain experienced a breach that exposed sensitive customer data t
 - **Detection and Response:**  
   The breach was eventually detected by unusual database query patterns, but not before significant data had been compromised.
 
-### **Lessons Learned**
+### **Lessons Learned Case Study 1**
 - **Input Validation:** Always sanitize and validate all user inputs using parameterized queries and prepared statements.
 - **Regular Security Audits:** Implement periodic code reviews and vulnerability assessments to identify and remediate vulnerabilities before they can be exploited.
 - **Intrusion Detection:** Deploy systems to monitor database activity and alert security teams to unusual behavior.
@@ -45,10 +45,10 @@ A major retail chain experienced a breach that exposed sensitive customer data t
 
 ## 3. Case Study 2: Cross-Site Scripting (XSS) on a Social Media Platform
 
-### **Overview**
+### **Overview Case Study 2**
 A popular social media platform fell victim to a series of XSS attacks, where attackers injected malicious scripts into user-generated content. This case demonstrates how inadequate output encoding and lack of content sanitization can allow attackers to hijack user sessions and deface web pages.
 
-### **Timeline and Attack Flow**
+### **Timeline and Attack Flow Case Study 2**
 - **Vulnerability Identification:**  
   Attackers identified a comment section that did not properly sanitize HTML or JavaScript code.
 
@@ -61,7 +61,7 @@ A popular social media platform fell victim to a series of XSS attacks, where at
 - **Detection and Remediation:**  
   The incident was detected when security teams observed abnormal session activity. A rapid patch was issued to sanitize inputs and implement stricter output encoding.
 
-### **Lessons Learned**
+### **Lessons Learned Case Study 2**
 - **Content Sanitization:** Implement robust sanitization and output encoding for all user-generated content.
 - **Content Security Policies:** Enforce a strict Content Security Policy (CSP) to reduce the risk of executing untrusted scripts.
 - **User Awareness:** Educate users about the risks of clicking on unfamiliar links or prompts, even on trusted platforms.
@@ -70,10 +70,10 @@ A popular social media platform fell victim to a series of XSS attacks, where at
 
 ## 4. Case Study 3: Buffer Overflow in a Legacy Application
 
-### **Overview**
+### **Overview Case Study 3**
 An outdated legacy application was exploited through a classic buffer overflow attack. The attacker leveraged inadequate memory management to overwrite critical parts of the system, leading to remote code execution. This case illustrates the dangers of relying on legacy code without proper security updates.
 
-### **Timeline and Attack Flow**
+### **Timeline and Attack Flow Case Study 3**
 - **Discovery of Vulnerability:**  
   Penetration testers, during an authorized security assessment, discovered that the application did not enforce bounds checking on user inputs.
 
@@ -86,7 +86,7 @@ An outdated legacy application was exploited through a classic buffer overflow a
 - **Post-Exploitation Actions:**  
   Affected systems were taken offline to contain the breach. The vulnerability was patched by introducing bounds checking and updating the memory management routines.
 
-### **Lessons Learned**
+### **Lessons Learned Case Study 3**
 - **Secure Coding Practices:**  
   Employ modern programming practices that include bounds checking and safe memory handling to prevent buffer overflows.
 - **Regular Updates and Patching:**  
