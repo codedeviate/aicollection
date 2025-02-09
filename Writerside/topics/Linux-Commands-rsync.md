@@ -169,7 +169,7 @@ rsync -avz --checksum source/ destination/
 ```
 This command compares files using checksums, ensuring that only truly modified files are transferred.
 
-### 12. **--partial**
+### 12. --partial
 
 The `--partial` flag allows `rsync` to keep partially transferred files if the transfer is interrupted. This is useful for resuming transfers without starting from scratch.
 

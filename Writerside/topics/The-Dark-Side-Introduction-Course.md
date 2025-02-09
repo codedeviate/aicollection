@@ -4,7 +4,7 @@
 
 ---
 
-## **Course Overview (Article 1: Course Summary & Introduction)**
+## Course Overview (Article 1: Course Summary & Introduction)
 
 **Purpose & Audience:**  
 This course is designed to equip you with a deep understanding of penetration testing and ethical hacking. Whether you’re an aspiring security professional, an IT specialist, or simply curious about how cyber threats work, this course offers a structured, ethical, and practical approach to learning the art and science of ethical hacking.
@@ -64,7 +64,7 @@ In this first article, we’ve provided a roadmap for the entire course. As you 
 
 ---
 
-## **Upcoming Modules Preview:**
+## Upcoming Modules Preview:
 
 - **Module 1:** We begin by laying the foundation of penetration testing, introducing its lifecycle and core concepts.
 - **Module 2:** Next, we shift our focus to the various attack vectors and common vulnerabilities that attackers exploit.

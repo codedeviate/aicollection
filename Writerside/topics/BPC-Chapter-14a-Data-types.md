@@ -16,7 +16,7 @@ Basic data types are the simplest forms of data a program can handle. They inclu
 
 ### Numeric Data Types: Backbone of Calculations
 
-#### **Integers (Whole Numbers)**
+#### Integers (Whole Numbers)
 Integers represent whole numbers, both positive and negative, including zero. They are used for counting, indexing, and performing arithmetic operations.
 
 Most programming languages provide multiple integer types, such as:
@@ -49,7 +49,7 @@ const unsigned_int: u16 = 42;
 
 ---
 
-#### **Floating-Point Numbers (Decimals)**
+#### Floating-Point Numbers (Decimals)
 Floating-point numbers represent real numbers with a fractional part. These are available in single precision (`float`) and double precision (`double`) formats, and in some languages, extended precision (`float80` or `float128`).
 
 **Examples of Use:**
@@ -79,7 +79,7 @@ const double_value: f64 = 3.141592653589793;
 
 ---
 
-#### **Bytes and Words**
+#### Bytes and Words
 
 **Bytes** are 8-bit unsigned integers commonly used for binary data and file handling. **Words** refer to the natural data size of the system's architecture (e.g., 16-bit, 32-bit, or 64-bit).
 
@@ -107,7 +107,7 @@ const byte_value: u8 = 65;
 
 Textual data types represent sequences of characters or individual symbols. These are critical for user input, text processing, and file operations.
 
-#### **Characters (Single Symbols)**
+#### Characters (Single Symbols)
 A `char` stores a single character, such as a letter, digit, or punctuation mark. Some languages provide Unicode-compatible wide characters for internationalization.
 
 **Code Examples:**
@@ -130,7 +130,7 @@ const char_value: u8 = 'A';
 
 ---
 
-#### **Strings (Sequences of Characters)**
+#### Strings (Sequences of Characters)
 Strings are used for handling text and are often immutable in modern languages. They support operations like concatenation, slicing, and searching.
 
 **Code Examples:**

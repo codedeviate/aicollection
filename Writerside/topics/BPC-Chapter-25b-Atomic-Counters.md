@@ -20,19 +20,19 @@ Atomic counters are typically implemented using hardware support for atomic oper
 
 ## Types of Atomic Counters
 
-### 1. **Increment-Only Counters**
+### 1. Increment-Only Counters
 
 These counters allow only increments, making them suitable for counting positive events such as completed tasks or logged events.
 
-### 2. **Decrement-Only Counters**
+### 2. Decrement-Only Counters
 
 Used to count down from a specific value, decrement-only counters are often applied in situations like countdowns or semaphore-like mechanisms.
 
-### 3. **Increment-Decrement Counters**
+### 3. Increment-Decrement Counters
 
 These are the most versatile atomic counters, allowing both increments and decrements. They are commonly used for reference counting in shared resources or dynamic allocations.
 
-### 4. **Bitfield Atomic Counters**
+### 4. Bitfield Atomic Counters
 
 Some counters operate at the bit level, allowing atomic modifications of individual bits in a shared integer. These are useful for managing flags or compact state representations.
 
@@ -169,19 +169,19 @@ pub fn main() !void {
 
 ## Common Use Cases for Atomic Counters
 
-### 1. **Task Progress Tracking**
+### 1. Task Progress Tracking
 
 In distributed systems or multi-threaded applications, atomic counters can track the number of completed tasks without contention.
 
-### 2. **Resource Management**
+### 2. Resource Management
 
 Atomic counters can limit access to shared resources, such as database connections, ensuring resource availability without overloading.
 
-### 3. **Logging and Metrics Collection**
+### 3. Logging and Metrics Collection
 
 Atomic counters enable fast and thread-safe incrementing for logging systems, helping maintain accurate event counts.
 
-### 4. **Reference Counting**
+### 4. Reference Counting
 
 Languages like C++ frequently use atomic counters for reference counting in memory management systems, ensuring that resources are freed correctly.
 

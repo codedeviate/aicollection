@@ -57,7 +57,7 @@ When dealing with character sets beyond a–z, several challenges may arise:
 
 When working with ISO-8859-1, each character is represented by a single byte, simplifying some aspects of regex pattern matching compared to multi-byte encodings. However, many default regex patterns assume ASCII by default. To properly handle Latin-1 text:
 
-### 1. **Extended Character Classes:**
+### 1. Extended Character Classes:
 
 - **Custom Ranges:**  
   Instead of using `[A-Za-z]` for letters, you might need to include accented characters:
@@ -69,7 +69,7 @@ When working with ISO-8859-1, each character is represented by a single byte, si
 - **Using POSIX Character Classes:**  
   Some regex engines offer POSIX classes like `[[:alpha:]]` which, when correctly configured for a given locale, include accented characters.
 
-### 2. **Locale Settings:**
+### 2. Locale Settings:
 
 - **Configuring the Regex Engine:**  
   In languages like C or C++ (using libraries such as ICU) or in Perl, you can set the locale to ensure that character classes behave as expected:
@@ -87,7 +87,7 @@ When working with ISO-8859-1, each character is represented by a single byte, si
 
 UTF-8 support in regex has become critical for internationalized applications. Many modern regex engines provide robust support for Unicode, but it requires explicit configuration or the use of special syntax:
 
-### 1. **Unicode Modes and Flags:**
+### 1. Unicode Modes and Flags:
 
 - **JavaScript:**  
   Use the `/u` flag to enable Unicode mode:
@@ -110,7 +110,7 @@ UTF-8 support in regex has become critical for internationalized applications. M
   var regex = new Regex(@"\p{L}+", RegexOptions.None);
   ```
 
-### 2. **Unicode Properties:**
+### 2. Unicode Properties:
 
 - **Matching Letters and Numbers:**  
   Instead of `[A-Za-z]`, use Unicode properties:
@@ -126,7 +126,7 @@ UTF-8 support in regex has become critical for internationalized applications. M
   ```
   This matches characters from the Cyrillic block.
 
-### 3. **Grapheme Clusters:**
+### 3. Grapheme Clusters:
 
 - **Complex Characters:**  
   Some languages use combining characters where a single user-perceived character (a grapheme) may consist of multiple Unicode code points. Advanced regex engines provide support for matching grapheme clusters:
@@ -141,13 +141,13 @@ UTF-8 support in regex has become critical for internationalized applications. M
 
 Double-byte character sets (DBCS) were more common in legacy systems for East Asian languages. Although Unicode has largely supplanted these encodings, understanding how to handle them is still valuable.
 
-### 1. **Understanding DBCS:**
+### 1. Understanding DBCS:
 
 - **Fixed vs. Variable Length:**
     - In some DBCS, characters are exactly two bytes, while others are mixed.
     - Regex engines built on Unicode (like those in Java, .NET, or modern JavaScript) treat characters as code points rather than raw bytes, which simplifies matching.
 
-### 2. **Regex and DBCS:**
+### 2. Regex and DBCS:
 
 - **Byte vs. Character Matching:**  
   Ensure that your regex engine interprets the input as characters and not as a sequence of bytes. For instance, a pattern such as `.` in a DBCS context should match one complete character, not two separate bytes.

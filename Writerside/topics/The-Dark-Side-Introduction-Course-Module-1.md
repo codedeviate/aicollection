@@ -28,28 +28,28 @@ Cyber threats are constantly evolving, and so must your defenses. Penetration te
 
 A structured methodology is essential for a successful penetration test. Although different frameworks exist, a typical penetration testing lifecycle includes the following phases:
 
-### a. **Planning and Reconnaissance**
+### a. Planning and Reconnaissance
 
 - **Goal Setting:** Define the scope, objectives, and rules of engagement. This includes determining which systems, networks, or applications will be tested and obtaining the necessary authorizations.
 - **Information Gathering:** Collect as much data as possible about the target using both passive (public records, websites) and active (network scanning, port enumeration) techniques.
 
-### b. **Scanning and Enumeration**
+### b. Scanning and Enumeration
 
 - **Vulnerability Scanning:** Use automated tools to identify open ports, running services, and potential vulnerabilities.
 - **Enumeration:** Delve deeper into the discovered services to map out system architecture and potential entry points. This step often involves gathering information about usernames, system configurations, and software versions.
 
-### c. **Exploitation**
+### c. Exploitation
 
 - **Attempting Access:** Leverage the identified vulnerabilities to gain unauthorized access. This phase simulates the actions of a real attacker trying to breach the system.
 - **Privilege Escalation:** Once initial access is obtained, the tester attempts to elevate their privileges to access sensitive data or systems, simulating a deeper breach.
 
-### d. **Post-Exploitation and Maintaining Access**
+### d. Post-Exploitation and Maintaining Access
 
 - **Impact Analysis:** Evaluate the potential damage an attacker could cause, such as data exfiltration or system compromise.
 - **Persistence Testing:** Determine if it is possible to remain undetected within the network and how long an attacker might maintain access.
 - **Lateral Movement:** Explore the possibility of moving through the network to access other systems and resources.
 
-### e. **Reporting**
+### e. Reporting
 
 - **Documentation:** Compile a detailed report that outlines:
     - The vulnerabilities discovered.

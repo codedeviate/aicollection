@@ -51,7 +51,7 @@ For example, if `filename.txt` contains a single column of data, the command wil
 
 Although implementations may vary slightly between distributions, here are some common options you’ll encounter:
 
-### 1. **-t, --table**
+### 1. -t, --table
 - **Purpose:** Create a table by automatically determining the number of columns and aligning the text.
 - **Usage Example:**
 
@@ -61,7 +61,7 @@ Although implementations may vary slightly between distributions, here are some 
 
   This option is particularly useful when your data is already delimited (by spaces, tabs, or a custom separator) and you want to align each field neatly.
 
-### 2. **-s, --separator \<string\>**
+### 2. -s, --separator \<string\>
 - **Purpose:** Specify a string to be used as the input field delimiter instead of the default whitespace.
 - **Usage Example:**
 
@@ -71,7 +71,7 @@ Although implementations may vary slightly between distributions, here are some 
 
   In this example, the input file `data.csv` is assumed to have comma-separated values. The `-s,` option tells `column` to treat commas as the separator, and `-t` formats the output as a table.
 
-### 3. **-c, --columns \<number\>**
+### 3. -c, --columns \<number\>
 - **Purpose:** (In some versions) Limit the output to a maximum number of columns.
 - **Usage Example:**
 
@@ -81,7 +81,7 @@ Although implementations may vary slightly between distributions, here are some 
 
   This instructs `column` to format the output into at most 3 columns. (Note: Not all implementations support this option. Always check your system’s man page with `man column`.)
 
-### 4. **-x, --fill**
+### 4. -x, --fill
 - **Purpose:** Fill the table across rows rather than down columns. By default, `column` fills down columns; this option changes the layout to fill horizontally.
 - **Usage Example:**
 
@@ -89,7 +89,7 @@ Although implementations may vary slightly between distributions, here are some 
   column -x filename.txt
   ```
 
-### 5. **Other Options**
+### 5. Other Options
 - Some implementations may offer additional options (such as specifying output column separators) or enhancements. Consult your system’s documentation with `man column` or `column --help` for further details.
 
 ---
