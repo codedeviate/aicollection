@@ -24,6 +24,19 @@ This site aims to provide comprehensive resources across various platforms, with
 our primary platform, and we have a wealth of experience and insights to share. While we ensure that the content is
 relevant for users of all platforms, macOS naturally receives more attention due to our expertise and current usage.
 
+### Courses
+
+In this article collection, you will find a variety of courses covering different topics. Each course is designed to
+provide a comprehensive learning experience, guiding you through essential concepts, practical applications, and advanced
+techniques. Whether you are a beginner looking to build foundational skills or an experienced professional seeking to
+expand your knowledge, these courses offer valuable insights and hands-on practice to enhance your expertise.
+
+*This list constantly evolves as new courses are added, so be sure to check back regularly for updates and fresh content.*
+
+- [Go Programming Course for Developers](Go-Programming-Course-for-Developers.md)
+- [Build Your Own Tools in Go](Go-Build-your-own-tools.md)
+- [The Dark Side: Introduction Course](The-Dark-Side-Introduction-Course.md)
+
 ## Hidden Gems in Plain Sight
 
 This collection of articles covers a wide range of topics, from the profound to the playful. While there’s plenty to

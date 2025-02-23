@@ -737,6 +737,10 @@
             <toc-element topic="Useful-Commands-xargs.md"/>
             <toc-element topic="Useful-Commands-Linux-vs-macOS-vs-Windows.md"/>
         </toc-element>
+        <toc-element topic="Non-standard-Commands.md"/>
+        <toc-element topic="Useful-Commands-Comparisons.md">
+            <toc-element topic="Useful-Commands-Comparisons-ripgrep-vs-grep.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Security.md">
         <toc-element topic="Security-Certificates.md">
