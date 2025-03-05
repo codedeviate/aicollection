@@ -485,7 +485,21 @@
             <toc-element topic="Shell-Hello-World.md"/>
         </toc-element>
         <toc-element topic="SQL.md">
-            <toc-element topic="The-SQL-language.md"/>
+            <toc-element topic="The-SQL-language.md">
+                <toc-element topic="Language-SQL-SQL-Language-DQL.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-DDL.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-DML.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-DCL.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-TCL.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Joins.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Constraints.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Functions.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Views.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Indexes.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Set-operations.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Conditions-and-operators.md"/>
+                <toc-element topic="Language-SQL-SQL-Language-Advanced-Commands.md"/>
+            </toc-element>
             <toc-element topic="JOIN.md">
                 <toc-element topic="SQL-INNER-JOIN.md"/>
                 <toc-element topic="SQL-OUTER-JOIN.md"/>
@@ -498,6 +512,12 @@
             <toc-element topic="Languages-SQL-CTE.md">
                 <toc-element topic="Languages-SQL-WITH.md"/>
                 <toc-element topic="Languages-SQL-CTE-Subselects-vs-CTEs.md"/>
+            </toc-element>
+            <toc-element topic="Langauges-SQL-UNION.md">
+                <toc-element topic="Langauges-SQL-UNION-ALL.md"/>
+            </toc-element>
+            <toc-element topic="Languages-SQL-Index.md">
+                <toc-element topic="Languages-SQL-Index-Find-the-right-index.md"/>
             </toc-element>
         </toc-element>
         <toc-element topic="Zig.md">
