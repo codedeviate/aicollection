@@ -499,6 +499,8 @@
                 <toc-element topic="Language-SQL-SQL-Language-Set-operations.md"/>
                 <toc-element topic="Language-SQL-SQL-Language-Conditions-and-operators.md"/>
                 <toc-element topic="Language-SQL-SQL-Language-Advanced-Commands.md"/>
+                <toc-element topic="Languages-SQL-SQL-Language-JSON.md"/>
+                <toc-element topic="Languages-SQL-SQL-Language-Regular-Expressions.md"/>
             </toc-element>
             <toc-element topic="JOIN.md">
                 <toc-element topic="SQL-INNER-JOIN.md"/>
