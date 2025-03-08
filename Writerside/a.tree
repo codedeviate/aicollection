@@ -714,7 +714,9 @@
         <toc-element topic="Tools-Editors.md">
             <toc-element topic="Tools-Editors-Nano.md"/>
             <toc-element topic="Tools-Editors-Pico.md"/>
-            <toc-element topic="Tools-Editors-Vim.md"/>
+            <toc-element topic="Tools-Editors-Vim.md">
+                <toc-element topic="Tools-Editors-Vim-In-depth-VIM.md"/>
+            </toc-element>
             <toc-element topic="Tools-Editors-Emacs.md"/>
             <toc-element topic="Tools-Editors-Sublime.md"/>
             <toc-element topic="Tools-Editors-Kate.md"/>
@@ -727,6 +729,16 @@
         <toc-element topic="Tools-Visual-Studio.md"/>
         <toc-element topic="Tools-Visual-Studio-Community-Edition.md">
             <toc-element topic="Difference-between-Full-edition-and-Community-Edition.md"/>
+        </toc-element>
+        <toc-element topic="Tools-API-Tools.md">
+            <toc-element topic="Tools-API-Tools-Postman.md"/>
+            <toc-element topic="Tools-API-Tools-Bruno.md"/>
+            <toc-element topic="Tools-API-Tools-Insomnia.md"/>
+            <toc-element topic="Tools-API-Tools-Paw.md"/>
+            <toc-element topic="Tools-API-Tools-Advanced-REST-Client.md"/>
+            <toc-element topic="Tools-API-Tools-SoapUI.md"/>
+            <toc-element topic="Tools-API-Tools-Apigee.md"/>
+            <toc-element topic="Tools-API-Tools-Hoppscotch.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Useful-Commands.md">
