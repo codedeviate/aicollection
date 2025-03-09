@@ -213,6 +213,15 @@
     <toc-element topic="Frontend.md">
         <toc-element topic="Frontend-ARIA.md"/>
         <toc-element topic="Frontend-Accessibility-a11y.md"/>
+        <toc-element topic="Frontend-WCAG.md"/>
+        <toc-element topic="Frontend-Deeper-Frontend.md">
+            <toc-element topic="Frontend-Deeper-Frontend-UX-UI-Design-Principles.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Inclusive-Design.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Usability-Testing-User-Research.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Performance-Optimization-Awareness.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Content-Strategy-Readability.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Ethical-Psychological-Design-Considerations.md"/>
+        </toc-element>
     </toc-element>
     <toc-element topic="Github.md">
         <toc-element topic="Github-Copilot.md"/>

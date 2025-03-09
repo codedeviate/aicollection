@@ -73,3 +73,12 @@ There will be a disclaimer at the beginning of each article that contains AI-gen
 ![AI Disclaimer example](ai-disclaimer-example.png)
 
 The content of AI-generated articles might not be verified and can therefor be of a lower quality. 
+
+## The amount of information
+The project may initially appear to contain an unusually large amount of information. However, this is because the
+content has been gathered over several years and is now being organized into a more structured format.
+
+Every text is thoroughly reviewed and updated to ensure that the information remains current and relevant.
+While AI is utilized to enhance the clarity, flow, and readability of the content—especially given that English is not
+my first language—it does not serve as the primary source. Instead, the information is sourced from historical media,
+archival articles, and my personal expertise before being refined by AI for improved presentation.
