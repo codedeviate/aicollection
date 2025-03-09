@@ -838,5 +838,6 @@
     </toc-element>
     <toc-element topic="Zzz-Miscellaneous-Knowledge.md">
         <toc-element topic="Zzz-Numeronyms.md"/>
+        <toc-element topic="Zzz-Phonetic-Alphabet.md"/>
     </toc-element>
 </instance-profile>
