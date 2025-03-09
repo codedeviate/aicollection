@@ -836,4 +836,7 @@
         <toc-element topic="Mercurial.md"/>
         <toc-element topic="Perforce.md"/>
     </toc-element>
+    <toc-element topic="Zzz-Miscellaneous-Knowledge.md">
+        <toc-element topic="Zzz-Numeronyms.md"/>
+    </toc-element>
 </instance-profile>
