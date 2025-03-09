@@ -140,7 +140,7 @@ Here, UNION is used in a recursive CTE to build an organizational chart, and the
 
 While UNION is a powerful tool, there are scenarios where alternative methods might be more appropriate:
 
-### 1. **UNION ALL with DISTINCT**
+### 1. UNION ALL with DISTINCT
 
 If you prefer to control duplicate elimination explicitly, you might first combine results with UNION ALL and then apply a DISTINCT:
 
@@ -157,7 +157,7 @@ FROM (
 
 This two-step process gives you more control over when and how duplicates are removed.
 
-### 2. **JOINs**
+### 2. JOINs
 
 **When to Use:**
 - To combine data based on a common key rather than simply appending rows.
@@ -172,7 +172,7 @@ JOIN orders b ON a.id = b.customer_id;
 
 JOINs combine rows based on related keys and are a preferred method when you need relational data rather than a flat union of two datasets.
 
-### 3. **Conditional Aggregation**
+### 3. Conditional Aggregation
 
 **When to Use:**
 - When pivoting or summarizing data from multiple sources into distinct categories.

@@ -23,7 +23,7 @@ Insomnia is a powerful and versatile API client that supports REST, GraphQL, and
     - [Collaborative API Development](#collaborative-api-development)
 6. [Advanced Topics](#advanced-topics)
     - [Plugins and Extensibility](#plugins-and-extensibility)
-    - [Integrating with CI/CD Pipelines](#integrating-with-cicd-pipelines)
+    - [Integrating with CI/CD Pipelines](#integrating-with-ci-cd-pipelines)
 7. [Conclusion](#conclusion)
 
 ---

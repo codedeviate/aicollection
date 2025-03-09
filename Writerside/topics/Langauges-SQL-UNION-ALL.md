@@ -129,7 +129,7 @@ This query standardizes column names and formats, making it possible to analyze 
 
 While UNION ALL is often the best tool for combining result sets, there are scenarios where alternative methods might be appropriate:
 
-### 1. **JOINs**
+### 1. JOINs
 
 **When to Use:**
 - If you need to combine rows based on a common key rather than appending them vertically.
@@ -144,7 +144,7 @@ JOIN customers c ON o.customer_id = c.customer_id;
 
 This join-based approach is ideal when data from two tables share a relationship, unlike UNION ALL, which simply stacks rows.
 
-### 2. **Conditional Aggregation**
+### 2. Conditional Aggregation
 
 **When to Use:**
 - To pivot data or consolidate similar rows from multiple sources into a single summary.
@@ -160,7 +160,7 @@ FROM sales;
 
 This method can sometimes replace UNION ALL by combining rows into aggregated columns.
 
-### 3. **Subqueries with Combined SELECTs**
+### 3. Subqueries with Combined SELECTs
 
 **When to Use:**
 - When data transformation or filtering needs to occur before combining rows.
