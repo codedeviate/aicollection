@@ -47,10 +47,10 @@ Integrating these principles into your design process involves more than just un
 
 Each of the principles mentioned—Gestalt, Hick’s Law, Fitts’s Law, and Color Theory & Contrast—plays a pivotal role in shaping intuitive and engaging interfaces. Over the coming series of articles, we will delve into each topic individually:
 
-- **Gestalt Principles:** How perception shapes interface design.
-- **Hick’s Law:** Simplifying choices to reduce user overwhelm.
-- **Fitts’s Law:** Optimizing interactive elements for efficient user interactions.
-- **Color Theory & Contrast:** Crafting visual experiences that are both beautiful and accessible.
+- **[Gestalt Principles](Frontend-Deeper-Frontend-Gestalt-Principles.md):** How perception shapes interface design.
+- **[Hick’s Law](Frontend-Deeper-Frontend-Hick-s-Law.md):** Simplifying choices to reduce user overwhelm.
+- **[Fitts’s Law](Frontend-Deeper-Frontend-Fitt-s-Law.md):** Optimizing interactive elements for efficient user interactions.
+- **[Color Theory & Contrast](Frontend-Deeper-Frontend-Color-Theory-Contrast.md):** Crafting visual experiences that are both beautiful and accessible.
 
 These upcoming discussions will provide actionable insights and practical examples, helping you to integrate these principles into your design process and enhance the overall usability of your projects.
 

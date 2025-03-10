@@ -215,12 +215,20 @@
         <toc-element topic="Frontend-Accessibility-a11y.md"/>
         <toc-element topic="Frontend-WCAG.md"/>
         <toc-element topic="Frontend-Deeper-Frontend.md">
-            <toc-element topic="Frontend-Deeper-Frontend-UX-UI-Design-Principles.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-UX-UI-Design-Principles.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Principles.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Hick-s-Law.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Fitt-s-Law.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Color-Theory-Contrast.md"/>
+            </toc-element>
             <toc-element topic="Frontend-Deeper-Frontend-Inclusive-Design.md"/>
             <toc-element topic="Frontend-Deeper-Frontend-Usability-Testing-User-Research.md"/>
             <toc-element topic="Frontend-Deeper-Frontend-Performance-Optimization-Awareness.md"/>
             <toc-element topic="Frontend-Deeper-Frontend-Content-Strategy-Readability.md"/>
             <toc-element topic="Frontend-Deeper-Frontend-Ethical-Psychological-Design-Considerations.md"/>
+        </toc-element>
+        <toc-element topic="Frontend-Miscellaneous-Frontend.md">
+            <toc-element topic="Frontend-Misc-Contrast-ratio.md"/>
         </toc-element>
     </toc-element>
     <toc-element topic="Github.md">
