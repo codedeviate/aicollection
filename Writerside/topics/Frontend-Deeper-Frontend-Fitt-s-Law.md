@@ -1,4 +1,4 @@
-# Fitt&apos;s Law
+# Fitts' Law
 
 *Understanding Fitts’ Law in UI/UX Design*
 

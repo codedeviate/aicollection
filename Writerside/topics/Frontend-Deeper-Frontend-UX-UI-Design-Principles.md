@@ -1,4 +1,4 @@
-# UX &amp; UI Design Principles
+# UX & UI Design Principles
 
 *UX & UI Design Principles: Building Intuitive and Accessible Interfaces*
 

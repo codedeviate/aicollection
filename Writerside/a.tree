@@ -229,11 +229,31 @@
                 <toc-element topic="Frontend-Deeper-Frontend-Fitt-s-Law.md"/>
                 <toc-element topic="Frontend-Deeper-Frontend-Color-Theory-Contrast.md"/>
             </toc-element>
-            <toc-element topic="Frontend-Deeper-Frontend-Inclusive-Design.md"/>
-            <toc-element topic="Frontend-Deeper-Frontend-Usability-Testing-User-Research.md"/>
-            <toc-element topic="Frontend-Deeper-Frontend-Performance-Optimization-Awareness.md"/>
-            <toc-element topic="Frontend-Deeper-Frontend-Content-Strategy-Readability.md"/>
-            <toc-element topic="Frontend-Deeper-Frontend-Ethical-Psychological-Design-Considerations.md"/>
+            <toc-element topic="Frontend-Deeper-Frontend-Inclusive-Design.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Microsoft-Inclusive-Design-Principles.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Cognitive-Load-Reduction.md"/>
+            </toc-element>
+            <toc-element topic="Frontend-Deeper-Frontend-Usability-Testing-User-Research.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Heuristic-Evaluation.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-A-B-Testing.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-User-Personas-Journey-Mapping.md"/>
+            </toc-element>
+            <toc-element topic="Frontend-Deeper-Frontend-Performance-Optimization-Awareness.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Core-Web-Vitals.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Lazy-Loading-Efficient-Asset-Management.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Mobile-First-Approach.md"/>
+            </toc-element>
+            <toc-element topic="Frontend-Deeper-Frontend-Content-Strategy-Readability.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Plain-Language-Guidelines.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Microcopy-UX-Writing.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Typography-Readability-Standards.md"/>
+            </toc-element>
+            <toc-element topic="Frontend-Deeper-Frontend-Ethical-Psychological-Design-Considerations.md">
+                <toc-element topic="Frontend-Deeper-Frontend-Dark-Patterns-Awareness.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Neurodiversity-Friendly-Design.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Privacy-Consent-UX.md"/>
+            </toc-element>
+            <toc-element topic="Frontend-Deeper-Frontend-Conclusions.md"/>
         </toc-element>
         <toc-element topic="Frontend-Miscellaneous-Frontend.md">
             <toc-element topic="Frontend-Misc-Contrast-ratio.md"/>

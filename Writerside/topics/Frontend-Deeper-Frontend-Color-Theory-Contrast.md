@@ -114,10 +114,10 @@ Different colors evoke different emotions and behaviors:
 ---
 
 ## Common Mistakes to Avoid
-❌ **Too many colors** – Overloading the UI with excessive colors reduces focus.
-❌ **Low contrast text** – Light gray text on white backgrounds is difficult to read.
-❌ **Ignoring accessibility** – Failing to accommodate color-blind users.
-❌ **Poor color psychology usage** – Using the wrong colors for brand messaging.
+❌ **Too many colors** – Overloading the UI with excessive colors reduces focus.  
+❌ **Low contrast text** – Light gray text on white backgrounds is difficult to read.  
+❌ **Ignoring accessibility** – Failing to accommodate color-blind users.  
+❌ **Poor color psychology usage** – Using the wrong colors for brand messaging.  
 
 ---
 
@@ -130,7 +130,7 @@ Different colors evoke different emotions and behaviors:
 ✅ **Ensure high contrast** for readability and accessibility.  
 ✅ **Leverage color psychology** to influence emotions and behavior.  
 ✅ **Avoid relying on color alone**—use icons, text, and labels for better usability.  
-✅ **Test colors across different devices** to ensure consistent experiences.
+✅ **Test colors across different devices** to ensure consistent experiences.  
 
 By integrating **color theory and contrast principles**, designers can craft engaging, inclusive, and effective digital experiences. 🚀
 

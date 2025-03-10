@@ -1,4 +1,4 @@
-# Hick&apos;s Law
+# Hick's Law
 
 *Understanding Hick's Law in UI/UX Design*
 
