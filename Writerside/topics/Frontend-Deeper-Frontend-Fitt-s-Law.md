@@ -18,7 +18,7 @@ Fitts’ Law, formulated by psychologist **Paul Fitts** in 1954, describes the r
 
 Mathematically, it is expressed as:
 
-\[ T = a + b \log_2(\frac{D}{W} + 1) \]
+$T = a + b \log_2(\frac{D}{W} + 1)$
 
 Where:
 - **T** = Time taken to reach the target
@@ -26,7 +26,7 @@ Where:
 - **W** = Width (size) of the target
 - **a & b** = Empirical constants based on system calibration
 
-### **Key Insights:**
+### Key Insights:
 ✅ **Larger targets** are easier and faster to click/tap.  
 ✅ **Closer targets** require less effort and time to reach.  
 ✅ **Small, distant targets** take longer to interact with.

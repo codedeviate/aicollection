@@ -2,7 +2,7 @@
 
 **Contrast ratio** is calculated using the **relative luminance** of two colors, typically a foreground color (text) and a background color. The formula used is based on the **WCAG (Web Content Accessibility Guidelines)** standard.
 
-### **Contrast Ratio Formula:**
+### Contrast Ratio Formula:
 $
 \text{Contrast Ratio} = \frac{L_1 + 0.05}{L_2 + 0.05}
 $
@@ -13,7 +13,7 @@ Where:
 - **Luminance values** range from **0 (black)** to **1 (white)**.
 - The **+0.05** is added to avoid division by zero.
 
-### **How to Calculate Relative Luminance:**
+### How to Calculate Relative Luminance:
 The **relative luminance** of an sRGB color is calculated using its **red, green, and blue (RGB)** values, which must first be converted to a linear space using the formula:
 
 $
@@ -32,7 +32,7 @@ Where:
   $
 - RGB values must be normalized to **0–1** range before calculations.
 
-### **Contrast Ratio Guidelines (WCAG 2.1):**
+### Contrast Ratio Guidelines (WCAG 2.1):
 - **4.5:1** = Minimum for normal text (small text)
 - **3:1** = Minimum for large text (≥18pt or 14pt bold)
 - **7:1** = Enhanced contrast for better accessibility

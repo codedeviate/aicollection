@@ -216,7 +216,15 @@
         <toc-element topic="Frontend-WCAG.md"/>
         <toc-element topic="Frontend-Deeper-Frontend.md">
             <toc-element topic="Frontend-Deeper-Frontend-UX-UI-Design-Principles.md">
-                <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Principles.md"/>
+                <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Principles.md">
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Figure-Ground.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Proximity.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Similarity.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Closure.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Continuation.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Common-Fate.md"/>
+                    <toc-element topic="Frontend-Deeper-Frontend-Gestalt-Symmetry-and-Order.md"/>
+                </toc-element>
                 <toc-element topic="Frontend-Deeper-Frontend-Hick-s-Law.md"/>
                 <toc-element topic="Frontend-Deeper-Frontend-Fitt-s-Law.md"/>
                 <toc-element topic="Frontend-Deeper-Frontend-Color-Theory-Contrast.md"/>

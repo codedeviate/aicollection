@@ -18,7 +18,7 @@ Hick’s Law, formulated by British psychologists **William Edmund Hick** and **
 
 Mathematically, it is expressed as:
 
-\[ RT = a + b \log_2(n) \]
+$RT = a + b \log_2(n)$
 
 Where:
 - **RT** = Reaction Time (time taken to make a decision)
@@ -68,7 +68,7 @@ Now, let's explore **how to apply Hick’s Law in UI/UX design.**
 
 ---
 
-### 4. **Prioritize Primary Actions**
+### 4. Prioritize Primary Actions
 - Highlight key actions visually (e.g., using color or size for primary buttons).
 - Make the primary action **more prominent** than secondary actions.
 

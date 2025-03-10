@@ -39,7 +39,7 @@ The Web Content Accessibility Guidelines (WCAG) are the foundation for creating 
 
 ## Techniques and Best Practices
 
-### 1. **Semantic HTML**
+### 1. Semantic HTML
 
 Using semantic HTML is one of the simplest ways to improve accessibility. Semantic tags (like `<header>`, `<nav>`, `<main>`, `<article>`, and `<footer>`) help browsers and assistive technologies understand the structure of the content.
 
@@ -77,7 +77,7 @@ Using semantic HTML is one of the simplest ways to improve accessibility. Semant
 </html>
 ```
 
-### 2. **Accessible Forms**
+### 2. Accessible Forms
 
 Forms must be designed with accessibility in mind. This means using `<label>` elements correctly, providing clear instructions, and ensuring error messages are meaningful.
 
@@ -99,7 +99,7 @@ Forms must be designed with accessibility in mind. This means using `<label>` el
 </form>
 ```
 
-### 3. **ARIA (Accessible Rich Internet Applications)**
+### 3. ARIA (Accessible Rich Internet Applications)
 
 ARIA attributes enhance accessibility, especially for dynamic content and custom UI elements that aren’t natively accessible. Use ARIA roles, states, and properties only when necessary, and always prefer native HTML elements when possible.
 
@@ -128,7 +128,7 @@ ARIA attributes enhance accessibility, especially for dynamic content and custom
 </script>
 ```
 
-### 4. **Keyboard Navigation**
+### 4. Keyboard Navigation
 
 Ensure that all interactive elements can be accessed using the keyboard. Focus indicators should be visible, and custom controls should mimic the native behavior of standard elements.
 
@@ -144,7 +144,7 @@ Ensure that all interactive elements can be accessed using the keyboard. Focus i
 </nav>
 ```
 
-### 5. **Color Contrast and Visual Design**
+### 5. Color Contrast and Visual Design
 
 Sufficient contrast between text and its background is essential for readability. Use tools like the WebAIM Contrast Checker to ensure your color combinations meet WCAG standards.
 
@@ -176,19 +176,19 @@ In addition to automated testing, manual testing with screen readers (such as NV
 
 ## Real-World Applications
 
-### 1. **Enterprise Web Applications**
+### 1. Enterprise Web Applications
 
 Large-scale applications like dashboards and management tools must be accessible to all employees, including those with disabilities. Implementing accessibility features ensures that every team member can navigate and use the application effectively.
 
-### 2. **E-Commerce Websites**
+### 2. E-Commerce Websites
 
 Online stores use accessibility to provide a seamless shopping experience for all customers. Accessible forms, navigation, and product images with descriptive alt text improve usability and broaden the customer base.
 
-### 3. **Educational Platforms**
+### 3. Educational Platforms
 
 Accessibility is crucial for online learning environments. Features such as captions on videos, keyboard navigation, and clear semantic structures enable students with diverse learning needs to access educational content without barriers.
 
-### 4. **Government and Public Service Sites**
+### 4. Government and Public Service Sites
 
 Public websites are legally required to be accessible to ensure that all citizens can access important information and services. This includes everything from voting information to public health resources.
 
